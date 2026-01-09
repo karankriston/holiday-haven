@@ -15,10 +15,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 30% 15%;
 
-    --primary: 24 95% 53%;
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 199 89% 48%;
+    --secondary: 220 90% 56%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 30 20% 94%;
@@ -32,13 +32,13 @@
 
     --border: 30 20% 88%;
     --input: 30 20% 88%;
-    --ring: 24 95% 53%;
+    --ring: 210 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom travel theme tokens */
-    --sunset: 24 95% 53%;
-    --ocean: 199 89% 48%;
+    --sunset: 210 100% 50%;
+    --ocean: 220 90% 56%;
     --forest: 152 69% 31%;
     --sand: 43 50% 85%;
     --golden: 43 96% 56%;
@@ -49,7 +49,7 @@
     
     --shadow-card: 0 4px 20px -4px hsl(220 30% 15% / 0.1);
     --shadow-card-hover: 0 20px 40px -8px hsl(220 30% 15% / 0.2);
-    --shadow-button: 0 4px 14px -2px hsl(24 95% 53% / 0.4);
+    --shadow-button: 0 4px 14px -2px hsl(210 100% 50% / 0.4);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -71,10 +71,10 @@
     --popover: 220 30% 12%;
     --popover-foreground: 30 50% 98%;
 
-    --primary: 24 95% 53%;
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 199 89% 48%;
+    --secondary: 220 90% 56%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 20% 18%;
@@ -88,7 +88,7 @@
 
     --border: 220 20% 20%;
     --input: 220 20% 20%;
-    --ring: 24 95% 53%;
+    --ring: 210 100% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -137,7 +137,11 @@
   }
 
   .section-padding {
-    @apply py-16 md:py-24 px-4 md:px-8;
+    @apply py-12 md:py-16 px-4 md:px-8;
+  }
+
+  .section-gap {
+    @apply space-y-12 md:space-y-16;
   }
 }
 
