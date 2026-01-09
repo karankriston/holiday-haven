@@ -1,12 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Categories from "@/components/Categories";
+import LongTrips from "@/components/LongTrips";
+import Reviews from "@/components/Reviews";
+import Footer from "@/components/Footer";
+
+// Import images
+import heroImage from "@/assets/hero-travel.jpg";
+import hillStationImg from "@/assets/hill-station.jpg";
+import beachImg from "@/assets/beach.jpg";
+import heritageImg from "@/assets/heritage.jpg";
+import wildlifeImg from "@/assets/wildlife.jpg";
+import adventureImg from "@/assets/adventure.jpg";
+import pilgrimageImg from "@/assets/pilgrimage.jpg";
+import kashmirImg from "@/assets/kashmir.jpg";
+import northeastImg from "@/assets/northeast.jpg";
+import southindiaImg from "@/assets/southindia.jpg";
+
+const categoryImages: Record<string, string> = {
+  "hill-stations": hillStationImg,
+  "beaches": beachImg,
+  "heritage": heritageImg,
+  "wildlife": wildlifeImg,
+  "adventure": adventureImg,
+  "pilgrimage": pilgrimageImg,
+};
+
+const tripImages: Record<string, string> = {
+  "kashmir-complete": kashmirImg,
+  "northeast-explorer": northeastImg,
+  "south-india-grand": southindiaImg,
+};
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <Hero heroImage={heroImage} />
+      <Categories categoryImages={categoryImages} />
+      <LongTrips tripImages={tripImages} />
+      <Reviews />
+      <Footer />
     </div>
   );
 };
