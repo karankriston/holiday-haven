@@ -3,7 +3,7 @@ import { categories } from "@/data/categories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, MapPin, Users, Star, ArrowRight } from "lucide-react";
+import { ArrowLeft, Clock, Star, ArrowRight } from "lucide-react";
 
 // Import images
 import hillStationImg from "@/assets/hill-station.jpg";
@@ -61,7 +61,7 @@ const CategoryPage = () => {
       <Navbar />
 
       {/* Hero Banner */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
+      <section className="relative h-[40vh] min-h-[320px] flex items-center justify-center">
         <div className="absolute inset-0">
           <img
             src={bannerImage}
@@ -74,16 +74,16 @@ const CategoryPage = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground mb-4 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Home
           </Link>
-          <div className="text-5xl mb-4">{category.icon}</div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground mb-4">
+          <div className="text-4xl mb-3">{category.icon}</div>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary-foreground mb-3">
             {category.name}
           </h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
             {category.description}
           </p>
         </div>
@@ -92,8 +92,8 @@ const CategoryPage = () => {
       {/* Tour Packages */}
       <section className="section-padding">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-3">
               Available <span className="text-gradient-primary">Tour Packages</span>
             </h2>
             <p className="text-muted-foreground">
@@ -101,18 +101,18 @@ const CategoryPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {category.packages.map((pkg, index) => (
+          <div className="space-y-6">
+            {category.packages.map((pkg) => (
               <div
                 key={pkg.id}
                 className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col md:flex-row"
               >
-                {/* Image */}
-                <div className="relative w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
+                {/* Image - Horizontal */}
+                <div className="relative w-full md:w-[400px] h-56 md:h-auto shrink-0 overflow-hidden">
                   <img
                     src={packageImages[pkg.id] || bannerImage}
                     alt={pkg.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-semibold">
                     {pkg.price}
@@ -139,12 +139,17 @@ const CategoryPage = () => {
                       {pkg.description}
                     </p>
 
-                    {/* Locations */}
-                    <div className="flex items-start gap-2 mb-4">
-                      <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {pkg.locations}
-                      </p>
+                    {/* Locations - Vertical List */}
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-foreground mb-2">Places Covered:</h4>
+                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5">
+                        {pkg.locationsList.map((location, idx) => (
+                          <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                            {location}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
 
@@ -166,18 +171,18 @@ const CategoryPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
           <div className="relative rounded-3xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary" />
-            <div className="relative z-10 p-8 md:p-12 text-center">
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground mb-4">
+            <div className="relative z-10 p-8 md:p-10 text-center">
+              <h3 className="text-xl md:text-2xl font-serif font-bold text-primary-foreground mb-3">
                 Can't Find What You're Looking For?
               </h3>
-              <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
+              <p className="text-primary-foreground/90 mb-5 max-w-2xl mx-auto">
                 Let us create a customized package tailored to your preferences and budget
               </p>
-              <Button variant="heroOutline" size="xl">
+              <Button variant="heroOutline" size="lg">
                 Get Custom Quote
                 <ArrowRight className="w-5 h-5" />
               </Button>
