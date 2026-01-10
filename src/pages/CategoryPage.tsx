@@ -66,8 +66,8 @@ const CategoryPage = () => {
       <Navbar />
 
       {/* Back Button - Below Navbar */}
-      <div className="pt-20 pb-4 px-4 bg-muted/30">
-        <div className="container mx-auto">
+      <div className="pt-20 px-4">
+        <div className="container mx-auto py-4">
           <Link
             to="/"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-medium"
@@ -101,9 +101,9 @@ const CategoryPage = () => {
       </section>
 
       {/* Tour Packages */}
-      <section className="section-padding">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-10">
+          <div className="mb-10">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-3">
               Available <span className="text-gradient-primary">Tour Packages</span>
             </h2>
