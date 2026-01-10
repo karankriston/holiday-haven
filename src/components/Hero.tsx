@@ -20,7 +20,7 @@ const Hero = ({ heroImage }: HeroProps) => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 animate-fade-up">
             ✨ Your Dream Vacation Awaits
           </span>
@@ -35,7 +35,7 @@ const Hero = ({ heroImage }: HeroProps) => {
             Create unforgettable memories with our curated travel experiences.
           </p>
 
-          <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" className="group">
               Explore Packages
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -47,7 +47,7 @@ const Hero = ({ heroImage }: HeroProps) => {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-wrap gap-8 mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-wrap justify-center gap-8 mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div>
               <span className="block text-3xl font-bold text-golden">500+</span>
               <span className="text-primary-foreground/80 text-sm">Happy Travelers</span>

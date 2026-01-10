@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { longTrips } from "@/data/categories";
-import { Clock, MapPin, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 
 interface LongTripsProps {
   tripImages: Record<string, string>;
@@ -65,6 +66,16 @@ const LongTrips = ({ tripImages }: LongTripsProps) => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View All Button */}
+        <div className="text-center mt-10">
+          <Link to="/long-trips">
+            <Button variant="default" size="lg" className="group">
+              View All Long Trips
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
 
         {/* CTA Banner */}

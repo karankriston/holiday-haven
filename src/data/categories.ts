@@ -399,6 +399,30 @@ export const longTrips = [
     price: "₹48,999",
     image: "/images/southindia.jpg",
     description: "Kerala, Tamil Nadu, Karnataka - Complete cultural and natural heritage tour"
+  },
+  {
+    id: "himalayan-odyssey",
+    name: "Himalayan Odyssey",
+    duration: "15 Days / 14 Nights",
+    price: "₹85,999",
+    image: "/images/kashmir.jpg",
+    description: "Complete Himalayan journey covering Ladakh, Spiti Valley, and Kinnaur with high-altitude adventures"
+  },
+  {
+    id: "coastal-india",
+    name: "Coastal India Trail",
+    duration: "12 Days / 11 Nights",
+    price: "₹52,999",
+    image: "/images/southindia.jpg",
+    description: "From Goa to Kerala - Experience India's stunning western coastline with beaches, backwaters, and seafood"
+  },
+  {
+    id: "rajasthan-complete",
+    name: "Complete Rajasthan Circuit",
+    duration: "14 Days / 13 Nights",
+    price: "₹68,999",
+    image: "/images/northeast.jpg",
+    description: "Majestic forts, royal palaces, desert safaris, and vibrant culture across the Land of Kings"
   }
 ];
 

@@ -4,7 +4,7 @@ import { categories } from "@/data/categories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 // Import images
 import ootyImg from "@/assets/ooty.jpg";
@@ -70,17 +70,8 @@ const BookingPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <div className="pt-28 pb-16">
+      <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          {/* Back link */}
-          <Link
-            to={`/category/${categoryId}`}
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary mb-6 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to {category.name}
-          </Link>
-
           {/* Package Title */}
           <div className="text-center mb-10">
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
