@@ -447,5 +447,14 @@ export const reviews = [
     comment: "Char Dham Yatra was a spiritually enriching experience. Every detail was taken care of, making the difficult journey smooth and memorable.",
     avatar: "MP",
     trip: "Char Dham Yatra"
+  },
+  {
+    id: 6,
+    name: "Sneha Reddy",
+    location: "Hyderabad",
+    rating: 5,
+    comment: "The Goa beach package was perfect for our honeymoon! Beautiful beachfront resort, romantic candlelight dinners, and amazing water sports. Truly unforgettable!",
+    avatar: "SR",
+    trip: "Goa Carnival"
   }
 ];

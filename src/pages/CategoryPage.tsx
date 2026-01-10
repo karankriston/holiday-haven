@@ -65,8 +65,21 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
+      {/* Back Button - Below Navbar */}
+      <div className="pt-20 pb-4 px-4 bg-muted/30">
+        <div className="container mx-auto">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-medium"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
+        </div>
+      </div>
+
       {/* Hero Banner */}
-      <section className="relative h-[40vh] min-h-[320px] flex items-center justify-center">
+      <section className="relative h-[35vh] min-h-[280px] flex items-center justify-center">
         <div className="absolute inset-0">
           <img
             src={bannerImage}
@@ -77,13 +90,6 @@ const CategoryPage = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground mb-4 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
           <div className="text-4xl mb-3">{category.icon}</div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary-foreground mb-3">
             {category.name}
