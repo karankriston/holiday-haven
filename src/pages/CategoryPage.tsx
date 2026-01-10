@@ -4,7 +4,7 @@ import { categories } from "@/data/categories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, Star, ArrowRight } from "lucide-react";
+import { Clock, Star, ArrowRight } from "lucide-react";
 
 // Import images
 import hillStationImg from "@/assets/hill-station.jpg";
@@ -65,21 +65,8 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Back Button - Below Navbar */}
-      <div className="pt-20 px-4">
-        <div className="container mx-auto py-4">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-medium"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
-        </div>
-      </div>
-
       {/* Hero Banner */}
-      <section className="relative h-[35vh] min-h-[280px] flex items-center justify-center">
+      <section className="relative h-[35vh] min-h-[280px] flex items-center justify-center mt-16">
         <div className="absolute inset-0">
           <img
             src={bannerImage}
