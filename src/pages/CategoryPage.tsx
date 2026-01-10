@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { categories } from "@/data/categories";
 import Navbar from "@/components/Navbar";
@@ -40,6 +41,10 @@ const packageImages: Record<string, string> = {
 const CategoryPage = () => {
   const { categoryId } = useParams();
   const category = categories.find((c) => c.id === categoryId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!category) {
     return (
@@ -158,10 +163,12 @@ const CategoryPage = () => {
                       <Clock className="w-4 h-4" />
                       {pkg.duration}
                     </div>
-                    <Button variant="default" size="sm" className="group/btn">
-                      Book Now
-                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
+                    <Link to={`/category/${categoryId}/book/${pkg.id}`}>
+                      <Button variant="default" size="sm" className="group/btn">
+                        Book Now
+                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
