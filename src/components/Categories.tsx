@@ -10,9 +10,6 @@ const Categories = ({ categoryImages }: CategoriesProps) => {
     <section id="categories" className="section-padding bg-muted/50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-4">
-            Popular Destinations
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
             Explore by <span className="text-gradient-primary">Category</span>
           </h2>

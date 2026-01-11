@@ -8,6 +8,7 @@ import CategoryPage from "./pages/CategoryPage";
 import BookingPage from "./pages/BookingPage";
 import LongTripsPage from "./pages/LongTripsPage";
 import NotFound from "./pages/NotFound";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <FloatingWhatsApp />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />

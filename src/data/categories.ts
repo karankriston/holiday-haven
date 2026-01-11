@@ -21,10 +21,10 @@ export interface Category {
 export const categories: Category[] = [
   {
     id: "hill-stations",
-    name: "Hill Stations",
+    name: "Ooty Tour Packages",
     description: "Escape to the misty mountains and serene valleys",
     image: "/images/hill-station.jpg",
-    icon: "⛰️",
+    icon: "🏔️",
     packages: [
       {
         id: "ooty-delight",
@@ -38,338 +38,338 @@ export const categories: Category[] = [
       },
       {
         id: "kodaikanal-escape",
-        name: "Kodaikanal Escape",
-        locations: "Kodaikanal, Palani, Berijam, Mannavanur, Vattakanal, Dolphin's Nose, Pillar Rocks",
-        locationsList: ["Kodaikanal", "Palani", "Berijam Lake", "Mannavanur", "Vattakanal", "Dolphin's Nose", "Pillar Rocks"],
+        name: "Coonoor Scenic Experience",
+        locations: "Coonoor, Sim's Park, Dolphin's Nose, Lamb's Rock, Tiger Hill, Droog Fort",
+        locationsList: ["Coonoor", "Sim's Park", "Dolphin's Nose", "Lamb's Rock", "Tiger Hill", "Droog Fort"],
         duration: "3 Days / 2 Nights",
         price: "₹9,999",
         image: "/images/kodaikanal.jpg",
-        description: "Discover the Princess of Hill Stations with pristine star-shaped lake, ancient forests, cascading waterfalls, and serene pine valleys"
+        description: "Discover the scenic beauty of Coonoor with pristine viewpoints, lush gardens, and historic colonial architecture"
       },
       {
         id: "munnar-magic",
-        name: "Munnar Magic",
-        locations: "Munnar, Devikulam, Mattupetty, Top Station, Echo Point, Eravikulam, Anamudi",
-        locationsList: ["Munnar", "Devikulam", "Mattupetty Dam", "Top Station", "Echo Point", "Eravikulam", "Anamudi Peak"],
+        name: "Pykara Nature and Adventure",
+        locations: "Pykara, Pykara Falls, Pykara Lake, Pine Forest, Wenlock Downs, Shooting Point",
+        locationsList: ["Pykara Falls", "Pykara Lake", "Pine Forest", "Wenlock Downs", "Shooting Point", "6th Mile"],
         duration: "5 Days / 4 Nights",
         price: "₹15,999",
         image: "/images/munnar.jpg",
-        description: "Immerse in the emerald tea plantations of God's Own Country with spice gardens, wildlife sanctuaries, and breathtaking mountain vistas"
+        description: "Experience the natural wonders of Pykara with stunning waterfalls, boat rides, and adventure activities in the Nilgiris"
       },
       {
         id: "coorg-adventure",
-        name: "Coorg Coffee Trail",
-        locations: "Coorg, Madikeri, Abbey Falls, Raja's Seat, Talacauvery, Bylakuppe, Nagarhole",
-        locationsList: ["Coorg", "Madikeri", "Abbey Falls", "Raja's Seat", "Talacauvery", "Bylakuppe", "Nagarhole"],
+        name: "Avalanche Wilderness Retreat",
+        locations: "Avalanche, Avalanche Lake, Upper Bhavani, Emerald Lake, Silent Valley",
+        locationsList: ["Avalanche Lake", "Upper Bhavani", "Emerald Lake", "Silent Valley", "Mukurthi Peak", "Trout Farm"],
         duration: "4 Days / 3 Nights",
         price: "₹13,499",
         image: "/images/coorg.jpg",
-        description: "Explore the Scotland of India featuring aromatic coffee estates, misty hills, ancient temples, and the Tibetan monastery experience"
+        description: "Explore the pristine wilderness of Avalanche with crystal clear lakes, shola forests, and untouched natural beauty"
       },
       {
         id: "shimla-manali",
-        name: "Shimla Manali Special",
-        locations: "Shimla, Manali, Kullu, Solang, Rohtang, Mall Road, Hidimba Temple",
-        locationsList: ["Shimla", "Manali", "Kullu Valley", "Solang Valley", "Rohtang Pass", "Mall Road", "Hidimba Temple"],
+        name: "Kodanadu Highlight Experience",
+        locations: "Kodanadu, Kodanadu View Point, Elephant Camp, Tea Estate, Kotagiri",
+        locationsList: ["Kodanadu View Point", "Elephant Camp", "Tea Estate Walk", "Kotagiri", "Catherine Falls", "Rangaswamy Pillar"],
         duration: "6 Days / 5 Nights",
         price: "₹22,999",
         image: "/images/shimla.jpg",
-        description: "The ultimate Himalayan adventure featuring snow-capped peaks, adventure sports, colonial architecture, and scenic mountain drives"
+        description: "Experience the breathtaking views of Kodanadu with elephant encounters, tea plantation walks, and stunning valley vistas"
       }
     ]
   },
   {
     id: "beaches",
-    name: "Beach Getaways",
-    description: "Sun, sand, and pristine coastal paradise",
+    name: "Pick up & Drop",
+    description: "Comfortable transfers to your destination",
     image: "/images/beach.jpg",
-    icon: "🏖️",
+    icon: "🚗",
     packages: [
       {
         id: "goa-carnival",
-        name: "Goa Carnival",
-        locations: "Baga, Calangute, Anjuna, Panjim, Old Goa, Dudhsagar, Chapora Fort",
-        locationsList: ["Baga Beach", "Calangute", "Anjuna", "Panjim City", "Old Goa", "Dudhsagar Falls", "Chapora Fort"],
-        duration: "4 Days / 3 Nights",
-        price: "₹14,999",
+        name: "Airport Pickup",
+        locations: "Coimbatore Airport, Bangalore Airport, Chennai Airport, Mysore",
+        locationsList: ["Coimbatore Airport", "Bangalore Airport", "Chennai Airport", "Mysore", "Salem", "Erode"],
+        duration: "One Way",
+        price: "₹2,999",
         image: "/images/goa.jpg",
-        description: "Experience the vibrant nightlife, Portuguese heritage, stunning beaches, water sports, and delicious Goan cuisine"
+        description: "Comfortable pickup service from major airports to Ooty with experienced drivers and well-maintained vehicles"
       },
       {
         id: "andaman-paradise",
-        name: "Andaman Paradise",
-        locations: "Port Blair, Havelock, Neil Island, Radhanagar, Cellular Jail, Ross Island, Baratang",
-        locationsList: ["Port Blair", "Havelock Island", "Neil Island", "Radhanagar Beach", "Cellular Jail", "Ross Island", "Baratang"],
-        duration: "6 Days / 5 Nights",
-        price: "₹28,999",
+        name: "Railway Station Transfer",
+        locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore",
+        locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode"],
+        duration: "One Way",
+        price: "₹1,999",
         image: "/images/andaman.jpg",
-        description: "Crystal clear turquoise waters, untouched coral reefs, pristine white sand beaches, and historical monuments await"
+        description: "Seamless transfers from railway stations to Ooty with punctual service and comfortable seating"
       },
       {
         id: "kerala-backwaters",
-        name: "Kerala Backwaters",
-        locations: "Alleppey, Kumarakom, Kochi, Kovalam, Varkala, Marari, Cherai",
-        locationsList: ["Alleppey", "Kumarakom", "Fort Kochi", "Kovalam Beach", "Varkala Cliff", "Marari Beach", "Cherai Beach"],
-        duration: "5 Days / 4 Nights",
-        price: "₹18,999",
+        name: "Round Trip Transfer",
+        locations: "Any City to Ooty and Back",
+        locationsList: ["Coimbatore", "Bangalore", "Chennai", "Mysore", "Kochi", "Madurai"],
+        duration: "Round Trip",
+        price: "₹5,999",
         image: "/images/kerala.jpg",
-        description: "Cruise through tranquil backwaters on traditional houseboats, enjoy Ayurvedic spa treatments, and savor authentic Kerala cuisine"
+        description: "Complete round trip transfer package with flexible scheduling and 24/7 availability"
       },
       {
         id: "pondicherry-bliss",
-        name: "Pondicherry Bliss",
-        locations: "Pondicherry, Auroville, Paradise Beach, Serenity Beach, Promenade, Chunnambar, Mahe",
-        locationsList: ["White Town", "Auroville", "Paradise Beach", "Serenity Beach", "Promenade", "Chunnambar", "Mahe"],
-        duration: "3 Days / 2 Nights",
-        price: "₹8,999",
+        name: "Local Sightseeing Transfer",
+        locations: "Ooty, Coonoor, Kotagiri, Pykara, Avalanche",
+        locationsList: ["Ooty Lake", "Botanical Garden", "Doddabetta", "Pykara Falls", "Rose Garden", "Tea Factory"],
+        duration: "Full Day",
+        price: "₹1,499",
         image: "/images/pondicherry.jpg",
-        description: "French colonial charm meets pristine beaches with colorful streets, artisan cafes, spiritual retreats, and water activities"
+        description: "Full day local sightseeing with comfortable vehicle and knowledgeable driver guide"
       },
       {
         id: "lakshadweep-dream",
-        name: "Lakshadweep Dream",
-        locations: "Kavaratti, Agatti, Bangaram, Kadmat, Kalpeni, Minicoy, Thinnakara",
-        locationsList: ["Kavaratti", "Agatti Island", "Bangaram Atoll", "Kadmat Island", "Kalpeni", "Minicoy", "Thinnakara"],
-        duration: "5 Days / 4 Nights",
-        price: "₹35,999",
+        name: "Multi-Day Package Transfer",
+        locations: "Complete tour coverage with transfers",
+        locationsList: ["All Ooty Attractions", "Coonoor Points", "Kotagiri", "Pykara", "Mudumalai", "Bandipur"],
+        duration: "Multi-Day",
+        price: "₹8,999",
         image: "/images/lakshadweep.jpg",
-        description: "India's hidden coral paradise featuring turquoise lagoons, world-class diving spots, untouched marine biodiversity, and island hopping"
+        description: "Complete multi-day package with dedicated vehicle, driver, and all transfers included"
       }
     ]
   },
   {
     id: "heritage",
-    name: "Heritage Tours",
-    description: "Journey through India's glorious past",
+    name: "South Serenity Tours",
+    description: "Peaceful escapes through South India",
     image: "/images/heritage.jpg",
-    icon: "🏛️",
+    icon: "🌿",
     packages: [
       {
         id: "rajasthan-royal",
-        name: "Royal Rajasthan",
-        locations: "Jaipur, Udaipur, Jodhpur, Jaisalmer, Pushkar, Bikaner, Mount Abu",
-        locationsList: ["Jaipur", "Udaipur", "Jodhpur", "Jaisalmer", "Pushkar", "Bikaner", "Mount Abu"],
+        name: "Kerala Backwaters Bliss",
+        locations: "Alleppey, Kumarakom, Kochi, Munnar",
+        locationsList: ["Alleppey", "Kumarakom", "Fort Kochi", "Munnar", "Thekkady", "Vagamon"],
         duration: "7 Days / 6 Nights",
         price: "₹32,999",
         image: "/images/rajasthan.jpg",
-        description: "Live like royalty in magnificent palaces, explore ancient forts, experience desert safaris, and witness vibrant Rajasthani culture"
+        description: "Experience the serene backwaters of Kerala with houseboat stays, Ayurvedic treatments, and lush hill stations"
       },
       {
         id: "golden-triangle",
-        name: "Golden Triangle",
-        locations: "Delhi, Agra, Jaipur, Fatehpur Sikri, Mathura, Vrindavan, Bharatpur",
-        locationsList: ["New Delhi", "Agra", "Jaipur", "Fatehpur Sikri", "Mathura", "Vrindavan", "Bharatpur"],
+        name: "Tamil Nadu Temple Trail",
+        locations: "Madurai, Rameswaram, Kanyakumari, Thanjavur",
+        locationsList: ["Madurai", "Rameswaram", "Kanyakumari", "Thanjavur", "Trichy", "Pondicherry"],
         duration: "5 Days / 4 Nights",
         price: "₹19,999",
         image: "/images/agra.jpg",
-        description: "The iconic trio featuring the majestic Taj Mahal, historic Red Fort, Amber Palace, and rich Mughal heritage"
+        description: "Explore the magnificent temples of Tamil Nadu with their stunning Dravidian architecture"
       },
       {
         id: "hampi-heritage",
-        name: "Hampi Heritage",
-        locations: "Hampi, Hospet, Badami, Aihole, Pattadakal, Anegundi, Tungabhadra",
-        locationsList: ["Hampi Ruins", "Hospet", "Badami Caves", "Aihole Temples", "Pattadakal", "Anegundi", "Tungabhadra Dam"],
+        name: "Karnataka Heritage",
+        locations: "Mysore, Coorg, Hampi, Badami",
+        locationsList: ["Mysore Palace", "Coorg", "Hampi", "Badami Caves", "Belur", "Halebidu"],
         duration: "4 Days / 3 Nights",
         price: "₹12,999",
         image: "/images/hampi.jpg",
-        description: "Explore the UNESCO World Heritage ruins of the mighty Vijayanagara Empire with stunning boulder landscapes and ancient temples"
+        description: "Discover Karnataka's rich heritage with royal palaces, ancient ruins, and coffee plantations"
       },
       {
         id: "varanasi-spiritual",
-        name: "Varanasi Spiritual",
-        locations: "Varanasi, Sarnath, Allahabad, Bodh Gaya, Kushinagar, Nalanda, Rajgir",
-        locationsList: ["Varanasi Ghats", "Sarnath", "Prayagraj", "Bodh Gaya", "Kushinagar", "Nalanda", "Rajgir"],
+        name: "Andhra Spiritual Journey",
+        locations: "Tirupati, Srikalahasti, Lepakshi, Puttaparthi",
+        locationsList: ["Tirupati", "Tirumala", "Srikalahasti", "Lepakshi", "Puttaparthi", "Ahobilam"],
         duration: "5 Days / 4 Nights",
         price: "₹16,999",
         image: "/images/varanasi.jpg",
-        description: "Experience the spiritual heart of India with sacred Ganga Aarti, Buddhist pilgrimage sites, and ancient learning centers"
+        description: "A spiritual journey through Andhra Pradesh's most sacred temples and pilgrimage sites"
       },
       {
         id: "south-temple",
-        name: "South Temple Trail",
-        locations: "Madurai, Thanjavur, Trichy, Rameswaram, Kanyakumari, Mahabalipuram, Chidambaram",
-        locationsList: ["Madurai Meenakshi", "Thanjavur", "Trichy", "Rameswaram", "Kanyakumari", "Mahabalipuram", "Chidambaram"],
+        name: "Complete South India",
+        locations: "Kerala, Tamil Nadu, Karnataka, Andhra Pradesh",
+        locationsList: ["Kochi", "Munnar", "Ooty", "Mysore", "Madurai", "Rameswaram"],
         duration: "6 Days / 5 Nights",
         price: "₹21,999",
         image: "/images/madurai.jpg",
-        description: "Marvel at the architectural grandeur of Dravidian temples, intricate sculptures, and centuries-old living traditions"
+        description: "The ultimate South India experience covering all four states with their unique culture and beauty"
       }
     ]
   },
   {
     id: "wildlife",
-    name: "Wildlife Safari",
-    description: "Encounter majestic creatures in their habitat",
+    name: "Ooty Toy Train Ride",
+    description: "Heritage railway experience through the Nilgiris",
     image: "/images/wildlife.jpg",
-    icon: "🦁",
+    icon: "🚂",
     packages: [
       {
         id: "jim-corbett",
-        name: "Jim Corbett Adventure",
-        locations: "Jim Corbett, Nainital, Ramnagar, Dhikala, Bijrani, Jhirna, Dhela",
-        locationsList: ["Jim Corbett NP", "Nainital", "Ramnagar", "Dhikala Zone", "Bijrani Zone", "Jhirna Zone", "Dhela Zone"],
-        duration: "4 Days / 3 Nights",
-        price: "₹18,999",
+        name: "Full Toy Train Experience",
+        locations: "Mettupalayam to Ooty via Coonoor",
+        locationsList: ["Mettupalayam", "Kallar", "Adderly", "Hillgrove", "Coonoor", "Wellington", "Ooty"],
+        duration: "Full Day",
+        price: "₹1,999",
         image: "/images/corbett.jpg",
-        description: "Track the majestic Royal Bengal Tiger in its natural habitat with expert naturalists, jungle safaris, and riverside camping"
+        description: "Complete UNESCO World Heritage toy train journey from Mettupalayam to Ooty through 16 tunnels and 250 bridges"
       },
       {
         id: "ranthambore",
-        name: "Ranthambore Safari",
-        locations: "Ranthambore, Sawai Madhopur, Jaipur, Keoladeo, Bundi, Chittorgarh, Tonk",
-        locationsList: ["Ranthambore NP", "Sawai Madhopur", "Jaipur", "Keoladeo Ghana", "Bundi", "Chittorgarh", "Tonk"],
-        duration: "4 Days / 3 Nights",
-        price: "₹17,499",
+        name: "Ooty to Coonoor Train",
+        locations: "Ooty to Coonoor scenic route",
+        locationsList: ["Ooty Station", "Lovedale", "Wellington", "Coonoor Station"],
+        duration: "Half Day",
+        price: "₹999",
         image: "/images/ranthambore.jpg",
-        description: "Witness tigers roaming amidst ancient ruins of the Ranthambore Fort with multiple safari zones and bird watching opportunities"
+        description: "Short scenic journey from Ooty to Coonoor with stunning valley views and tea garden landscapes"
       },
       {
         id: "kaziranga",
-        name: "Kaziranga Expedition",
-        locations: "Kaziranga, Guwahati, Shillong, Cherrapunji, Mawlynnong, Majuli, Tezpur",
-        locationsList: ["Kaziranga NP", "Guwahati", "Shillong", "Cherrapunji", "Mawlynnong", "Majuli Island", "Tezpur"],
-        duration: "6 Days / 5 Nights",
-        price: "₹26,999",
+        name: "First Class Experience",
+        locations: "Premium toy train journey",
+        locationsList: ["Reserved First Class", "Window Seats", "Scenic Views", "Photo Stops"],
+        duration: "Full Day",
+        price: "₹2,999",
         image: "/images/kaziranga.jpg",
-        description: "Home to the one-horned rhinoceros, wild elephants, water buffaloes, and incredible birdlife in the UNESCO World Heritage site"
+        description: "Travel in comfort with first-class reserved seating, guaranteed window views, and premium service"
       },
       {
         id: "bandipur",
-        name: "Bandipur Wild Trail",
-        locations: "Bandipur, Mudumalai, Nagarhole, Ooty, Wayanad, Mysore, Kabini",
-        locationsList: ["Bandipur NP", "Mudumalai", "Nagarhole", "Ooty", "Wayanad", "Mysore", "Kabini"],
-        duration: "5 Days / 4 Nights",
-        price: "₹19,999",
+        name: "Toy Train with Sightseeing",
+        locations: "Train ride plus local attractions",
+        locationsList: ["Toy Train", "Botanical Garden", "Rose Garden", "Ooty Lake", "Doddabetta"],
+        duration: "Full Day",
+        price: "₹3,499",
         image: "/images/bandipur.jpg",
-        description: "Explore the lush forests of the Western Ghats with elephant herds, spotted deer, leopards, and diverse avian species"
+        description: "Combine the toy train experience with guided sightseeing of Ooty's major attractions"
       },
       {
         id: "gir-safari",
-        name: "Gir Lion Safari",
-        locations: "Gir Forest, Junagadh, Somnath, Diu, Sasangir, Jamjir, Kankai",
-        locationsList: ["Gir Forest", "Junagadh", "Somnath Temple", "Diu Island", "Sasan Gir", "Jamjir Waterfall", "Kankai Temple"],
-        duration: "4 Days / 3 Nights",
-        price: "₹20,999",
+        name: "Sunset Train Special",
+        locations: "Evening train ride with sunset views",
+        locationsList: ["Evening Departure", "Sunset Views", "Tea Gardens", "Valley Panorama"],
+        duration: "Evening",
+        price: "₹1,499",
         image: "/images/gir.jpg",
-        description: "The last refuge of the Asiatic Lion featuring exclusive safari experiences, Maldhari culture, and coastal heritage sites"
+        description: "Special evening train ride timing to catch the magical sunset over the Nilgiri hills"
       }
     ]
   },
   {
     id: "adventure",
-    name: "Adventure Tours",
+    name: "Treks & Adventures",
     description: "Thrilling experiences for the bold explorer",
     image: "/images/adventure.jpg",
-    icon: "🏔️",
+    icon: "🥾",
     packages: [
       {
         id: "ladakh-expedition",
-        name: "Ladakh Expedition",
-        locations: "Leh, Nubra Valley, Pangong, Khardung La, Tso Moriri, Zanskar, Hemis",
-        locationsList: ["Leh Town", "Nubra Valley", "Pangong Lake", "Khardung La", "Tso Moriri", "Zanskar Valley", "Hemis Monastery"],
-        duration: "7 Days / 6 Nights",
-        price: "₹38,999",
+        name: "Doddabetta Trek",
+        locations: "Doddabetta Peak, highest point in Nilgiris",
+        locationsList: ["Doddabetta Base", "Forest Trail", "View Point", "Summit", "Tea Estate", "Botanical Garden"],
+        duration: "Half Day",
+        price: "₹1,499",
         image: "/images/ladakh.jpg",
-        description: "Conquer the highest motorable roads in the world with stunning monasteries, crystal-clear lakes, and Himalayan adventures"
+        description: "Trek to the highest peak in the Nilgiris at 2,637m with panoramic views of the entire region"
       },
       {
         id: "rishikesh-thrill",
-        name: "Rishikesh Adventure",
-        locations: "Rishikesh, Haridwar, Shivpuri, Kaudiyala, Neelkanth, Lakshman Jhula, Triveni Ghat",
-        locationsList: ["Rishikesh", "Haridwar", "Shivpuri", "Kaudiyala", "Neelkanth Temple", "Lakshman Jhula", "Triveni Ghat"],
-        duration: "3 Days / 2 Nights",
-        price: "₹11,999",
+        name: "Mukurthi Peak Trek",
+        locations: "Mukurthi National Park adventure",
+        locationsList: ["Mukurthi Park Entry", "Shola Forest", "Grasslands", "Peak Summit", "Wildlife Spotting"],
+        duration: "Full Day",
+        price: "₹2,999",
         image: "/images/rishikesh.jpg",
-        description: "River rafting, bungee jumping, cliff jumping, camping by the Ganges, and spiritual awakening in the Yoga Capital"
+        description: "Challenging trek through Mukurthi National Park with chances to spot Nilgiri Tahr and exotic birds"
       },
       {
         id: "spiti-valley",
-        name: "Spiti Valley Quest",
-        locations: "Spiti, Kaza, Key Monastery, Chandratal, Kunzum Pass, Tabo, Pin Valley",
-        locationsList: ["Spiti Valley", "Kaza Town", "Key Monastery", "Chandratal Lake", "Kunzum Pass", "Tabo Monastery", "Pin Valley"],
-        duration: "8 Days / 7 Nights",
-        price: "₹42,999",
+        name: "Avalanche Valley Trek",
+        locations: "Avalanche Lake and surrounding trails",
+        locationsList: ["Avalanche Lake", "Upper Bhavani", "Emerald Lake", "Forest Trails", "Trout Fishing"],
+        duration: "Full Day",
+        price: "₹2,499",
         image: "/images/spiti.jpg",
-        description: "The middle land between India and Tibet featuring ancient monasteries, fossil-rich terrain, and remote Himalayan villages"
+        description: "Scenic trek through the pristine Avalanche valley with crystal clear lakes and diverse wildlife"
       },
       {
         id: "meghalaya-caves",
-        name: "Meghalaya Exploration",
-        locations: "Shillong, Cherrapunji, Dawki, Mawlynnong, Living Root Bridges, Mawsmai Caves, Nongriat",
-        locationsList: ["Shillong", "Cherrapunji", "Dawki River", "Mawlynnong", "Living Root Bridge", "Mawsmai Cave", "Nongriat Trek"],
-        duration: "5 Days / 4 Nights",
-        price: "₹23,999",
+        name: "Night Safari Adventure",
+        locations: "Mudumalai and Bandipur wildlife",
+        locationsList: ["Mudumalai Entry", "Jeep Safari", "Wildlife Spotting", "Night Camp", "Nature Walk"],
+        duration: "Overnight",
+        price: "₹4,999",
         image: "/images/meghalaya.jpg",
-        description: "Living root bridges, the wettest place on Earth, crystal-clear rivers, limestone caves, and the cleanest village in Asia"
+        description: "Thrilling night safari through Mudumalai Tiger Reserve with camping and wildlife encounters"
       },
       {
         id: "sikkim-adventure",
-        name: "Sikkim Adventure",
-        locations: "Gangtok, Pelling, Lachung, Yumthang, Nathula Pass, Tsomgo Lake, Ravangla",
-        locationsList: ["Gangtok", "Pelling", "Lachung", "Yumthang Valley", "Nathula Pass", "Tsomgo Lake", "Ravangla"],
-        duration: "6 Days / 5 Nights",
-        price: "₹29,999",
+        name: "Multi-Day Adventure Package",
+        locations: "Complete adventure experience",
+        locationsList: ["Trekking", "Camping", "Safari", "Rock Climbing", "Rappelling", "Nature Walks"],
+        duration: "3 Days / 2 Nights",
+        price: "₹8,999",
         image: "/images/sikkim.jpg",
-        description: "Himalayan adventure with stunning monastery visits, rhododendron valleys, Indo-China border, and Kanchenjunga views"
+        description: "Ultimate adventure package combining multiple activities for thrill seekers"
       }
     ]
   },
   {
     id: "pilgrimage",
-    name: "Pilgrimage",
-    description: "Sacred journeys for the soul",
+    name: "Honeymoon Packages",
+    description: "Romantic getaways for couples",
     image: "/images/pilgrimage.jpg",
-    icon: "🙏",
+    icon: "💑",
     packages: [
       {
         id: "char-dham",
-        name: "Char Dham Yatra",
-        locations: "Yamunotri, Gangotri, Kedarnath, Badrinath, Haridwar, Rishikesh, Uttarkashi",
-        locationsList: ["Yamunotri", "Gangotri", "Kedarnath", "Badrinath", "Haridwar", "Rishikesh", "Uttarkashi"],
-        duration: "10 Days / 9 Nights",
-        price: "₹45,999",
+        name: "Romantic Ooty Escape",
+        locations: "Ooty, Coonoor romantic spots",
+        locationsList: ["Rose Garden", "Botanical Garden", "Ooty Lake", "Boat House", "Dolphin's Nose", "Lamb's Rock"],
+        duration: "4 Days / 3 Nights",
+        price: "₹18,999",
         image: "/images/chardham.jpg",
-        description: "The sacred four abodes in the Himalayas with divine darshans, holy dips, and a complete spiritual transformation journey"
+        description: "Perfect honeymoon package with romantic stays, candlelight dinners, and scenic excursions"
       },
       {
         id: "vaishno-devi",
-        name: "Vaishno Devi Darshan",
-        locations: "Katra, Vaishno Devi, Jammu, Patnitop, Shiv Khori, Baba Dhansar, Purmandal",
-        locationsList: ["Katra", "Vaishno Devi", "Jammu City", "Patnitop", "Shiv Khori", "Baba Dhansar", "Purmandal"],
-        duration: "4 Days / 3 Nights",
-        price: "₹12,999",
+        name: "Coorg & Ooty Romance",
+        locations: "Coorg and Ooty combined tour",
+        locationsList: ["Abbey Falls", "Raja's Seat", "Coffee Plantations", "Ooty Lake", "Rose Garden", "Tea Estates"],
+        duration: "5 Days / 4 Nights",
+        price: "₹24,999",
         image: "/images/vaishnodevi.jpg",
-        description: "Trek to the divine cave shrine of Mata Vaishno Devi with helicopter options, comfortable stays, and guided pilgrimage"
+        description: "Romantic journey through the coffee estates of Coorg and tea gardens of Ooty"
       },
       {
         id: "tirupati-darshan",
-        name: "Tirupati Darshan",
-        locations: "Tirupati, Tirumala, Chennai, Mahabalipuram, Kanchipuram, Srikalahasti, Kanipakam",
-        locationsList: ["Tirupati", "Tirumala Temple", "Chennai", "Mahabalipuram", "Kanchipuram", "Srikalahasti", "Kanipakam"],
-        duration: "3 Days / 2 Nights",
-        price: "₹9,999",
+        name: "Kerala Honeymoon Special",
+        locations: "Kerala backwaters and hills",
+        locationsList: ["Munnar", "Thekkady", "Alleppey", "Kumarakom", "Houseboat Stay", "Ayurveda Spa"],
+        duration: "6 Days / 5 Nights",
+        price: "₹32,999",
         image: "/images/tirupati.jpg",
-        description: "Seek blessings at the richest temple in the world with special darshan arrangements, prasadam, and temple town exploration"
+        description: "Luxurious Kerala honeymoon with houseboat stays, spa treatments, and romantic hill station visits"
       },
       {
         id: "amarnath-yatra",
-        name: "Amarnath Yatra",
-        locations: "Pahalgam, Amarnath Cave, Srinagar, Gulmarg, Sonmarg, Chandanwari, Baltal",
-        locationsList: ["Pahalgam", "Amarnath Cave", "Srinagar", "Gulmarg", "Sonmarg", "Chandanwari", "Baltal"],
-        duration: "5 Days / 4 Nights",
-        price: "₹28,999",
+        name: "South India Romantic Tour",
+        locations: "Ooty, Kodaikanal, Munnar",
+        locationsList: ["Ooty", "Kodaikanal", "Munnar", "Alleppey", "Romantic Stays", "Private Tours"],
+        duration: "7 Days / 6 Nights",
+        price: "₹38,999",
         image: "/images/amarnath.jpg",
-        description: "Witness the miraculous ice Shivling with pony/palki options, medical support, and comfortable base camp arrangements"
+        description: "Grand South India honeymoon covering the most romantic destinations with luxury accommodations"
       },
       {
         id: "south-jyotirlinga",
-        name: "South Jyotirlinga Tour",
-        locations: "Rameshwaram, Kanyakumari, Madurai, Srirangam, Thanjavur, Chidambaram, Velankanni",
-        locationsList: ["Rameshwaram", "Kanyakumari", "Madurai", "Srirangam", "Thanjavur", "Chidambaram", "Velankanni"],
-        duration: "6 Days / 5 Nights",
-        price: "₹24,999",
+        name: "Budget Honeymoon Package",
+        locations: "Ooty romantic essentials",
+        locationsList: ["Ooty Lake", "Botanical Garden", "Rose Garden", "Doddabetta", "Pine Forest"],
+        duration: "3 Days / 2 Nights",
+        price: "₹12,999",
         image: "/images/rameshwaram.jpg",
-        description: "Visit the sacred Jyotirlinga, Dhanushkodi, three-sea confluence, and magnificent Dravidian temple architecture"
+        description: "Affordable honeymoon package with all romantic essentials in the Queen of Hill Stations"
       }
     ]
   }
@@ -378,51 +378,27 @@ export const categories: Category[] = [
 export const longTrips = [
   {
     id: "kashmir-complete",
-    name: "Complete Kashmir Experience",
+    name: "Ooty to Bangalore",
     duration: "10 Days / 9 Nights",
     price: "₹55,999",
     image: "/images/kashmir.jpg",
-    description: "Srinagar, Gulmarg, Pahalgam, Sonmarg - The complete paradise experience with houseboat stay"
+    description: "Complete road trip from Ooty to Bangalore via Mysore, Coorg with multiple sightseeing stops"
   },
   {
     id: "northeast-explorer",
-    name: "Northeast Explorer",
+    name: "Ooty to Kerala",
     duration: "14 Days / 13 Nights",
     price: "₹72,999",
     image: "/images/northeast.jpg",
-    description: "Seven Sisters adventure - Assam, Meghalaya, Arunachal Pradesh, Nagaland"
+    description: "Epic journey from Ooty to Kerala covering Munnar, Thekkady, Alleppey backwaters and beaches"
   },
   {
     id: "south-india-grand",
-    name: "Grand South India",
+    name: "Ooty to Coimbatore",
     duration: "12 Days / 11 Nights",
     price: "₹48,999",
     image: "/images/southindia.jpg",
-    description: "Kerala, Tamil Nadu, Karnataka - Complete cultural and natural heritage tour"
-  },
-  {
-    id: "himalayan-odyssey",
-    name: "Himalayan Odyssey",
-    duration: "15 Days / 14 Nights",
-    price: "₹85,999",
-    image: "/images/kashmir.jpg",
-    description: "Complete Himalayan journey covering Ladakh, Spiti Valley, and Kinnaur with high-altitude adventures"
-  },
-  {
-    id: "coastal-india",
-    name: "Coastal India Trail",
-    duration: "12 Days / 11 Nights",
-    price: "₹52,999",
-    image: "/images/southindia.jpg",
-    description: "From Goa to Kerala - Experience India's stunning western coastline with beaches, backwaters, and seafood"
-  },
-  {
-    id: "rajasthan-complete",
-    name: "Complete Rajasthan Circuit",
-    duration: "14 Days / 13 Nights",
-    price: "₹68,999",
-    image: "/images/northeast.jpg",
-    description: "Majestic forts, royal palaces, desert safaris, and vibrant culture across the Land of Kings"
+    description: "Scenic route from Ooty to Coimbatore with all major attractions and comfortable transfers"
   }
 ];
 
@@ -441,44 +417,17 @@ export const reviews = [
     name: "Rajesh Kumar",
     location: "Delhi",
     rating: 5,
-    comment: "The Ladakh expedition was a dream come true. The breathtaking landscapes and professional organization made it an unforgettable adventure. Will definitely book again!",
+    comment: "The toy train experience was a dream come true. The breathtaking landscapes and professional organization made it an unforgettable adventure. Will definitely book again!",
     avatar: "RK",
-    trip: "Ladakh Expedition"
+    trip: "Toy Train Experience"
   },
   {
     id: 3,
     name: "Anita Desai",
     location: "Bangalore",
     rating: 5,
-    comment: "Kerala backwaters tour exceeded all expectations. The houseboat experience was serene and the food was incredible. Perfect family vacation!",
+    comment: "Our honeymoon package exceeded all expectations. The romantic settings and personalized service was incredible. Perfect couple vacation!",
     avatar: "AD",
-    trip: "Kerala Backwaters"
-  },
-  {
-    id: 4,
-    name: "Vikram Singh",
-    location: "Jaipur",
-    rating: 5,
-    comment: "The wildlife safari at Jim Corbett was thrilling! Spotted a tiger on our second day. The guides were knowledgeable and the jungle lodge was comfortable.",
-    avatar: "VS",
-    trip: "Jim Corbett Adventure"
-  },
-  {
-    id: 5,
-    name: "Meera Patel",
-    location: "Ahmedabad",
-    rating: 5,
-    comment: "Char Dham Yatra was a spiritually enriching experience. Every detail was taken care of, making the difficult journey smooth and memorable.",
-    avatar: "MP",
-    trip: "Char Dham Yatra"
-  },
-  {
-    id: 6,
-    name: "Sneha Reddy",
-    location: "Hyderabad",
-    rating: 5,
-    comment: "The Goa beach package was perfect for our honeymoon! Beautiful beachfront resort, romantic candlelight dinners, and amazing water sports. Truly unforgettable!",
-    avatar: "SR",
-    trip: "Goa Carnival"
+    trip: "Romantic Ooty Escape"
   }
 ];
