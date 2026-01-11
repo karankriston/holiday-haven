@@ -6,9 +6,6 @@ const Reviews = () => {
     <section id="reviews" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-golden/20 rounded-full text-foreground text-sm font-medium mb-4">
-            Testimonials
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
             What Our <span className="text-gradient-primary">Travelers Say</span>
           </h2>
