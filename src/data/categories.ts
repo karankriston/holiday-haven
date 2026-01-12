@@ -29,50 +29,50 @@ export const categories: Category[] = [
       {
         id: "ooty-delight",
         name: "Ooty Delight Tour",
-        locations: "Ooty, Coonoor, Kotagiri, Wellington, Ketti, Lovedale, Doddabetta",
-        locationsList: ["Ooty", "Coonoor", "Kotagiri", "Wellington", "Ketti", "Lovedale", "Doddabetta"],
-        duration: "4 Days / 3 Nights",
-        price: "₹12,999",
+        locations: "Doddabetta Peak, Tea Park, Ooty Lake, Botanical Garden, Karnataka Garden, Tea Factory, Eagle Adventures Park, Chocolate Museum",
+        locationsList: ["Doddabetta Peak", "Tea Park", "Ooty Lake [Boating]", "Botanical Garden", "Karnataka Garden", "Tea Factory", "Eagle Adventures Park", "Chocolate Museum"],
+        duration: "Full Day",
+        price: "₹2,500",
         image: "/images/ooty.jpg",
         description: "Experience the Queen of Hill Stations with sprawling tea gardens, botanical wonders, and scenic railway journeys through the Nilgiris"
       },
       {
         id: "kodaikanal-escape",
         name: "Coonoor Scenic Experience",
-        locations: "Coonoor, Sim's Park, Dolphin's Nose, Lamb's Rock, Tiger Hill, Droog Fort",
-        locationsList: ["Coonoor", "Sim's Park", "Dolphin's Nose", "Lamb's Rock", "Tiger Hill", "Droog Fort"],
-        duration: "3 Days / 2 Nights",
-        price: "₹9,999",
+        locations: "Lamb's Rock, Dolphin's Nose, Sims Park, Tea Garden, Madras Regimental Museum, Strawberry Farm",
+        locationsList: ["Lamb's Rock", "Dolphin's Nose", "Sims Park", "Tea Garden", "Madras Regimental Museum", "Strawberry Farm"],
+        duration: "Full Day",
+        price: "₹2,500",
         image: "/images/kodaikanal.jpg",
         description: "Discover the scenic beauty of Coonoor with pristine viewpoints, lush gardens, and historic colonial architecture"
       },
       {
         id: "munnar-magic",
-        name: "Pykara Nature and Adventure",
-        locations: "Pykara, Pykara Falls, Pykara Lake, Pine Forest, Wenlock Downs, Shooting Point",
-        locationsList: ["Pykara Falls", "Pykara Lake", "Pine Forest", "Wenlock Downs", "Shooting Point", "6th Mile"],
-        duration: "5 Days / 4 Nights",
-        price: "₹15,999",
+        name: "Pykara Nature And Adventure",
+        locations: "Pykara Falls, Pykara Lake, Shooting Spot, Pine Forest, Tree Park, Wenlock Downs, Mudhumalai Trek",
+        locationsList: ["Pykara Falls", "Pykara Lake [Boating]", "Shooting Spot (9th Miles)", "Pine Forest", "Tree Park", "Wenlock Downs", "Mudhumalai Trek [₹1000]"],
+        duration: "Full Day",
+        price: "₹2,500",
         image: "/images/munnar.jpg",
         description: "Experience the natural wonders of Pykara with stunning waterfalls, boat rides, and adventure activities in the Nilgiris"
       },
       {
         id: "coorg-adventure",
         name: "Avalanche Wilderness Retreat",
-        locations: "Avalanche, Avalanche Lake, Upper Bhavani, Emerald Lake, Silent Valley",
-        locationsList: ["Avalanche Lake", "Upper Bhavani", "Emerald Lake", "Silent Valley", "Mukurthi Peak", "Trout Farm"],
-        duration: "4 Days / 3 Nights",
-        price: "₹13,499",
+        locations: "Cairn Hill Reservoir, Thoda Museum, Emerald Lake, Avalanche Dam, Avalanche Jeep Ride",
+        locationsList: ["Cairn Hill Reservoir", "Thoda Museum", "Emerald Lake", "Avalanche Dam", "Avalanche Jeep Ride [Additional Cost]"],
+        duration: "Full Day",
+        price: "₹2,700",
         image: "/images/coorg.jpg",
         description: "Explore the pristine wilderness of Avalanche with crystal clear lakes, shola forests, and untouched natural beauty"
       },
       {
         id: "shimla-manali",
         name: "Kodanadu Highlight Experience",
-        locations: "Kodanadu, Kodanadu View Point, Elephant Camp, Tea Estate, Kotagiri",
-        locationsList: ["Kodanadu View Point", "Elephant Camp", "Tea Estate Walk", "Kotagiri", "Catherine Falls", "Rangaswamy Pillar"],
-        duration: "6 Days / 5 Nights",
-        price: "₹22,999",
+        locations: "Kodanadu Viewpoint, Catherine Falls, Kodanad Estates, Pandian Park, Rangaswamy Peak",
+        locationsList: ["Kodanadu Viewpoint", "Catherine Falls", "Kodanad Estates", "Pandian Park", "Rangaswamy Peak"],
+        duration: "Full Day",
+        price: "₹3,000",
         image: "/images/shimla.jpg",
         description: "Experience the breathtaking views of Kodanadu with elephant encounters, tea plantation walks, and stunning valley vistas"
       }
@@ -81,15 +81,15 @@ export const categories: Category[] = [
   {
     id: "beaches",
     name: "Pick up & Drop",
-    description: "Comfortable transfers to your destination",
+    description: "Comfortable transfers to your destination. Additional charges may apply based on pickup location.",
     image: "/images/beach.jpg",
     icon: "🚗",
     packages: [
       {
         id: "goa-carnival",
         name: "Airport Pickup",
-        locations: "Coimbatore Airport, Bangalore Airport, Chennai Airport, Mysore",
-        locationsList: ["Coimbatore Airport", "Bangalore Airport", "Chennai Airport", "Mysore", "Salem", "Erode"],
+        locations: "Coimbatore Airport, Bangalore Airport, Chennai Airport, Mysore, Salem, Erode, Tirupur, Madurai",
+        locationsList: ["Coimbatore Airport", "Bangalore Airport", "Chennai Airport", "Mysore", "Salem", "Erode", "Tirupur", "Madurai"],
         duration: "One Way",
         price: "₹2,999",
         image: "/images/goa.jpg",
@@ -98,8 +98,8 @@ export const categories: Category[] = [
       {
         id: "andaman-paradise",
         name: "Railway Station Transfer",
-        locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore",
-        locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode"],
+        locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore, Erode, Chennai, Madurai",
+        locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode Junction", "Chennai Central", "Madurai Junction"],
         duration: "One Way",
         price: "₹1,999",
         image: "/images/andaman.jpg",
@@ -109,7 +109,7 @@ export const categories: Category[] = [
         id: "kerala-backwaters",
         name: "Round Trip Transfer",
         locations: "Any City to Ooty and Back",
-        locationsList: ["Coimbatore", "Bangalore", "Chennai", "Mysore", "Kochi", "Madurai"],
+        locationsList: ["Coimbatore", "Bangalore", "Chennai", "Mysore", "Kochi", "Madurai", "Salem", "Tirupur"],
         duration: "Round Trip",
         price: "₹5,999",
         image: "/images/kerala.jpg",
@@ -119,7 +119,7 @@ export const categories: Category[] = [
         id: "pondicherry-bliss",
         name: "Local Sightseeing Transfer",
         locations: "Ooty, Coonoor, Kotagiri, Pykara, Avalanche",
-        locationsList: ["Ooty Lake", "Botanical Garden", "Doddabetta", "Pykara Falls", "Rose Garden", "Tea Factory"],
+        locationsList: ["Ooty Lake", "Botanical Garden", "Doddabetta", "Pykara Falls", "Rose Garden", "Tea Factory", "Coonoor", "Avalanche"],
         duration: "Full Day",
         price: "₹1,499",
         image: "/images/pondicherry.jpg",
@@ -129,7 +129,7 @@ export const categories: Category[] = [
         id: "lakshadweep-dream",
         name: "Multi-Day Package Transfer",
         locations: "Complete tour coverage with transfers",
-        locationsList: ["All Ooty Attractions", "Coonoor Points", "Kotagiri", "Pykara", "Mudumalai", "Bandipur"],
+        locationsList: ["All Ooty Attractions", "Coonoor Points", "Kotagiri", "Pykara", "Mudumalai", "Bandipur", "Mysore", "Coorg"],
         duration: "Multi-Day",
         price: "₹8,999",
         image: "/images/lakshadweep.jpg",
@@ -202,58 +202,7 @@ export const categories: Category[] = [
     description: "Heritage railway experience through the Nilgiris",
     image: "/images/wildlife.jpg",
     icon: "🚂",
-    packages: [
-      {
-        id: "jim-corbett",
-        name: "Full Toy Train Experience",
-        locations: "Mettupalayam to Ooty via Coonoor",
-        locationsList: ["Mettupalayam", "Kallar", "Adderly", "Hillgrove", "Coonoor", "Wellington", "Ooty"],
-        duration: "Full Day",
-        price: "₹1,999",
-        image: "/images/corbett.jpg",
-        description: "Complete UNESCO World Heritage toy train journey from Mettupalayam to Ooty through 16 tunnels and 250 bridges"
-      },
-      {
-        id: "ranthambore",
-        name: "Ooty to Coonoor Train",
-        locations: "Ooty to Coonoor scenic route",
-        locationsList: ["Ooty Station", "Lovedale", "Wellington", "Coonoor Station"],
-        duration: "Half Day",
-        price: "₹999",
-        image: "/images/ranthambore.jpg",
-        description: "Short scenic journey from Ooty to Coonoor with stunning valley views and tea garden landscapes"
-      },
-      {
-        id: "kaziranga",
-        name: "First Class Experience",
-        locations: "Premium toy train journey",
-        locationsList: ["Reserved First Class", "Window Seats", "Scenic Views", "Photo Stops"],
-        duration: "Full Day",
-        price: "₹2,999",
-        image: "/images/kaziranga.jpg",
-        description: "Travel in comfort with first-class reserved seating, guaranteed window views, and premium service"
-      },
-      {
-        id: "bandipur",
-        name: "Toy Train with Sightseeing",
-        locations: "Train ride plus local attractions",
-        locationsList: ["Toy Train", "Botanical Garden", "Rose Garden", "Ooty Lake", "Doddabetta"],
-        duration: "Full Day",
-        price: "₹3,499",
-        image: "/images/bandipur.jpg",
-        description: "Combine the toy train experience with guided sightseeing of Ooty's major attractions"
-      },
-      {
-        id: "gir-safari",
-        name: "Sunset Train Special",
-        locations: "Evening train ride with sunset views",
-        locationsList: ["Evening Departure", "Sunset Views", "Tea Gardens", "Valley Panorama"],
-        duration: "Evening",
-        price: "₹1,499",
-        image: "/images/gir.jpg",
-        description: "Special evening train ride timing to catch the magical sunset over the Nilgiri hills"
-      }
-    ]
+    packages: []
   },
   {
     id: "adventure",
@@ -271,6 +220,16 @@ export const categories: Category[] = [
         price: "₹1,499",
         image: "/images/ladakh.jpg",
         description: "Trek to the highest peak in the Nilgiris at 2,637m with panoramic views of the entire region"
+      },
+      {
+        id: "birdwatch-virgin",
+        name: "Bird Watch [Virgin Earth]",
+        locations: "Virgin Earth Bird Sanctuary, Nilgiri forests",
+        locationsList: ["Virgin Earth Sanctuary", "Forest Trails", "Bird Watching Points", "Nature Walk", "Photography Spots", "Wildlife Spotting"],
+        duration: "Half Day",
+        price: "₹1,999",
+        image: "/images/birdwatch.jpg",
+        description: "Discover exotic bird species in the pristine Virgin Earth sanctuary with expert naturalist guides"
       },
       {
         id: "rishikesh-thrill",
@@ -379,26 +338,50 @@ export const longTrips = [
   {
     id: "kashmir-complete",
     name: "Ooty to Bangalore",
-    duration: "10 Days / 9 Nights",
-    price: "₹55,999",
+    duration: "2 Days / 1 Night",
+    price: "₹8,999",
     image: "/images/kashmir.jpg",
     description: "Complete road trip from Ooty to Bangalore via Mysore, Coorg with multiple sightseeing stops"
   },
   {
     id: "northeast-explorer",
     name: "Ooty to Kerala",
-    duration: "14 Days / 13 Nights",
-    price: "₹72,999",
+    duration: "3 Days / 2 Nights",
+    price: "₹12,999",
     image: "/images/northeast.jpg",
     description: "Epic journey from Ooty to Kerala covering Munnar, Thekkady, Alleppey backwaters and beaches"
   },
   {
     id: "south-india-grand",
     name: "Ooty to Coimbatore",
-    duration: "12 Days / 11 Nights",
-    price: "₹48,999",
+    duration: "1 Day",
+    price: "₹3,999",
     image: "/images/southindia.jpg",
     description: "Scenic route from Ooty to Coimbatore with all major attractions and comfortable transfers"
+  },
+  {
+    id: "ooty-mysore",
+    name: "Ooty to Mysore",
+    duration: "2 Days / 1 Night",
+    price: "₹7,999",
+    image: "/images/ooty-mysore.jpg",
+    description: "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens on this scenic journey from Ooty"
+  },
+  {
+    id: "ooty-mettupalayam",
+    name: "Ooty to Mettupalayam",
+    duration: "Half Day",
+    price: "₹2,499",
+    image: "/images/ooty-mettupalayam.jpg",
+    description: "Scenic drive through 36 hairpin bends from Ooty to Mettupalayam with tea garden views"
+  },
+  {
+    id: "ooty-chennai",
+    name: "Ooty to Chennai",
+    duration: "2 Days / 1 Night",
+    price: "₹9,999",
+    image: "/images/ooty-chennai.jpg",
+    description: "Long scenic journey from Ooty to Chennai with stops at major attractions en route"
   }
 ];
 
@@ -431,3 +414,109 @@ export const reviews = [
     trip: "Romantic Ooty Escape"
   }
 ];
+
+export const trainSchedule = {
+  mettupalayamToOoty: [
+    {
+      trainNo: "56136",
+      name: "Mettupalayam-Ooty Passenger",
+      from: "Mettupalayam (MTP)",
+      departure: "7:10 AM",
+      to: "Ooty (UAM)",
+      arrival: "11:55 AM",
+      duration: "4h 45m / 46 km"
+    }
+  ],
+  coonoorToOoty: [
+    {
+      trainNo: "56141",
+      name: "Coonoor-Udagamandalam Passenger",
+      from: "Coonoor (ONR)",
+      departure: "7:45 AM",
+      to: "Ooty (UAM)",
+      arrival: "9:00 AM",
+      duration: "1h 15m / 19 km"
+    },
+    {
+      trainNo: "56136",
+      name: "Mettupalayam-Ooty Passenger",
+      from: "Coonoor (ONR)",
+      departure: "10:40 AM",
+      to: "Ooty (UAM)",
+      arrival: "11:55 AM",
+      duration: "1h 15m / 19 km"
+    },
+    {
+      trainNo: "56143",
+      name: "Coonoor-Udagamandalam Passenger",
+      from: "Coonoor (ONR)",
+      departure: "12:35 PM",
+      to: "Ooty (UAM)",
+      arrival: "1:45 PM",
+      duration: "1h 10m / 19 km"
+    },
+    {
+      trainNo: "56138",
+      name: "Coonoor-Udagamandalam Passenger",
+      from: "Coonoor (ONR)",
+      departure: "4:00 PM",
+      to: "Ooty (UAM)",
+      arrival: "5:10 PM",
+      duration: "1h 10m / 19 km"
+    }
+  ],
+  ootyToMettupalayam: [
+    {
+      trainNo: "56137",
+      name: "Ooty-Mettupalayam Passenger",
+      from: "Ooty (UAM)",
+      departure: "2:00 PM",
+      to: "Mettupalayam (MTP)",
+      arrival: "5:30 PM",
+      duration: "3h 30m / 46 km"
+    }
+  ],
+  ootyToCoonoor: [
+    {
+      trainNo: "56139",
+      name: "Udagamandalam-Coonoor Passenger",
+      from: "Ooty (UAM)",
+      departure: "9:15 AM",
+      to: "Coonoor (ONR)",
+      arrival: "10:20 AM",
+      duration: "1h 5m / 19 km"
+    },
+    {
+      trainNo: "56142",
+      name: "Udagamandalam-Coonoor Passenger",
+      from: "Ooty (UAM)",
+      departure: "12:15 PM",
+      to: "Coonoor (ONR)",
+      arrival: "1:15 PM",
+      duration: "1h / 19 km"
+    },
+    {
+      trainNo: "56137",
+      name: "Udagamandalam-Mettupalayam Passenger",
+      from: "Ooty (UAM)",
+      departure: "2:00 PM",
+      to: "Coonoor (ONR)",
+      arrival: "3:05 PM",
+      duration: "1h 5m / 19 km"
+    },
+    {
+      trainNo: "56140",
+      name: "Udagamandalam-Coonoor Passenger",
+      from: "Ooty (UAM)",
+      departure: "5:30 PM",
+      to: "Coonoor (ONR)",
+      arrival: "6:35 PM",
+      duration: "1h 5m / 19 km"
+    }
+  ],
+  ticketFare: {
+    mettupalayamToOoty: { firstClass: 600, secondClass: 295 },
+    mettupalayamToCoonoor: { firstClass: 445, secondClass: 190 },
+    coonoorToOoty: { firstClass: 350, secondClass: 150 }
+  }
+};
