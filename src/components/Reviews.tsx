@@ -90,13 +90,13 @@ const Reviews = () => {
           <div
             ref={scrollContainerRef}
             onScroll={checkScrollability}
-            className="flex gap-5 overflow-x-auto scroll-smooth flex-1 pb-4 snap-x snap-mandatory"
+            className="flex gap-4 md:gap-5 overflow-x-auto scroll-smooth flex-1 pb-4 snap-x snap-mandatory px-4 md:px-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {reviews.map((review, index) => (
               <div
                 key={review.id}
-                className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex-shrink-0 w-[300px] md:w-[350px] snap-center"
+                className="bg-card rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex-shrink-0 w-[calc(100vw-3rem)] max-w-[320px] md:w-[350px] md:max-w-none snap-center"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Quote icon */}
