@@ -392,6 +392,51 @@ export const reviews = [
     comment: "Our honeymoon package exceeded all expectations. The romantic settings and personalized service was incredible. Perfect couple vacation!",
     avatar: "AD",
     trip: "Romantic Ooty Escape"
+  },
+  {
+    id: 4,
+    name: "Vikram Mehta",
+    location: "Hyderabad",
+    rating: 5,
+    comment: "The Pykara trip was breathtaking! The waterfalls, boating, and pine forests made it a memorable day. Driver was very knowledgeable about local spots.",
+    avatar: "VM",
+    trip: "Pykara Nature Adventure"
+  },
+  {
+    id: 5,
+    name: "Sneha Nair",
+    location: "Kochi",
+    rating: 5,
+    comment: "Best family trip ever! Kids loved the chocolate museum and botanical gardens. The driver was patient and accommodating with our schedule changes.",
+    avatar: "SN",
+    trip: "Ooty Delight Tour"
+  },
+  {
+    id: 6,
+    name: "Arjun Reddy",
+    location: "Chennai",
+    rating: 5,
+    comment: "The Coonoor experience was serene and peaceful. Lamb's Rock view was stunning! Great value for money and excellent service throughout.",
+    avatar: "AR",
+    trip: "Coonoor Scenic Experience"
+  },
+  {
+    id: 7,
+    name: "Meera Krishnan",
+    location: "Coimbatore",
+    rating: 5,
+    comment: "Booked the airport pickup and local sightseeing combo. Everything was seamless - punctual driver, clean vehicle, and great hospitality!",
+    avatar: "MK",
+    trip: "Airport Pickup"
+  },
+  {
+    id: 8,
+    name: "Sanjay Gupta",
+    location: "Pune",
+    rating: 5,
+    comment: "The Avalanche trek was an adventure of a lifetime! Crystal clear lakes, misty forests, and the jeep ride was thrilling. Highly recommend!",
+    avatar: "SG",
+    trip: "Avalanche Wilderness Retreat"
   }
 ];
 
