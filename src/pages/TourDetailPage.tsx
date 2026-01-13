@@ -121,7 +121,7 @@ const TourDetailPage = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-foreground/30" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="absolute top-4 left-4 px-4 py-2 bg-primary text-primary-foreground rounded-full text-lg font-bold">
+          <div className="inline-block px-4 py-2 bg-primary text-primary-foreground rounded-full text-lg font-bold mb-4">
             {pkg.price}
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary-foreground mb-3">{pkg.name}</h1>
