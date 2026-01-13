@@ -39,13 +39,37 @@ const Reviews = () => {
   return (
     <section id="reviews" className="section-padding bg-muted/30">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
             What Our <span className="text-gradient-primary">Travelers Say</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
             Real experiences from happy travelers who explored India with us
           </p>
+          
+          {/* Mobile Navigation - Top */}
+          <div className="flex md:hidden justify-center gap-4">
+            <Button
+              variant="outline"
+              size="icon"
+              className={`w-10 h-10 rounded-full bg-background shadow-md border-2 border-primary/20 hover:border-primary ${
+                canScrollLeft ? "opacity-100" : "opacity-30"
+              }`}
+              onClick={() => scroll("left")}
+            >
+              <ChevronLeft className="w-5 h-5 text-primary" />
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              className={`w-10 h-10 rounded-full bg-background shadow-md border-2 border-primary/20 hover:border-primary ${
+                canScrollRight ? "opacity-100" : "opacity-30"
+              }`}
+              onClick={() => scroll("right")}
+            >
+              <ChevronRight className="w-5 h-5 text-primary" />
+            </Button>
+          </div>
         </div>
 
         {/* Reviews Carousel with External Controls */}
@@ -124,29 +148,6 @@ const Reviews = () => {
           </Button>
         </div>
 
-        {/* Mobile Navigation */}
-        <div className="flex md:hidden justify-center gap-4 mt-6">
-          <Button
-            variant="outline"
-            size="icon"
-            className={`w-12 h-12 rounded-full bg-background shadow-md border-2 border-primary/20 hover:border-primary ${
-              canScrollLeft ? "opacity-100" : "opacity-30"
-            }`}
-            onClick={() => scroll("left")}
-          >
-            <ChevronLeft className="w-6 h-6 text-primary" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className={`w-12 h-12 rounded-full bg-background shadow-md border-2 border-primary/20 hover:border-primary ${
-              canScrollRight ? "opacity-100" : "opacity-30"
-            }`}
-            onClick={() => scroll("right")}
-          >
-            <ChevronRight className="w-6 h-6 text-primary" />
-          </Button>
-        </div>
 
         {/* Trust badges */}
         <div className="mt-16 flex flex-wrap justify-center gap-8 items-center opacity-60">
