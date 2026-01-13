@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import BookingPage from "./pages/BookingPage";
 import LongTripsPage from "./pages/LongTripsPage";
+import TourDetailPage from "./pages/TourDetailPage";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
+          <Route path="/category/:categoryId/tour/:packageId" element={<TourDetailPage />} />
           <Route path="/category/:categoryId/book/:packageId" element={<BookingPage />} />
           <Route path="/long-trips" element={<LongTripsPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
