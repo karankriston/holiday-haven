@@ -298,7 +298,7 @@ const CategoryPage = () => {
                         to={`/category/${category.id}/tour/${pkg.id}`}
                         className="flex-1"
                       >
-                        <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary/10">
+                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                           Explore Tour
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
