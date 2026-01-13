@@ -58,6 +58,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         {/* Main navbar */}
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img src={logoImg} alt="OotyEscapes Logo" className="w-10 h-10 object-contain" />
             <span className="text-xl font-serif font-bold text-foreground">
@@ -65,8 +66,8 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Desktop menu */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop menu - Centered */}
+          <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             <a 
               href="/" 
               onClick={handleHomeClick}
@@ -95,6 +96,10 @@ const Navbar = () => {
             >
               Reviews
             </a>
+          </div>
+
+          {/* Phone Button - Right */}
+          <div className="hidden md:block">
             <a href="tel:+918667820589">
               <Button variant="default" size="lg" className="flex items-center gap-2 rounded-sm px-5 py-2.5">
                 <Phone className="w-4 h-4" />
