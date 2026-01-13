@@ -114,26 +114,6 @@ export const categories: Category[] = [
         price: "₹5,999",
         image: "/images/kerala.jpg",
         description: "Complete round trip transfer package with flexible scheduling and 24/7 availability"
-      },
-      {
-        id: "pondicherry-bliss",
-        name: "Local Sightseeing Transfer",
-        locations: "Ooty, Coonoor, Kotagiri, Pykara, Avalanche",
-        locationsList: ["Ooty Lake", "Botanical Garden", "Doddabetta", "Pykara Falls", "Rose Garden", "Tea Factory", "Coonoor", "Avalanche"],
-        duration: "Full Day",
-        price: "₹1,499",
-        image: "/images/pondicherry.jpg",
-        description: "Full day local sightseeing with comfortable vehicle and knowledgeable driver guide"
-      },
-      {
-        id: "lakshadweep-dream",
-        name: "Multi-Day Package Transfer",
-        locations: "Complete tour coverage with transfers",
-        locationsList: ["All Ooty Attractions", "Coonoor Points", "Kotagiri", "Pykara", "Mudumalai", "Bandipur", "Mysore", "Coorg"],
-        duration: "Multi-Day",
-        price: "₹8,999",
-        image: "/images/lakshadweep.jpg",
-        description: "Complete multi-day package with dedicated vehicle, driver, and all transfers included"
       }
     ]
   },
