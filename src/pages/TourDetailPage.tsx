@@ -130,14 +130,6 @@ const TourDetailPage = () => {
         </div>
       </section>
 
-      {/* Back Button */}
-      <div className="container mx-auto px-4 py-6">
-        <Button variant="ghost" onClick={() => navigate(-1)} className="gap-2">
-          <ArrowLeft className="w-4 h-4" />
-          Back to {category.name}
-        </Button>
-      </div>
-
       {/* Gallery Section - 4 images side by side */}
       <section className="py-6 px-4">
         <div className="container mx-auto">
