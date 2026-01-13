@@ -23,9 +23,10 @@ const Hero = ({ heroImage }: HeroProps) => {
         <img
           src={heroImage}
           alt="Beautiful travel destination"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center md:object-center"
+          style={{ objectPosition: 'center 60%' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/70 via-foreground/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-foreground/70 via-foreground/50 to-foreground/30 md:to-transparent" />
       </div>
 
       {/* Content */}
