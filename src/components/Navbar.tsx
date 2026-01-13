@@ -24,6 +24,22 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "hero" } });
+    } else {
+      const element = document.getElementById("hero");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     if (location.state?.scrollTo) {
       const sectionId = location.state.scrollTo;
@@ -51,9 +67,13 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a 
+              href="/" 
+              onClick={handleHomeClick}
+              className="text-foreground hover:text-primary transition-colors font-medium cursor-pointer"
+            >
               Home
-            </Link>
+            </a>
             <a 
               href="#categories" 
               onClick={(e) => handleNavClick(e, "categories")}
@@ -96,13 +116,13 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-slide-in">
             <div className="flex flex-col gap-4">
-              <Link 
-                to="/" 
-                className="text-foreground hover:text-primary transition-colors font-medium py-2"
-                onClick={() => setIsOpen(false)}
+              <a 
+                href="/" 
+                onClick={handleHomeClick}
+                className="text-foreground hover:text-primary transition-colors font-medium py-2 cursor-pointer"
               >
                 Home
-              </Link>
+              </a>
               <a 
                 href="#categories" 
                 onClick={(e) => handleNavClick(e, "categories")}

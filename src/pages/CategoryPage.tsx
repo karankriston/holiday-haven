@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { categories, trainSchedule } from "@/data/categories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 
-// Import images
+// Import banner images
 import bannerHillstations from "@/assets/banner-hillstations.jpg";
 import bannerPickup from "@/assets/banner-pickup.jpg";
 import bannerSouth from "@/assets/banner-south.jpg";
@@ -14,11 +14,41 @@ import bannerToytrain from "@/assets/banner-toytrain.jpg";
 import bannerAdventure from "@/assets/banner-adventure.jpg";
 import bannerHoneymoon from "@/assets/banner-honeymoon.jpg";
 
+// Import Ooty Tour package images
 import ootyImg from "@/assets/ooty.jpg";
 import coonoorImg from "@/assets/coonoor.jpg";
 import pykaraImg from "@/assets/pykara.jpg";
 import avalancheImg from "@/assets/avalanche.jpg";
 import kodanadImg from "@/assets/kodanadu.jpg";
+
+// Import Pickup & Drop images
+import airportPickupImg from "@/assets/airport-pickup.jpg";
+import railwayTransferImg from "@/assets/railway-transfer.jpg";
+import roundTripImg from "@/assets/round-trip.jpg";
+import localSightseeingImg from "@/assets/local-sightseeing.jpg";
+import multiDayPackageImg from "@/assets/multi-day-package.jpg";
+
+// Import South Serenity images
+import keralaBackwatersImg from "@/assets/kerala-backwaters.jpg";
+import templeTrailImg from "@/assets/temple-trail.jpg";
+import karnatakaHeritageImg from "@/assets/karnataka-heritage.jpg";
+import andhraSpiritualImg from "@/assets/andhra-spiritual.jpg";
+import southIndiaCompleteImg from "@/assets/south-india-complete.jpg";
+
+// Import Adventure images
+import doddabettaTrekImg from "@/assets/doddabetta-trek.jpg";
+import birdwatchImg from "@/assets/birdwatch.jpg";
+import mukurthiTrekImg from "@/assets/mukurthi-trek.jpg";
+import avalancheTrekImg from "@/assets/avalanche-trek.jpg";
+import nightSafariImg from "@/assets/night-safari.jpg";
+import multiAdventureImg from "@/assets/multi-adventure.jpg";
+
+// Import Honeymoon images
+import romanticOotyImg from "@/assets/romantic-ooty.jpg";
+import coorgRomanceImg from "@/assets/coorg-romance.jpg";
+import keralaHoneymoonImg from "@/assets/kerala-honeymoon.jpg";
+import southHoneymoonImg from "@/assets/south-honeymoon.jpg";
+import budgetHoneymoonImg from "@/assets/budget-honeymoon.jpg";
 
 const categoryBanners: Record<string, string> = {
   "hill-stations": bannerHillstations,
@@ -30,15 +60,42 @@ const categoryBanners: Record<string, string> = {
 };
 
 const packageImages: Record<string, string> = {
+  // Ooty Tour Packages
   "ooty-delight": ootyImg,
   "kodaikanal-escape": coonoorImg,
   "munnar-magic": pykaraImg,
   "coorg-adventure": avalancheImg,
   "shimla-manali": kodanadImg,
+  // Pickup & Drop
+  "goa-carnival": airportPickupImg,
+  "andaman-paradise": railwayTransferImg,
+  "kerala-backwaters": roundTripImg,
+  "pondicherry-bliss": localSightseeingImg,
+  "lakshadweep-dream": multiDayPackageImg,
+  // South Serenity Tours
+  "rajasthan-royal": keralaBackwatersImg,
+  "golden-triangle": templeTrailImg,
+  "hampi-heritage": karnatakaHeritageImg,
+  "varanasi-spiritual": andhraSpiritualImg,
+  "south-temple": southIndiaCompleteImg,
+  // Adventure
+  "ladakh-expedition": doddabettaTrekImg,
+  "birdwatch-virgin": birdwatchImg,
+  "rishikesh-thrill": mukurthiTrekImg,
+  "spiti-valley": avalancheTrekImg,
+  "meghalaya-caves": nightSafariImg,
+  "sikkim-adventure": multiAdventureImg,
+  // Honeymoon
+  "char-dham": romanticOotyImg,
+  "vaishno-devi": coorgRomanceImg,
+  "tirupati-darshan": keralaHoneymoonImg,
+  "amarnath-yatra": southHoneymoonImg,
+  "south-jyotirlinga": budgetHoneymoonImg,
 };
 
 const CategoryPage = () => {
   const { categoryId } = useParams();
+  const navigate = useNavigate();
   const category = categories.find((c) => c.id === categoryId);
   const phoneNumber = "918667820589";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
@@ -211,7 +268,7 @@ const CategoryPage = () => {
 
             <div className="space-y-6">
               {category.packages.map((pkg) => (
-                <Link key={pkg.id} to={`/category/${categoryId}/book/${pkg.id}`} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col md:flex-row cursor-pointer block">
+                <div key={pkg.id} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col md:flex-row">
                   <div className="relative w-full md:w-[400px] h-56 md:h-auto shrink-0 overflow-hidden">
                     <img src={packageImages[pkg.id] || bannerImage} alt={pkg.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-bold">{pkg.price}</div>
@@ -229,16 +286,28 @@ const CategoryPage = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className="pt-4 border-t border-border">
-                      <Button variant="default" size="lg" className="w-full group/btn" asChild>
-                        <a href={`tel:+${phoneNumber}`} onClick={(e) => e.stopPropagation()}>
+                    {/* CTA Buttons - Similar to reference image */}
+                    <div className="pt-4 border-t border-border flex flex-col sm:flex-row gap-3">
+                      <a href={`tel:+${phoneNumber}`} className="flex-1">
+                        <Button variant="default" size="lg" className="w-full bg-primary hover:bg-primary/90">
                           <Phone className="w-4 h-4 mr-2" />
                           Call Now
-                        </a>
-                      </Button>
+                        </Button>
+                      </a>
+                      <a 
+                        href={`https://wa.me/${phoneNumber}?text=${whatsappMessage}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button variant="outline" size="lg" className="w-full border-green-500 text-green-600 hover:bg-green-50 hover:text-green-700">
+                          <MessageCircle className="w-4 h-4 mr-2" />
+                          WhatsApp
+                        </Button>
+                      </a>
                     </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
