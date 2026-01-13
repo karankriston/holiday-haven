@@ -78,27 +78,27 @@ const Reviews = () => {
           <div
             ref={scrollContainerRef}
             onScroll={checkScrollability}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-8 pb-4"
+            className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-4 md:px-8 pb-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {reviews.map((review, index) => (
               <div
                 key={review.id}
-                className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex-shrink-0 w-[350px]"
+                className="bg-card rounded-2xl p-5 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex-shrink-0 w-[85vw] max-w-[350px]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Quote icon */}
-                <Quote className="w-10 h-10 text-primary/20 mb-4" />
+                <Quote className="w-8 h-8 md:w-10 md:h-10 text-primary/20 mb-3 md:mb-4" />
 
                 {/* Rating */}
-                <div className="flex gap-1 mb-4">
+                <div className="flex gap-1 mb-3 md:mb-4">
                   {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-golden text-golden" />
+                    <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-golden text-golden" />
                   ))}
                 </div>
 
                 {/* Comment */}
-                <p className="text-card-foreground mb-6 leading-relaxed line-clamp-4">
+                <p className="text-card-foreground mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
                   "{review.comment}"
                 </p>
 
