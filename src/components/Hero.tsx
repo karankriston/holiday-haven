@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface HeroProps {
   heroImage: string;
@@ -8,6 +9,15 @@ interface HeroProps {
 const Hero = ({ heroImage }: HeroProps) => {
   const phoneNumber = "918667820589";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToCategories = () => {
     const element = document.getElementById("categories");
@@ -18,13 +28,17 @@ const Hero = ({ heroImage }: HeroProps) => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
+      {/* Background image with parallax */}
+      <div className="absolute inset-0 overflow-hidden">
         <img
           src={heroImage}
           alt="Beautiful travel destination"
-          className="w-full h-full object-cover object-center md:object-center"
-          style={{ objectPosition: 'center 60%' }}
+          className="w-full h-[120%] object-cover object-center md:object-center"
+          style={{ 
+            objectPosition: 'center 40%',
+            transform: `translateY(${scrollY * 0.4}px)`,
+            willChange: 'transform'
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-foreground/70 via-foreground/50 to-foreground/30 md:to-transparent" />
       </div>
