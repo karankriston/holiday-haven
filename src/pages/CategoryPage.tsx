@@ -321,6 +321,9 @@ const CategoryPage = () => {
                         <Link 
                           to={`/category/${category.id}/tour/${pkg.id}`}
                           className="flex-1"
+                          onClick={() => {
+                            sessionStorage.setItem(`scroll-${categoryId}`, window.scrollY.toString());
+                          }}
                         >
                           <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                             Explore Tour
