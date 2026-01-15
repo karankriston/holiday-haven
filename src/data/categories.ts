@@ -231,26 +231,6 @@ export const categories: Category[] = [
         image: "/images/spiti.jpg",
         description: "Scenic trek through the pristine Avalanche valley with crystal clear lakes and diverse wildlife"
       },
-      {
-        id: "meghalaya-caves",
-        name: "Night Safari Adventure",
-        locations: "Mudumalai and Bandipur wildlife",
-        locationsList: ["Mudumalai Entry", "Jeep Safari", "Wildlife Spotting", "Night Camp", "Nature Walk"],
-        duration: "Overnight",
-        price: "₹4,999",
-        image: "/images/meghalaya.jpg",
-        description: "Thrilling night safari through Mudumalai Tiger Reserve with camping and wildlife encounters"
-      },
-      {
-        id: "sikkim-adventure",
-        name: "Multi-Day Adventure Package",
-        locations: "Complete adventure experience",
-        locationsList: ["Trekking", "Camping", "Safari", "Rock Climbing", "Rappelling", "Nature Walks"],
-        duration: "3 Days / 2 Nights",
-        price: "₹8,999",
-        image: "/images/sikkim.jpg",
-        description: "Ultimate adventure package combining multiple activities for thrill seekers"
-      }
     ]
   },
   {

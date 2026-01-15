@@ -1,38 +1,61 @@
 import { useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { categories } from "@/data/categories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, ArrowLeft } from "lucide-react";
 
-// Import all package images for the gallery
-import ootyImg from "@/assets/ooty.jpg";
-import coonoorImg from "@/assets/coonoor.jpg";
-import pykaraImg from "@/assets/pykara.jpg";
-import avalancheImg from "@/assets/avalanche.jpg";
-import kodanadImg from "@/assets/kodanadu.jpg";
-import airportPickupImg from "@/assets/airport-pickup.jpg";
-import railwayTransferImg from "@/assets/railway-transfer.jpg";
-import roundTripImg from "@/assets/round-trip.jpg";
-import localSightseeingImg from "@/assets/local-sightseeing.jpg";
-import multiDayPackageImg from "@/assets/multi-day-package.jpg";
-import keralaBackwatersImg from "@/assets/kerala-backwaters.jpg";
-import templeTrailImg from "@/assets/temple-trail.jpg";
-import karnatakaHeritageImg from "@/assets/karnataka-heritage.jpg";
-import andhraSpiritualImg from "@/assets/andhra-spiritual.jpg";
-import southIndiaCompleteImg from "@/assets/south-india-complete.jpg";
-import doddabettaTrekImg from "@/assets/doddabetta-trek.jpg";
-import birdwatchImg from "@/assets/birdwatch.jpg";
-import mukurthiTrekImg from "@/assets/mukurthi-trek.jpg";
-import avalancheTrekImg from "@/assets/avalanche-trek.jpg";
-import nightSafariImg from "@/assets/night-safari.jpg";
-import multiAdventureImg from "@/assets/multi-adventure.jpg";
-import romanticOotyImg from "@/assets/romantic-ooty.jpg";
-import coorgRomanceImg from "@/assets/coorg-romance.jpg";
-import keralaHoneymoonImg from "@/assets/kerala-honeymoon.jpg";
-import southHoneymoonImg from "@/assets/south-honeymoon.jpg";
-import budgetHoneymoonImg from "@/assets/budget-honeymoon.jpg";
+// Import gallery images
+import ootyDelight1 from "@/assets/gallery/ooty-delight-1.jpg";
+import ootyDelight2 from "@/assets/gallery/ooty-delight-2.jpg";
+import ootyDelight3 from "@/assets/gallery/ooty-delight-3.jpg";
+import ootyDelight4 from "@/assets/gallery/ooty-delight-4.jpg";
+import coonoor1 from "@/assets/gallery/coonoor-1.jpg";
+import coonoor2 from "@/assets/gallery/coonoor-2.jpg";
+import coonoor3 from "@/assets/gallery/coonoor-3.jpg";
+import coonoor4 from "@/assets/gallery/coonoor-4.jpg";
+import pykara1 from "@/assets/gallery/pykara-1.jpg";
+import pykara2 from "@/assets/gallery/pykara-2.jpg";
+import pykara3 from "@/assets/gallery/pykara-3.jpg";
+import pykara4 from "@/assets/gallery/pykara-4.jpg";
+import kodanadu1 from "@/assets/gallery/kodanadu-1.jpg";
+import kodanadu2 from "@/assets/gallery/kodanadu-2.jpg";
+import kodanadu3 from "@/assets/gallery/kodanadu-3.jpg";
+import kodanadu4 from "@/assets/gallery/kodanadu-4.jpg";
+import kerala1 from "@/assets/gallery/kerala-1.jpg";
+import kerala2 from "@/assets/gallery/kerala-2.jpg";
+import kerala3 from "@/assets/gallery/kerala-3.jpg";
+import kerala4 from "@/assets/gallery/kerala-4.jpg";
+import temple1 from "@/assets/gallery/temple-1.jpg";
+import temple2 from "@/assets/gallery/temple-2.jpg";
+import temple3 from "@/assets/gallery/temple-3.jpg";
+import temple4 from "@/assets/gallery/temple-4.jpg";
+import karnataka1 from "@/assets/gallery/karnataka-1.jpg";
+import karnataka2 from "@/assets/gallery/karnataka-2.jpg";
+import karnataka3 from "@/assets/gallery/karnataka-3.jpg";
+import karnataka4 from "@/assets/gallery/karnataka-4.jpg";
+import andhra1 from "@/assets/gallery/andhra-1.jpg";
+import andhra2 from "@/assets/gallery/andhra-2.jpg";
+import andhra3 from "@/assets/gallery/andhra-3.jpg";
+import andhra4 from "@/assets/gallery/andhra-4.jpg";
+import southIndia1 from "@/assets/gallery/south-india-1.jpg";
+import southIndia2 from "@/assets/gallery/south-india-2.jpg";
+import southIndia3 from "@/assets/gallery/south-india-3.jpg";
+import southIndia4 from "@/assets/gallery/south-india-4.jpg";
+import trekDoddabetta1 from "@/assets/gallery/trek-doddabetta-1.jpg";
+import trekDoddabetta2 from "@/assets/gallery/trek-doddabetta-2.jpg";
+import trekDoddabetta3 from "@/assets/gallery/trek-doddabetta-3.jpg";
+import trekDoddabetta4 from "@/assets/gallery/trek-doddabetta-4.jpg";
+import trekMukurthi1 from "@/assets/gallery/trek-mukurthi-1.jpg";
+import trekMukurthi2 from "@/assets/gallery/trek-mukurthi-2.jpg";
+import trekMukurthi3 from "@/assets/gallery/trek-mukurthi-3.jpg";
+import trekMukurthi4 from "@/assets/gallery/trek-mukurthi-4.jpg";
+import trekAvalanche1 from "@/assets/gallery/trek-avalanche-1.jpg";
+import trekAvalanche2 from "@/assets/gallery/trek-avalanche-2.jpg";
+import trekAvalanche3 from "@/assets/gallery/trek-avalanche-3.jpg";
+import trekAvalanche4 from "@/assets/gallery/trek-avalanche-4.jpg";
+
 import bannerHillstations from "@/assets/banner-hillstations.jpg";
 import bannerPickup from "@/assets/banner-pickup.jpg";
 import bannerSouth from "@/assets/banner-south.jpg";
@@ -43,36 +66,32 @@ import bannerHoneymoon from "@/assets/banner-honeymoon.jpg";
 // Gallery images mapping - 4 images per package
 const packageGallery: Record<string, string[]> = {
   // Ooty Tour Packages
-  "ooty-delight": [ootyImg, coonoorImg, pykaraImg, avalancheImg],
-  "kodaikanal-escape": [coonoorImg, ootyImg, kodanadImg, avalancheImg],
-  "munnar-magic": [pykaraImg, avalancheImg, ootyImg, kodanadImg],
-  "coorg-adventure": [avalancheImg, pykaraImg, coonoorImg, ootyImg],
-  "shimla-manali": [kodanadImg, ootyImg, coonoorImg, pykaraImg],
-  // Pickup & Drop
-  "goa-carnival": [airportPickupImg, railwayTransferImg, roundTripImg, localSightseeingImg],
-  "andaman-paradise": [railwayTransferImg, airportPickupImg, multiDayPackageImg, localSightseeingImg],
-  "kerala-backwaters": [roundTripImg, localSightseeingImg, airportPickupImg, multiDayPackageImg],
-  "pondicherry-bliss": [localSightseeingImg, roundTripImg, railwayTransferImg, airportPickupImg],
-  "lakshadweep-dream": [multiDayPackageImg, roundTripImg, airportPickupImg, railwayTransferImg],
+  "ooty-delight": [ootyDelight1, ootyDelight2, ootyDelight3, ootyDelight4],
+  "kodaikanal-escape": [coonoor1, coonoor2, coonoor3, coonoor4],
+  "munnar-magic": [pykara1, pykara2, pykara3, pykara4],
+  "coorg-adventure": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
+  "shimla-manali": [kodanadu1, kodanadu2, kodanadu3, kodanadu4],
+  // Pickup & Drop - reuse scenic images
+  "goa-carnival": [ootyDelight1, coonoor1, pykara1, kodanadu1],
+  "andaman-paradise": [coonoor1, ootyDelight1, pykara1, kodanadu1],
+  "kerala-backwaters": [kerala1, kerala2, kerala3, kerala4],
   // South Serenity Tours
-  "rajasthan-royal": [keralaBackwatersImg, templeTrailImg, karnatakaHeritageImg, andhraSpiritualImg],
-  "golden-triangle": [templeTrailImg, keralaBackwatersImg, southIndiaCompleteImg, karnatakaHeritageImg],
-  "hampi-heritage": [karnatakaHeritageImg, templeTrailImg, keralaBackwatersImg, andhraSpiritualImg],
-  "varanasi-spiritual": [andhraSpiritualImg, karnatakaHeritageImg, southIndiaCompleteImg, templeTrailImg],
-  "south-temple": [southIndiaCompleteImg, keralaBackwatersImg, templeTrailImg, andhraSpiritualImg],
+  "rajasthan-royal": [kerala1, kerala2, kerala3, kerala4],
+  "golden-triangle": [temple1, temple2, temple3, temple4],
+  "hampi-heritage": [karnataka1, karnataka2, karnataka3, karnataka4],
+  "varanasi-spiritual": [andhra1, andhra2, andhra3, andhra4],
+  "south-temple": [southIndia1, southIndia2, southIndia3, southIndia4],
   // Adventure
-  "ladakh-expedition": [doddabettaTrekImg, mukurthiTrekImg, avalancheTrekImg, nightSafariImg],
-  "birdwatch-virgin": [birdwatchImg, doddabettaTrekImg, nightSafariImg, mukurthiTrekImg],
-  "rishikesh-thrill": [mukurthiTrekImg, avalancheTrekImg, doddabettaTrekImg, nightSafariImg],
-  "spiti-valley": [avalancheTrekImg, mukurthiTrekImg, doddabettaTrekImg, multiAdventureImg],
-  "meghalaya-caves": [nightSafariImg, avalancheTrekImg, birdwatchImg, mukurthiTrekImg],
-  "sikkim-adventure": [multiAdventureImg, doddabettaTrekImg, nightSafariImg, avalancheTrekImg],
-  // Honeymoon
-  "char-dham": [romanticOotyImg, coorgRomanceImg, keralaHoneymoonImg, southHoneymoonImg],
-  "vaishno-devi": [coorgRomanceImg, romanticOotyImg, budgetHoneymoonImg, keralaHoneymoonImg],
-  "tirupati-darshan": [keralaHoneymoonImg, southHoneymoonImg, romanticOotyImg, coorgRomanceImg],
-  "amarnath-yatra": [southHoneymoonImg, keralaHoneymoonImg, coorgRomanceImg, budgetHoneymoonImg],
-  "south-jyotirlinga": [budgetHoneymoonImg, romanticOotyImg, southHoneymoonImg, coorgRomanceImg],
+  "ladakh-expedition": [trekDoddabetta1, trekDoddabetta2, trekDoddabetta3, trekDoddabetta4],
+  "birdwatch-virgin": [trekMukurthi2, trekDoddabetta2, trekAvalanche2, pykara3],
+  "rishikesh-thrill": [trekMukurthi1, trekMukurthi2, trekMukurthi3, trekMukurthi4],
+  "spiti-valley": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
+  // Honeymoon - using scenic images
+  "char-dham": [ootyDelight4, ootyDelight3, coonoor2, coonoor3],
+  "vaishno-devi": [kodanadu2, kodanadu1, karnataka3, coonoor4],
+  "tirupati-darshan": [kerala2, andhra1, kerala1, kerala3],
+  "amarnath-yatra": [southIndia4, kodanadu1, kerala2, kerala1],
+  "south-jyotirlinga": [ootyDelight3, ootyDelight4, coonoor3, pykara4],
 };
 
 const categoryBanners: Record<string, string> = {
@@ -87,14 +106,18 @@ const categoryBanners: Record<string, string> = {
 const TourDetailPage = () => {
   const { categoryId, packageId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const category = categories.find((c) => c.id === categoryId);
   const pkg = category?.packages.find((p) => p.id === packageId);
   const phoneNumber = "918667820589";
   const whatsappMessage = encodeURIComponent(`Hi Raghul, I'm interested in the ${pkg?.name || 'tour package'}. Please share more details.`);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    // Only scroll to top if not coming back from somewhere
+    if (!location.state?.fromPackage) {
+      window.scrollTo(0, 0);
+    }
+  }, [location.state]);
 
   if (!category || !pkg) {
     return (
@@ -193,7 +216,7 @@ const TourDetailPage = () => {
                 rel="noopener noreferrer"
                 className="flex-1"
               >
-                <Button size="xl" variant="outline" className="w-full border-green-500 text-green-600 hover:bg-green-50 hover:text-green-700 text-lg py-6">
+                <Button size="xl" className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white text-lg py-6">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   WhatsApp
                 </Button>

@@ -101,8 +101,17 @@ const CategoryPage = () => {
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    // Check if we should restore scroll position
+    const savedPosition = sessionStorage.getItem(`scroll-${categoryId}`);
+    if (savedPosition) {
+      setTimeout(() => {
+        window.scrollTo(0, parseInt(savedPosition));
+        sessionStorage.removeItem(`scroll-${categoryId}`);
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [categoryId]);
 
   if (!category) {
     return (
