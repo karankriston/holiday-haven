@@ -19,9 +19,17 @@ const ScrollToTop = () => {
   const { pathname, state } = useLocation();
 
   useLayoutEffect(() => {
-    // Only scroll to top on new navigations, not on back/forward
-    if (!state?.scrollTo && window.history.scrollRestoration) {
-      window.history.scrollRestoration = 'auto';
+    // If coming back and there's a scrollTo target, scroll to that section
+    if (state?.scrollTo) {
+      const element = document.getElementById(state.scrollTo);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'instant', block: 'start' });
+        }, 100);
+      }
+    } else if (pathname !== '/') {
+      // Only scroll to top for non-home pages on new navigations
+      window.scrollTo(0, 0);
     }
   }, [pathname, state]);
 
