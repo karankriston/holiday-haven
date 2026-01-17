@@ -40,18 +40,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  useEffect(() => {
-    if (location.state?.scrollTo) {
-      const sectionId = location.state.scrollTo;
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-      window.history.replaceState({}, document.title);
-    }
-  }, [location]);
+  // Scroll handling is now managed by ScrollRestoration in App.tsx
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-border shadow-sm">
