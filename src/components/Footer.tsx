@@ -118,6 +118,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Brand Bottom Bar */}
+      <div className="bg-primary py-3">
+        <div className="container mx-auto px-4 text-center">
+          <span className="text-primary-foreground font-serif font-bold text-lg tracking-wide">
+            OotyEscapes
+          </span>
+        </div>
+      </div>
     </footer>
   );
 };
