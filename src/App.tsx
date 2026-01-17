@@ -10,6 +10,7 @@ import BookingPage from "./pages/BookingPage";
 import LongTripsPage from "./pages/LongTripsPage";
 import TourDetailPage from "./pages/TourDetailPage";
 import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
 import NotFound from "./pages/NotFound";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
@@ -64,6 +65,7 @@ const App = () => (
           <Route path="/category/:categoryId/book/:packageId" element={<BookingPage />} />
           <Route path="/long-trips" element={<LongTripsPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
