@@ -2,7 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useLayoutEffect } from "react";
 import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import BookingPage from "./pages/BookingPage";
@@ -13,12 +14,27 @@ import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
+// Scroll restoration component
+const ScrollToTop = () => {
+  const { pathname, state } = useLocation();
+
+  useLayoutEffect(() => {
+    // Only scroll to top on new navigations, not on back/forward
+    if (!state?.scrollTo && window.history.scrollRestoration) {
+      window.history.scrollRestoration = 'auto';
+    }
+  }, [pathname, state]);
+
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <FloatingWhatsApp />
         <Routes>
           <Route path="/" element={<Index />} />
