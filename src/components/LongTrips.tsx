@@ -15,7 +15,7 @@ const LongTrips = ({ tripImages }: LongTripsProps) => {
   const displayedTrips = longTrips.slice(0, 3);
 
   return (
-    <section id="long-trips" className="section-padding scroll-mt-20">
+    <section id="long-trips" className="section-padding scroll-mt-16">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
