@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation, useNavigationType } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, useLayoutEffect } from "react";
 import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
@@ -14,52 +14,16 @@ import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
-// Scroll restoration component with proper back/forward handling
-const ScrollRestoration = () => {
-  const { pathname, state, key } = useLocation();
-  const navigationType = useNavigationType();
-
-  // Save scroll position before leaving
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      sessionStorage.setItem(`scroll-${key}`, String(window.scrollY));
-    };
-
-    // Save on any navigation
-    return () => {
-      sessionStorage.setItem(`scroll-${key}`, String(window.scrollY));
-    };
-  }, [key]);
+// Scroll restoration component
+const ScrollToTop = () => {
+  const { pathname, state } = useLocation();
 
   useLayoutEffect(() => {
-    // For back/forward navigation (POP), restore saved position
-    if (navigationType === 'POP') {
-      const savedPosition = sessionStorage.getItem(`scroll-${key}`);
-      if (savedPosition) {
-        // Use requestAnimationFrame to ensure DOM is ready
-        requestAnimationFrame(() => {
-          window.scrollTo(0, parseInt(savedPosition, 10));
-        });
-        return;
-      }
+    // Only scroll to top on new navigations, not on back/forward
+    if (!state?.scrollTo && window.history.scrollRestoration) {
+      window.history.scrollRestoration = 'auto';
     }
-
-    // For regular navigation with scrollTo state, scroll to that section
-    if (state?.scrollTo) {
-      setTimeout(() => {
-        const element = document.getElementById(state.scrollTo);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-      return;
-    }
-
-    // For PUSH navigation (new pages), scroll to top
-    if (navigationType === 'PUSH') {
-      window.scrollTo(0, 0);
-    }
-  }, [pathname, key, navigationType, state]);
+  }, [pathname, state]);
 
   return null;
 };
@@ -70,7 +34,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollRestoration />
+        <ScrollToTop />
         <FloatingWhatsApp />
         <Routes>
           <Route path="/" element={<Index />} />
