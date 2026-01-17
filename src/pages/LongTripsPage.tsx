@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import { longTrips } from "@/data/categories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowLeft } from "lucide-react";
+import { Phone } from "lucide-react";
 
 import longTripsBanner from "@/assets/long-trips-banner.jpg";
 import ootyBangaloreImg from "@/assets/ooty-bangalore.jpg";
@@ -24,23 +23,12 @@ const tripImages: Record<string, string> = {
 };
 
 const LongTripsPage = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
   const phoneNumber = "918667820589";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleGoBack = () => {
-    // If came from home page long-trips section, go back with scroll target
-    if (location.state?.from === 'long-trips') {
-      navigate('/', { state: { scrollTo: 'long-trips' } });
-    } else {
-      navigate('/', { state: { scrollTo: 'long-trips' } });
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -59,14 +47,7 @@ const LongTripsPage = () => {
 
       <section className="section-padding">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
-            <Button variant="ghost" onClick={handleGoBack} className="group">
-              <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Back
-            </Button>
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground text-center flex-1">All Long Trip Packages</h2>
-            <div className="w-20" /> {/* Spacer for centering */}
-          </div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 text-center">All Long Trip Packages</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {longTrips.map((trip, index) => (
