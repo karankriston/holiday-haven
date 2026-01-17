@@ -19,6 +19,18 @@ const ScrollToTop = () => {
   const { pathname, state } = useLocation();
 
   useLayoutEffect(() => {
+    // Check if returning to home page and we have a saved scroll position
+    if (pathname === '/') {
+      const savedScrollPosition = sessionStorage.getItem('longTripsScrollPosition');
+      if (savedScrollPosition) {
+        setTimeout(() => {
+          window.scrollTo(0, parseInt(savedScrollPosition));
+          sessionStorage.removeItem('longTripsScrollPosition');
+        }, 100);
+        return;
+      }
+    }
+    
     // If coming back and there's a scrollTo target, scroll to that section
     if (state?.scrollTo) {
       const element = document.getElementById(state.scrollTo);

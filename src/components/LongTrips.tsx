@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { longTrips } from "@/data/categories";
 import { ArrowRight } from "lucide-react";
@@ -8,8 +8,15 @@ interface LongTripsProps {
 }
 
 const LongTrips = ({ tripImages }: LongTripsProps) => {
+  const navigate = useNavigate();
   const phoneNumber = "918667820589";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
+
+  const handleViewAllClick = () => {
+    // Save current scroll position before navigating
+    sessionStorage.setItem('longTripsScrollPosition', window.scrollY.toString());
+    navigate('/long-trips');
+  };
 
   // Only show first 3 trips
   const displayedTrips = longTrips.slice(0, 3);
@@ -69,12 +76,15 @@ const LongTrips = ({ tripImages }: LongTripsProps) => {
 
         {/* View All Button */}
         <div className="text-center mt-10">
-          <Link to="/long-trips" state={{ from: 'long-trips' }}>
-            <Button variant="default" size="lg" className="group">
-              View All Long Trips
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
+          <Button 
+            variant="default" 
+            size="lg" 
+            className="group"
+            onClick={handleViewAllClick}
+          >
+            View All Long Trips
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
 
         {/* CTA Banner */}
