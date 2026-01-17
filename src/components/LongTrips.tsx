@@ -69,7 +69,7 @@ const LongTrips = ({ tripImages }: LongTripsProps) => {
 
         {/* View All Button */}
         <div className="text-center mt-10">
-          <Link to="/long-trips">
+          <Link to="/long-trips" state={{ from: 'long-trips' }}>
             <Button variant="default" size="lg" className="group">
               View All Long Trips
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
