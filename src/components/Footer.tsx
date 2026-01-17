@@ -120,11 +120,14 @@ const Footer = () => {
       </div>
 
       {/* Brand Bottom Bar */}
-      <div className="bg-primary py-3">
-        <div className="container mx-auto px-4 text-center">
-          <span className="text-primary-foreground font-serif font-bold text-lg tracking-wide">
-            OotyEscapes
+      <div className="bg-white py-3">
+        <div className="container mx-auto px-4 flex items-center justify-center gap-3">
+          <img src={logoImg} alt="OotyEscapes Logo" className="w-6 h-6 object-contain" />
+          <span className="font-serif font-bold text-lg tracking-wide">
+            <span className="text-foreground">Ooty</span>
+            <span className="text-primary">Escapes</span>
           </span>
+          <img src={logoImg} alt="OotyEscapes Logo" className="w-6 h-6 object-contain" />
         </div>
       </div>
     </footer>
