@@ -30,7 +30,7 @@ export const categories: Category[] = [
         id: "ooty-delight",
         name: "Ooty Delight Tour",
         locations: "Doddabetta Peak, Tea Park, Ooty Lake, Botanical Garden, Karnataka Garden, Tea Factory, Eagle Adventures Park, Chocolate Museum",
-        locationsList: ["Doddabetta Peak", "Tea Park", "Ooty Lake [Boating]", "Botanical Garden", "Karnataka Garden", "Tea Factory", "Eagle Adventures Park", "Chocolate Museum"],
+        locationsList: ["Doddabetta Peak", "Tea Park", "Ooty Lake [Boating & Speed Boat]", "Botanical Garden", "Karnataka Garden", "Tea Factory", "Eagle Adventures Park", "Chocolate Museum"],
         duration: "Full Day",
         price: "₹2,500",
         image: "/images/ooty.jpg",
