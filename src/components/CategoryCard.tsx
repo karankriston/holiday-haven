@@ -15,7 +15,7 @@ const CategoryCard = ({ category, index, categoryImages }: CategoryCardProps) =>
       className="group card-travel block"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="relative h-72 overflow-hidden">
+      <div className="relative h-44 overflow-hidden">
         <img
           src={categoryImages[category.id]}
           alt={category.name}
