@@ -34,7 +34,7 @@ const ScrollToTop = () => {
         setTimeout(() => {
           const footer = document.getElementById('footer');
           if (footer) {
-            footer.scrollIntoView({ behavior: 'instant', block: 'start' });
+            footer.scrollIntoView({ behavior: 'instant', block: 'end' });
           }
           sessionStorage.removeItem('returnToFooter');
         }, 100);
