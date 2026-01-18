@@ -113,8 +113,8 @@ const Footer = () => {
             © 2026 OotyEscapes. All rights reserved. Crafted with love for travelers.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link to="/privacy" className="text-primary-foreground/50 hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="text-primary-foreground/50 hover:text-primary transition-colors">Terms of Service</Link>
+            <Link to="/privacy" state={{ fromFooter: true }} className="text-primary-foreground/50 hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms" state={{ fromFooter: true }} className="text-primary-foreground/50 hover:text-primary transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
