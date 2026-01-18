@@ -74,7 +74,9 @@ const TermsPage = () => {
     {
       title: "9. AI-Generated Images Disclaimer",
       content: [
-        "Some of the images displayed on this website are generated using artificial intelligence (AI) by referencing real-world locations. These images are used for illustrative and promotional purposes only. While we strive to represent destinations as accurately as possible, the actual appearance of the locations may differ. The AI-generated images should not be considered exact representations of the real places, and the company is not responsible for any differences between the visuals shown on the website and the real-world experience."
+        "Some of the images displayed on this website are generated using artificial intelligence (AI) by referencing real-world locations. These images are used for illustrative and promotional purposes only.",
+        "While we strive to represent destinations as accurately as possible, the actual appearance of the locations may differ.",
+        "The AI-generated images should not be considered exact representations of the real places, and the company is not responsible for any differences between the visuals shown on the website and the real-world experience."
       ]
     },
     {
