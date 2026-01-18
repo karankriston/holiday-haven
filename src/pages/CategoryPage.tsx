@@ -276,28 +276,28 @@ const CategoryPage = () => {
 
             <div className="space-y-6">
               {category.packages.map((pkg) => (
-                <div key={pkg.id} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col md:flex-row md:h-[280px]">
-                  <div className="relative w-full md:w-[400px] h-56 md:h-full shrink-0 overflow-hidden">
+                <div key={pkg.id} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col lg:flex-row">
+                  <div className="relative w-full lg:w-[350px] xl:w-[400px] h-48 sm:h-56 lg:h-auto lg:min-h-[280px] shrink-0 overflow-hidden">
                     <img src={packageImages[pkg.id] || bannerImage} alt={pkg.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    {!isPickupDrop && <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-bold">{pkg.price}</div>}
+                    {!isPickupDrop && <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-primary text-primary-foreground rounded-full text-xs sm:text-sm font-bold">{pkg.price}</div>}
                   </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between">
+                  <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
                     <div>
-                      <h3 className="text-2xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors">{pkg.name}</h3>
-                      <p className="text-muted-foreground text-sm mb-4">{pkg.description}</p>
-                      <div className="mb-4">
-                        <h4 className="text-sm font-semibold text-foreground mb-2">{isPickupDrop ? 'Pickup Spots:' : 'Places Covered:'}</h4>
-                        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5">
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors">{pkg.name}</h3>
+                      <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2 lg:line-clamp-none">{pkg.description}</p>
+                      <div className="mb-3 sm:mb-4">
+                        <h4 className="text-xs sm:text-sm font-semibold text-foreground mb-2">{isPickupDrop ? 'Pickup Spots:' : 'Places Covered:'}</h4>
+                        <ul className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 sm:gap-x-4 gap-y-1 sm:gap-y-1.5">
                           {pkg.locationsList.map((location, idx) => (
-                            <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />{location}</li>
+                            <li key={idx} className="flex items-center gap-1.5 text-xs sm:text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" /><span className="truncate">{location}</span></li>
                           ))}
                         </ul>
                       </div>
                     </div>
-                    {/* CTA Buttons - Similar to reference image */}
-                    <div className="pt-4 border-t border-border flex flex-col sm:flex-row gap-3">
+                    {/* CTA Buttons */}
+                    <div className="pt-3 sm:pt-4 border-t border-border flex flex-col sm:flex-row gap-2 sm:gap-3">
                       <a href={`tel:+${phoneNumber}`} className="flex-1">
-                        <Button variant="default" size="lg" className="w-full bg-primary hover:bg-primary/90">
+                        <Button variant="default" size="default" className="w-full bg-primary hover:bg-primary/90 text-sm sm:text-base">
                           <Phone className="w-4 h-4 mr-2" />
                           Call Now
                         </Button>
@@ -309,7 +309,7 @@ const CategoryPage = () => {
                           rel="noopener noreferrer"
                           className="flex-1"
                         >
-                          <Button size="lg" className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white">
+                          <Button size="default" className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white text-sm sm:text-base">
                             <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
                               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                             </svg>
@@ -324,7 +324,7 @@ const CategoryPage = () => {
                             sessionStorage.setItem(`scroll-${categoryId}`, window.scrollY.toString());
                           }}
                         >
-                          <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                          <Button size="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-sm sm:text-base">
                             Explore Tour
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Button>
