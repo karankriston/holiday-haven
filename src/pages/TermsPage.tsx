@@ -80,13 +80,20 @@ const TermsPage = () => {
       ]
     },
     {
-      title: "10. Force Majeure",
+      title: "10. Ooty Toy Train Booking",
+      content: [
+        "Our app only helps in booking the Ooty Toy Train ride. We are not responsible for train departure or arrival timings, as all schedules are controlled by the railway authorities.",
+        "The ticket fare is fixed and managed by the Central Government / Indian Railways, and we have no control over any price changes."
+      ]
+    },
+    {
+      title: "11. Force Majeure",
       content: [
         "OotyEscapes is not responsible for delays or cancellations due to natural calamities, landslides, strikes, government restrictions, or any events beyond our control."
       ]
     },
     {
-      title: "11. Website Disclaimer",
+      title: "12. Website Disclaimer",
       content: [
         "This website is for information purposes only.",
         "No bookings or payments are accepted directly through the website.",
@@ -94,7 +101,7 @@ const TermsPage = () => {
       ]
     },
     {
-      title: "12. Legal Jurisdiction",
+      title: "13. Legal Jurisdiction",
       content: [
         "All disputes shall be subject to Tamil Nadu jurisdiction only."
       ]
