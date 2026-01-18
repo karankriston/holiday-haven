@@ -52,7 +52,7 @@ const LongTripsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {longTrips.map((trip, index) => (
               <div key={trip.id} className="group card-travel overflow-hidden animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-44 overflow-hidden">
                   <img src={tripImages[trip.id] || ootyBangaloreImg} alt={trip.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
                 </div>
