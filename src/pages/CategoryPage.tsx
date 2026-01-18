@@ -281,18 +281,16 @@ const CategoryPage = () => {
                     <img src={packageImages[pkg.id] || bannerImage} alt={pkg.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     {!isPickupDrop && <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-bold">{pkg.price}</div>}
                   </div>
-                  <div className="flex-1 p-6 flex flex-col justify-between">
-                    <div>
-                      <h3 className="text-2xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors">{pkg.name}</h3>
-                      <p className="text-muted-foreground text-sm mb-4">{pkg.description}</p>
-                      <div className="mb-4">
-                        <h4 className="text-sm font-semibold text-foreground mb-2">{isPickupDrop ? 'Pickup Spots:' : 'Places Covered:'}</h4>
-                        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5">
-                          {pkg.locationsList.map((location, idx) => (
-                            <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />{location}</li>
-                          ))}
-                        </ul>
-                      </div>
+                  <div className="flex-1 p-6 flex flex-col">
+                    <h3 className="text-2xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors">{pkg.name}</h3>
+                    <p className="text-muted-foreground text-sm mb-4">{pkg.description}</p>
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-foreground mb-2">{isPickupDrop ? 'Pickup Spots:' : 'Places Covered:'}</h4>
+                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5">
+                        {pkg.locationsList.map((location, idx) => (
+                          <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />{location}</li>
+                        ))}
+                      </ul>
                     </div>
                     {/* CTA Buttons - Similar to reference image */}
                     <div className="pt-4 border-t border-border flex flex-col sm:flex-row gap-3">
