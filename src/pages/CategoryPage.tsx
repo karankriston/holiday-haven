@@ -286,7 +286,7 @@ const CategoryPage = () => {
                       <h3 className="text-2xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors">{pkg.name}</h3>
                       <p className="text-muted-foreground text-sm mb-4">{pkg.description}</p>
                       <div className="mb-4">
-                        <h4 className="text-sm font-semibold text-foreground mb-2">{isPickupDrop ? 'Pickup Spots:' : 'Places Covered:'}</h4>
+                        <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">{isPickupDrop ? 'Pickup Spots:' : 'Places Covered:'}</h4>
                         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-1.5">
                           {pkg.locationsList.map((location, idx) => (
                             <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />{location}</li>

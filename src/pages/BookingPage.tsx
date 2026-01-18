@@ -90,7 +90,7 @@ const BookingPage = () => {
 
           {/* Places Covered */}
           <div className="bg-card rounded-2xl p-6 mb-8 border border-border">
-            <h2 className="text-xl font-serif font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-4">
               Places Covered
             </h2>
             <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
