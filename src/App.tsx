@@ -21,8 +21,27 @@ const ScrollToTop = () => {
   const { pathname, state } = useLocation();
 
   useLayoutEffect(() => {
-    // Check if returning to home page and we have a saved scroll position
+    // Save footer navigation state for back navigation
+    if (state?.fromFooter) {
+      sessionStorage.setItem('returnToFooter', 'true');
+    }
+
+    // Check if returning to home page
     if (pathname === '/') {
+      // Check if returning from footer link
+      const returnToFooter = sessionStorage.getItem('returnToFooter');
+      if (returnToFooter) {
+        setTimeout(() => {
+          const footer = document.getElementById('footer');
+          if (footer) {
+            footer.scrollIntoView({ behavior: 'instant', block: 'start' });
+          }
+          sessionStorage.removeItem('returnToFooter');
+        }, 100);
+        return;
+      }
+
+      // Check for long trips scroll position
       const savedScrollPosition = sessionStorage.getItem('longTripsScrollPosition');
       if (savedScrollPosition) {
         setTimeout(() => {
