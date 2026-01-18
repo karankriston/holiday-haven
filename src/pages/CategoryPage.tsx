@@ -277,7 +277,7 @@ const CategoryPage = () => {
             <div className="space-y-6">
               {category.packages.map((pkg) => (
                 <div key={pkg.id} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col md:flex-row">
-                  <div className="relative w-full md:w-[320px] h-44 md:h-48 shrink-0 overflow-hidden">
+                  <div className="relative w-full md:w-[400px] h-56 md:h-auto shrink-0 overflow-hidden">
                     <img src={packageImages[pkg.id] || bannerImage} alt={pkg.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     {!isPickupDrop && <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-bold">{pkg.price}</div>}
                   </div>
