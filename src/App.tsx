@@ -32,10 +32,10 @@ const ScrollToTop = () => {
       const returnToFooter = sessionStorage.getItem('returnToFooter');
       if (returnToFooter) {
         setTimeout(() => {
-          const footer = document.getElementById('footer');
-          if (footer) {
-            footer.scrollIntoView({ behavior: 'instant', block: 'end' });
-          }
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'instant'
+          });
           sessionStorage.removeItem('returnToFooter');
         }, 100);
         return;
