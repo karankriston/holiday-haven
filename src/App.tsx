@@ -21,26 +21,33 @@ const ScrollToTop = () => {
   const { pathname, state } = useLocation();
 
   useLayoutEffect(() => {
-    // Save footer navigation state for back navigation
+    // Save footer navigation state and previous path for back navigation
     if (state?.fromFooter) {
       sessionStorage.setItem('returnToFooter', 'true');
+      sessionStorage.setItem('returnToPath', sessionStorage.getItem('currentPath') || '/');
+    }
+    
+    // Save current path for return navigation
+    sessionStorage.setItem('currentPath', pathname);
+
+    // Check if returning from footer link (works for all pages)
+    const returnToFooter = sessionStorage.getItem('returnToFooter');
+    const isTermsOrPrivacy = pathname === '/terms' || pathname === '/privacy';
+    
+    if (returnToFooter && !isTermsOrPrivacy) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'instant'
+        });
+        sessionStorage.removeItem('returnToFooter');
+        sessionStorage.removeItem('returnToPath');
+      }, 100);
+      return;
     }
 
     // Check if returning to home page
     if (pathname === '/') {
-      // Check if returning from footer link
-      const returnToFooter = sessionStorage.getItem('returnToFooter');
-      if (returnToFooter) {
-        setTimeout(() => {
-          window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: 'instant'
-          });
-          sessionStorage.removeItem('returnToFooter');
-        }, 100);
-        return;
-      }
-
       // Check for long trips scroll position
       const savedScrollPosition = sessionStorage.getItem('longTripsScrollPosition');
       if (savedScrollPosition) {
@@ -60,8 +67,8 @@ const ScrollToTop = () => {
           element.scrollIntoView({ behavior: 'instant', block: 'start' });
         }, 100);
       }
-    } else if (pathname !== '/') {
-      // Only scroll to top for non-home pages on new navigations
+    } else if (!returnToFooter) {
+      // Only scroll to top for new navigations (not returning from footer links)
       window.scrollTo(0, 0);
     }
   }, [pathname, state]);
