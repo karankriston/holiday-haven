@@ -60,11 +60,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-serif font-bold mb-6">Popular Tours</h3>
             <ul className="space-y-3">
-              <li><Link to="/category/hill-stations/tour/ooty-delight" state={{ fromFooter: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Ooty Delight Tour</Link></li>
-              <li><Link to="/category/wildlife" state={{ fromFooter: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Toy Train Ride</Link></li>
-              <li><Link to="/category/pilgrimage/tour/char-dham" state={{ fromFooter: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Honeymoon Package</Link></li>
-              <li><Link to="/category/hill-stations/tour/kodaikanal-escape" state={{ fromFooter: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Coonoor Experience</Link></li>
-              <li><Link to="/category/hill-stations/tour/munnar-magic" state={{ fromFooter: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Pykara Adventure</Link></li>
+              <li><Link to="/category/hill-stations/tour/ooty-delight" className="text-primary-foreground/70 hover:text-primary transition-colors">Ooty Delight Tour</Link></li>
+              <li><Link to="/category/wildlife" className="text-primary-foreground/70 hover:text-primary transition-colors">Toy Train Ride</Link></li>
+              <li><Link to="/category/pilgrimage/tour/char-dham" className="text-primary-foreground/70 hover:text-primary transition-colors">Honeymoon Package</Link></li>
+              <li><Link to="/category/hill-stations/tour/kodaikanal-escape" className="text-primary-foreground/70 hover:text-primary transition-colors">Coonoor Experience</Link></li>
+              <li><Link to="/category/hill-stations/tour/munnar-magic" className="text-primary-foreground/70 hover:text-primary transition-colors">Pykara Adventure</Link></li>
             </ul>
           </div>
 
