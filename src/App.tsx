@@ -61,8 +61,13 @@ const ScrollToTop = () => {
         }, 100);
       }
     } else if (pathname !== '/') {
-      // Only scroll to top for non-home pages on new navigations
-      window.scrollTo(0, 0);
+      // For Popular Tours footer links - scroll to top on forward navigation
+      if (state?.scrollToTop) {
+        window.scrollTo(0, 0);
+      } else {
+        // Only scroll to top for non-home pages on new navigations
+        window.scrollTo(0, 0);
+      }
     }
   }, [pathname, state]);
 
