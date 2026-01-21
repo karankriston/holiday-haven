@@ -53,7 +53,7 @@ const TermsPage = () => {
       content: [
         "Guests must carry valid ID proof during the trip.",
         "OotyEscapes is not responsible for loss of personal belongings.",
-        "Any damage caused to the vehicle or property during the trip must be borne by the customer."
+        "The customer shall be held liable for any damages to the vehicle's interior sustained during the duration of the trip."
       ]
     },
     {
