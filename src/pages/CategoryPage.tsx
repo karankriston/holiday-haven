@@ -279,7 +279,7 @@ const CategoryPage = () => {
                 <div key={pkg.id} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border flex flex-col md:flex-row">
                   <div className="relative w-full md:w-[400px] h-56 md:h-auto shrink-0 overflow-hidden">
                     <img src={packageImages[pkg.id] || bannerImage} alt={pkg.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    {!isPickupDrop && <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-bold">{pkg.price}</div>}
+                    {!isPickupDrop && pkg.price && <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-bold">{pkg.price}</div>}
                   </div>
                   <div className="flex-1 p-6 flex flex-col justify-between">
                     <div className="flex-1">
