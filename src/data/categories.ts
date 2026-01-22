@@ -250,18 +250,16 @@ export const categories: Category[] = [
         name: "Romantic Ooty Escape",
         locations: "Ooty, Coonoor romantic spots",
         locationsList: ["Rose Garden", "Botanical Garden", "Ooty Lake", "Boat House", "Dolphin's Nose", "Lamb's Rock"],
-        duration: "4 Days / 3 Nights",
-        price: "₹18,999",
+        duration: "Flexible - Based on your schedule",
         image: "/images/chardham.jpg",
         description: "Perfect honeymoon package with romantic stays, candlelight dinners, and scenic excursions"
       },
       {
         id: "vaishno-devi",
         name: "Coorg & Ooty Romance",
-        locations: "Coorg and Ooty combined tour",
-        locationsList: ["Abbey Falls", "Raja's Seat", "Coffee Plantations", "Ooty Lake", "Rose Garden", "Tea Estates"],
-        duration: "5 Days / 4 Nights",
-        price: "₹24,999",
+        locations: "Coorg, Mysore, Madikeri and Ooty combined tour",
+        locationsList: ["Abbey Falls", "Raja's Seat", "Coffee Plantations", "Ooty Lake", "Rose Garden", "Tea Estates", "Mysore", "Madikeri"],
+        duration: "Flexible - Based on your schedule",
         image: "/images/vaishnodevi.jpg",
         description: "Romantic journey through the coffee estates of Coorg and tea gardens of Ooty"
       },
@@ -270,8 +268,7 @@ export const categories: Category[] = [
         name: "Kerala Honeymoon Special",
         locations: "Kerala backwaters and hills",
         locationsList: ["Munnar", "Thekkady", "Alleppey", "Kumarakom", "Houseboat Stay", "Ayurveda Spa"],
-        duration: "6 Days / 5 Nights",
-        price: "₹32,999",
+        duration: "Flexible - Based on your schedule",
         image: "/images/tirupati.jpg",
         description: "Luxurious Kerala honeymoon with houseboat stays, spa treatments, and romantic hill station visits"
       },
@@ -280,8 +277,7 @@ export const categories: Category[] = [
         name: "South India Romantic Tour",
         locations: "Ooty, Kodaikanal, Munnar",
         locationsList: ["Ooty", "Kodaikanal", "Munnar", "Alleppey", "Romantic Stays", "Private Tours"],
-        duration: "7 Days / 6 Nights",
-        price: "₹38,999",
+        duration: "Flexible - Based on your schedule",
         image: "/images/amarnath.jpg",
         description: "Grand South India honeymoon covering the most romantic destinations with luxury accommodations"
       },
@@ -290,8 +286,7 @@ export const categories: Category[] = [
         name: "Budget Honeymoon Package",
         locations: "Ooty romantic essentials",
         locationsList: ["Ooty Lake", "Botanical Garden", "Rose Garden", "Doddabetta", "Pine Forest"],
-        duration: "3 Days / 2 Nights",
-        price: "₹12,999",
+        duration: "Flexible - Based on your schedule",
         image: "/images/rameshwaram.jpg",
         description: "Affordable honeymoon package with all romantic essentials in the Queen of Hill Stations"
       }
