@@ -20,7 +20,7 @@ export interface Category {
 
 export const categories: Category[] = [
   {
-    id: "hill-stations",
+    id: "ooty-tour-packages",
     name: "Ooty Tour Packages",
     description: "Escape to the misty mountains and serene valleys",
     image: "/images/hill-station.jpg",
@@ -89,7 +89,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: "beaches",
+    id: "pick-up-drop",
     name: "Pick up & Drop",
     description: "Comfortable transfers to your destination. Additional charges may apply based on pickup location.",
     image: "/images/beach.jpg",
@@ -128,7 +128,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: "heritage",
+    id: "south-serenity-tours",
     name: "South Serenity Tours",
     description: "Peaceful escapes through South India",
     image: "/images/heritage.jpg",
@@ -191,7 +191,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: "wildlife",
+    id: "ooty-toy-train-ride",
     name: "Ooty Toy Train Ride",
     description: "Heritage railway experience through the Nilgiris",
     image: "/images/wildlife.jpg",
@@ -199,8 +199,8 @@ export const categories: Category[] = [
     packages: []
   },
   {
-    id: "adventure",
-    name: "Treks & Adventures",
+    id: "hotels",
+    name: "Hotels",
     description: "Thrilling experiences for the bold explorer",
     image: "/images/adventure.jpg",
     icon: "🥾",
@@ -248,7 +248,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: "pilgrimage",
+    id: "honeymoon-packages",
     name: "Honeymoon Packages",
     description: "Romantic getaways for couples",
     image: "/images/pilgrimage.jpg",

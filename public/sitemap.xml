@@ -26,193 +26,193 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Category: Ooty Tour Packages (hill-stations) -->
+  <!-- Category: Ooty Tour Packages -->
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations/tour/ooty-delight</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages/tour/ooty-delight</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations/tour/kodaikanal-escape</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages/tour/kodaikanal-escape</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations/tour/munnar-magic</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages/tour/munnar-magic</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations/tour/coorg-adventure</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages/tour/coorg-adventure</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations/tour/shimla-manali</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages/tour/shimla-manali</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/hill-stations/tour/birdwatch-virgin</loc>
+    <loc>https://ootyescapes.com/category/ooty-tour-packages/tour/birdwatch-virgin</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Category: Pick up & Drop (beaches) -->
+  <!-- Category: Pick up & Drop -->
   <url>
-    <loc>https://ootyescapes.com/category/beaches</loc>
+    <loc>https://ootyescapes.com/category/pick-up-drop</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/beaches/tour/goa-carnival</loc>
+    <loc>https://ootyescapes.com/category/pick-up-drop/tour/goa-carnival</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/beaches/tour/andaman-paradise</loc>
+    <loc>https://ootyescapes.com/category/pick-up-drop/tour/andaman-paradise</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/beaches/tour/kerala-backwaters</loc>
+    <loc>https://ootyescapes.com/category/pick-up-drop/tour/kerala-backwaters</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Category: South Serenity Tours (heritage) -->
+  <!-- Category: South Serenity Tours -->
   <url>
-    <loc>https://ootyescapes.com/category/heritage</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/heritage/tour/rajasthan-royal</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours/tour/rajasthan-royal</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/heritage/tour/golden-triangle</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours/tour/golden-triangle</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/heritage/tour/hampi-heritage</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours/tour/hampi-heritage</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/heritage/tour/varanasi-spiritual</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours/tour/varanasi-spiritual</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/heritage/tour/kerala-coastal-paradise</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours/tour/kerala-coastal-paradise</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/heritage/tour/south-temple</loc>
+    <loc>https://ootyescapes.com/category/south-serenity-tours/tour/south-temple</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Category: Ooty Toy Train Ride (wildlife) -->
+  <!-- Category: Ooty Toy Train Ride -->
   <url>
-    <loc>https://ootyescapes.com/category/wildlife</loc>
+    <loc>https://ootyescapes.com/category/ooty-toy-train-ride</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Category: Treks & Adventures (adventure) -->
+  <!-- Category: Hotels -->
   <url>
-    <loc>https://ootyescapes.com/category/adventure</loc>
+    <loc>https://ootyescapes.com/category/hotels</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/adventure/tour/ladakh-expedition</loc>
+    <loc>https://ootyescapes.com/category/hotels/tour/ladakh-expedition</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/adventure/tour/birdwatch-virgin</loc>
+    <loc>https://ootyescapes.com/category/hotels/tour/birdwatch-virgin</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/adventure/tour/rishikesh-thrill</loc>
+    <loc>https://ootyescapes.com/category/hotels/tour/rishikesh-thrill</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/adventure/tour/spiti-valley</loc>
+    <loc>https://ootyescapes.com/category/hotels/tour/spiti-valley</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Category: Honeymoon Packages (pilgrimage) -->
+  <!-- Category: Honeymoon Packages -->
   <url>
-    <loc>https://ootyescapes.com/category/pilgrimage</loc>
+    <loc>https://ootyescapes.com/category/honeymoon-packages</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/pilgrimage/tour/char-dham</loc>
+    <loc>https://ootyescapes.com/category/honeymoon-packages/tour/char-dham</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/pilgrimage/tour/vaishno-devi</loc>
+    <loc>https://ootyescapes.com/category/honeymoon-packages/tour/vaishno-devi</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/pilgrimage/tour/tirupati-darshan</loc>
+    <loc>https://ootyescapes.com/category/honeymoon-packages/tour/tirupati-darshan</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/pilgrimage/tour/amarnath-yatra</loc>
+    <loc>https://ootyescapes.com/category/honeymoon-packages/tour/amarnath-yatra</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootyescapes.com/category/pilgrimage/tour/south-jyotirlinga</loc>
+    <loc>https://ootyescapes.com/category/honeymoon-packages/tour/south-jyotirlinga</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

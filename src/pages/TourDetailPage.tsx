@@ -101,12 +101,12 @@ const packageGallery: Record<string, string[]> = {
 };
 
 const categoryBanners: Record<string, string> = {
-  "hill-stations": bannerHillstations,
-  "beaches": bannerPickup,
-  "heritage": bannerSouth,
-  "wildlife": bannerToytrain,
-  "adventure": bannerAdventure,
-  "pilgrimage": bannerHoneymoon,
+  "ooty-tour-packages": bannerHillstations,
+  "pick-up-drop": bannerPickup,
+  "south-serenity-tours": bannerSouth,
+  "ooty-toy-train-ride": bannerToytrain,
+  "hotels": bannerAdventure,
+  "honeymoon-packages": bannerHoneymoon,
 };
 
 const TourDetailPage = () => {

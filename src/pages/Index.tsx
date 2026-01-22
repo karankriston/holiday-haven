@@ -18,12 +18,12 @@ import ootyKeralaImg from "@/assets/ooty-kerala.jpg";
 import ootyCoimbatoreImg from "@/assets/ooty-coimbatore.jpg";
 
 const categoryImages: Record<string, string> = {
-  "hill-stations": ootyTourImg,
-  "beaches": pickupDropImg,
-  "heritage": southSerenityImg,
-  "wildlife": toyTrainImg,
-  "adventure": treksAdventureImg,
-  "pilgrimage": honeymoonImg,
+  "ooty-tour-packages": ootyTourImg,
+  "pick-up-drop": pickupDropImg,
+  "south-serenity-tours": southSerenityImg,
+  "ooty-toy-train-ride": toyTrainImg,
+  "hotels": treksAdventureImg,
+  "honeymoon-packages": honeymoonImg,
 };
 
 const tripImages: Record<string, string> = {

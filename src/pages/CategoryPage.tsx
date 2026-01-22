@@ -51,12 +51,12 @@ import southHoneymoonImg from "@/assets/south-honeymoon.jpg";
 import budgetHoneymoonImg from "@/assets/budget-honeymoon.jpg";
 
 const categoryBanners: Record<string, string> = {
-  "hill-stations": bannerHillstations,
-  "beaches": bannerPickup,
-  "heritage": bannerSouth,
-  "wildlife": bannerToytrain,
-  "adventure": bannerAdventure,
-  "pilgrimage": bannerHoneymoon,
+  "ooty-tour-packages": bannerHillstations,
+  "pick-up-drop": bannerPickup,
+  "south-serenity-tours": bannerSouth,
+  "ooty-toy-train-ride": bannerToytrain,
+  "hotels": bannerAdventure,
+  "honeymoon-packages": bannerHoneymoon,
 };
 
 const packageImages: Record<string, string> = {
@@ -125,8 +125,8 @@ const CategoryPage = () => {
   }
 
   const bannerImage = categoryBanners[category.id] || bannerHillstations;
-  const isToyTrain = category.id === "wildlife";
-  const isPickupDrop = category.id === "beaches";
+  const isToyTrain = category.id === "ooty-toy-train-ride";
+  const isPickupDrop = category.id === "pick-up-drop";
 
   return (
     <div className="min-h-screen bg-background animate-page-enter">
