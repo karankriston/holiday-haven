@@ -27,7 +27,7 @@ export const categories: Category[] = [
     icon: "🏔️",
     packages: [
       {
-        id: "ooty",
+        id: "ooty-delight",
         name: "Ooty Delight Tour",
         locations: "Doddabetta Peak, Tea Park, Ooty Lake, Botanical Garden, Karnataka Garden, Tea Factory, Eagle Adventures Park, Chocolate Museum",
         locationsList: ["Doddabetta Peak", "Tea Park", "Ooty Lake [Speed Boat]", "Botanical Garden", "Karnataka Garden", "Tea Factory", "Eagle Adventures Park", "Chocolate Museum"],
@@ -37,7 +37,7 @@ export const categories: Category[] = [
         description: "Experience the Queen of Hill Stations with sprawling tea gardens, botanical wonders, and scenic railway journeys through the Nilgiris"
       },
       {
-        id: "coonoor",
+        id: "kodaikanal-escape",
         name: "Coonoor Scenic Experience",
         locations: "Lamb's Rock, Dolphin's Nose, Sims Park, Tea Garden, Madras Regimental Museum, Strawberry Farm",
         locationsList: ["Lamb's Rock", "Dolphin's Nose", "Sims Park", "Tea Garden", "Madras Regimental Museum", "Strawberry Farm"],
@@ -47,7 +47,7 @@ export const categories: Category[] = [
         description: "Discover the scenic beauty of Coonoor with pristine viewpoints, lush gardens, and historic colonial architecture"
       },
       {
-        id: "pykara",
+        id: "munnar-magic",
         name: "Pykara Nature And Adventure",
         locations: "Pykara Falls, Pykara Lake, Shooting Spot, Pine Forest, Tree Park, Wenlock Downs, Mudhumalai Trek",
         locationsList: ["Pykara Falls", "Pykara Lake [Boating]", "Shooting Spot (9th Miles)", "Pine Forest", "Tree Park", "Wenlock Downs", "Mudhumalai Trek [₹1000]"],
@@ -67,7 +67,7 @@ export const categories: Category[] = [
         description: "Explore the pristine wilderness of Avalanche with crystal clear lakes, shola forests, and untouched natural beauty"
       },
       {
-        id: "kodanadu",
+        id: "shimla-manali",
         name: "Kodanadu Highlight Experience",
         locations: "Kodanadu Viewpoint, Catherine Falls, Kodanad Estates, Pandian Park, Rangaswamy Peak",
         locationsList: ["Kodanadu Viewpoint", "Catherine Falls", "Kodanad Estates", "Pandian Park", "Rangaswamy Peak"],
@@ -77,7 +77,7 @@ export const categories: Category[] = [
         description: "Experience the breathtaking views of Kodanadu with elephant encounters, tea plantation walks, and stunning valley vistas"
       },
       {
-        id: "birdwatch-virgin-earth-ooty",
+        id: "birdwatch-virgin",
         name: "Bird Watch [Virgin Earth]",
         locations: "Virgin Earth Bird Sanctuary, Nilgiri forests",
         locationsList: ["Virgin Earth Sanctuary", "Forest Trails", "Bird Watching Points", "Nature Walk", "Photography Spots", "Wildlife Spotting"],
