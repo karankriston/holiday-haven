@@ -292,6 +292,9 @@ const CategoryPage = () => {
                             <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />{location}</li>
                           ))}
                         </ul>
+                        {pkg.id === "kerala-backwaters" && (
+                          <p className="mt-3 text-sm text-muted-foreground italic">We offer comfortable and reliable round-trip tour services across South India.</p>
+                        )}
                       </div>
                     </div>
                     {/* CTA Buttons - Similar to reference image */}
