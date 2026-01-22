@@ -178,6 +178,15 @@ export const categories: Category[] = [
         duration: "Flexible - Based on your schedule",
         image: "/images/madurai.jpg",
         description: "The ultimate South India experience covering all four states with their unique culture and beauty"
+      },
+      {
+        id: "kerala-coastal-paradise",
+        name: "Kerala Coastal Paradise",
+        locations: "All Kerala Beaches - Arabian Sea Coast",
+        locationsList: ["Kovalam Beach", "Varkala Cliff Beach", "Marari Beach", "Cherai Beach", "Bekal Beach", "Kappad Beach", "Muzhappilangad Beach", "Alappuzha Beach", "Shanghumukham Beach", "Papanasam Beach"],
+        duration: "Flexible - Based on your schedule",
+        image: "/images/kerala-beach.jpg",
+        description: "Experience the pristine golden shores and azure waters of Kerala's most beautiful beaches along the Arabian Sea coast"
       }
     ]
   },
