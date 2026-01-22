@@ -171,15 +171,6 @@ export const categories: Category[] = [
         description: "A spiritual journey through Andhra Pradesh's most sacred temples and pilgrimage sites"
       },
       {
-        id: "south-temple",
-        name: "Complete South India",
-        locations: "Kerala, Tamil Nadu, Karnataka, Andhra Pradesh",
-        locationsList: ["Kochi", "Munnar", "Ooty", "Mysore", "Madurai", "Rameswaram"],
-        duration: "Flexible - Based on your schedule",
-        image: "/images/madurai.jpg",
-        description: "The ultimate South India experience covering all four states with their unique culture and beauty"
-      },
-      {
         id: "kerala-coastal-paradise",
         name: "Kerala Coastal Paradise",
         locations: "All Kerala Beaches - Arabian Sea Coast",
@@ -187,6 +178,15 @@ export const categories: Category[] = [
         duration: "Flexible - Based on your schedule",
         image: "/images/kerala-beach.jpg",
         description: "Experience the pristine golden shores and azure waters of Kerala's most beautiful beaches along the Arabian Sea coast"
+      },
+      {
+        id: "south-temple",
+        name: "Complete South India",
+        locations: "Kerala, Tamil Nadu, Karnataka, Andhra Pradesh",
+        locationsList: ["Kochi", "Munnar", "Ooty", "Mysore", "Madurai", "Rameswaram"],
+        duration: "Flexible - Based on your schedule",
+        image: "/images/madurai.jpg",
+        description: "The ultimate South India experience covering all four states with their unique culture and beauty"
       }
     ]
   },
