@@ -293,7 +293,7 @@ const CategoryPage = () => {
                           ))}
                         </ul>
                         {pkg.id === "kerala-backwaters" && (
-                          <p className="mt-3 text-sm text-muted-foreground italic">We offer comfortable and reliable round-trip tour services across South India.</p>
+                          <p className="mt-3 text-sm text-primary italic">We offer comfortable and reliable round-trip tour services across South India.</p>
                         )}
                       </div>
                     </div>
