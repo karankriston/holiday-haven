@@ -55,6 +55,10 @@ import trekAvalanche1 from "@/assets/gallery/trek-avalanche-1.jpg";
 import trekAvalanche2 from "@/assets/gallery/trek-avalanche-2.jpg";
 import trekAvalanche3 from "@/assets/gallery/trek-avalanche-3.jpg";
 import trekAvalanche4 from "@/assets/gallery/trek-avalanche-4.jpg";
+import keralaBeach1 from "@/assets/gallery/kerala-beach-1.jpg";
+import keralaBeach2 from "@/assets/gallery/kerala-beach-2.jpg";
+import keralaBeach3 from "@/assets/gallery/kerala-beach-3.jpg";
+import keralaBeach4 from "@/assets/gallery/kerala-beach-4.jpg";
 
 import bannerHillstations from "@/assets/banner-hillstations.jpg";
 import bannerPickup from "@/assets/banner-pickup.jpg";
@@ -92,6 +96,8 @@ const packageGallery: Record<string, string[]> = {
   "tirupati-darshan": [kerala2, andhra1, kerala1, kerala3],
   "amarnath-yatra": [southIndia4, kodanadu1, kerala2, kerala1],
   "south-jyotirlinga": [ootyDelight3, ootyDelight4, coonoor3, pykara4],
+  // Kerala Coastal Paradise
+  "kerala-coastal-paradise": [keralaBeach1, keralaBeach2, keralaBeach3, keralaBeach4],
 };
 
 const categoryBanners: Record<string, string> = {
