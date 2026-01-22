@@ -75,6 +75,16 @@ export const categories: Category[] = [
         price: "₹3,000",
         image: "/images/shimla.jpg",
         description: "Experience the breathtaking views of Kodanadu with elephant encounters, tea plantation walks, and stunning valley vistas"
+      },
+      {
+        id: "birdwatch-virgin",
+        name: "Bird Watch [Virgin Earth]",
+        locations: "Virgin Earth Bird Sanctuary, Nilgiri forests",
+        locationsList: ["Virgin Earth Sanctuary", "Forest Trails", "Bird Watching Points", "Nature Walk", "Photography Spots", "Wildlife Spotting"],
+        duration: "Full Day",
+        price: "₹1,999",
+        image: "/images/birdwatch.jpg",
+        description: "Discover exotic bird species in the pristine Virgin Earth sanctuary with expert naturalist guides"
       }
     ]
   },
