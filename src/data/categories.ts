@@ -129,6 +129,7 @@ export const categories: Category[] = [
         name: "Kerala Backwaters Bliss",
         locations: "Alleppey, Kumarakom, Kochi, Munnar",
         locationsList: ["Alleppey", "Kumarakom", "Fort Kochi", "Munnar", "Thekkady", "Vagamon"],
+        duration: "Flexible - Based on your schedule",
         image: "/images/rajasthan.jpg",
         description: "Experience the serene backwaters of Kerala with houseboat stays, Ayurvedic treatments, and lush hill stations"
       },
@@ -137,6 +138,7 @@ export const categories: Category[] = [
         name: "Tamil Nadu Temple Trail",
         locations: "Madurai, Rameswaram, Kanyakumari, Thanjavur",
         locationsList: ["Madurai", "Rameswaram", "Kanyakumari", "Thanjavur", "Trichy", "Pondicherry"],
+        duration: "Flexible - Based on your schedule",
         image: "/images/agra.jpg",
         description: "Explore the magnificent temples of Tamil Nadu with their stunning Dravidian architecture"
       },
@@ -145,6 +147,7 @@ export const categories: Category[] = [
         name: "Karnataka Heritage",
         locations: "Mysore, Coorg, Hampi, Badami",
         locationsList: ["Mysore Palace", "Coorg", "Hampi", "Badami Caves", "Belur", "Halebidu"],
+        duration: "Flexible - Based on your schedule",
         image: "/images/hampi.jpg",
         description: "Discover Karnataka's rich heritage with royal palaces, ancient ruins, and coffee plantations"
       },
@@ -153,6 +156,7 @@ export const categories: Category[] = [
         name: "Andhra Spiritual Journey",
         locations: "Tirupati, Srikalahasti, Lepakshi, Puttaparthi",
         locationsList: ["Tirupati", "Tirumala", "Srikalahasti", "Lepakshi", "Puttaparthi", "Ahobilam"],
+        duration: "Flexible - Based on your schedule",
         image: "/images/varanasi.jpg",
         description: "A spiritual journey through Andhra Pradesh's most sacred temples and pilgrimage sites"
       },
@@ -161,6 +165,7 @@ export const categories: Category[] = [
         name: "Complete South India",
         locations: "Kerala, Tamil Nadu, Karnataka, Andhra Pradesh",
         locationsList: ["Kochi", "Munnar", "Ooty", "Mysore", "Madurai", "Rameswaram"],
+        duration: "Flexible - Based on your schedule",
         image: "/images/madurai.jpg",
         description: "The ultimate South India experience covering all four states with their unique culture and beauty"
       }
