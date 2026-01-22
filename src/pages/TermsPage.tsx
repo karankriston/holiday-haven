@@ -83,7 +83,8 @@ const TermsPage = () => {
       title: "10. Ooty Toy Train Booking",
       content: [
         "Our app only helps in booking the Ooty Toy Train ride. We are not responsible for train departure or arrival timings, as all schedules are controlled by the railway authorities.",
-        "The ticket fare is fixed and managed by the Central Government / Indian Railways, and we have no control over any price changes."
+        "The ticket fare is fixed and managed by the Central Government / Indian Railways, and we have no control over any price changes.",
+        "An additional agency service charge will be applicable for assisting with Ooty Toy Train ticket booking."
       ]
     },
     {
