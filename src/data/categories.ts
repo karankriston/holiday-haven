@@ -108,8 +108,8 @@ export const categories: Category[] = [
       {
         id: "andaman-paradise",
         name: "Railway Station Transfer",
-        locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore, Erode, Chennai, Madurai",
-        locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode Junction", "Chennai Central", "Madurai Junction"],
+        locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore, Erode, Chennai, Madurai, Tiruppur",
+        locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode Junction", "Chennai Central", "Madurai Junction", "Tiruppur"],
         duration: "One Way",
         price: "₹1,999",
         image: "/images/andaman.jpg",
