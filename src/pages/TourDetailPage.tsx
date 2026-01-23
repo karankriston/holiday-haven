@@ -189,9 +189,12 @@ const TourDetailPage = () => {
       {/* Gallery Section - 4 images side by side */}
       <section className="py-6 px-4">
         <div className="container mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2">
             Tour <span className="text-gradient-primary">Gallery</span>
           </h2>
+          <p className="text-muted-foreground text-sm mb-6 italic">
+            ✨ These images are thoughtfully crafted using AI, inspired by the real beauty of each destination.
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {galleryImages.map((img, idx) => (
               <div key={idx} className="relative aspect-square overflow-hidden rounded-2xl group">
