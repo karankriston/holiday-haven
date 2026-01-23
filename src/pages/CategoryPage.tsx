@@ -281,9 +281,12 @@ const CategoryPage = () => {
           <div className="container mx-auto">
             {/* Room Gallery */}
             <div className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6 text-center">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2 text-center">
                 Our <span className="text-gradient-primary">Room Collection</span>
               </h2>
+              <p className="text-muted-foreground text-sm text-center mb-6">
+                *Images shown are AI-generated for illustration purposes. Actual rooms may vary.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 {hotelRoomImages.map((img, idx) => (
                   <div key={idx} className="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
