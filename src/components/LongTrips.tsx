@@ -33,14 +33,14 @@ const LongTrips = ({ tripImages }: LongTripsProps) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-6 lg:gap-8">
           {displayedTrips.map((trip, index) => (
             <div
               key={trip.id}
               className="group card-travel overflow-hidden"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-52 sm:h-56 md:h-56 lg:h-64 overflow-hidden">
                 <img
                   src={tripImages[trip.id]}
                   alt={trip.name}
@@ -49,11 +49,11 @@ const LongTrips = ({ tripImages }: LongTripsProps) => {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
               </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-serif font-bold text-card-foreground mb-3 group-hover:text-primary transition-colors">
+              <div className="p-4 sm:p-5 md:p-5 lg:p-6">
+                <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-serif font-bold text-card-foreground mb-2 md:mb-3 group-hover:text-primary transition-colors line-clamp-1">
                   {trip.name}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                <p className="text-muted-foreground text-xs sm:text-sm md:text-sm mb-3 md:mb-4 line-clamp-2 min-h-[2.5rem]">
                   {trip.description}
                 </p>
                 
