@@ -15,7 +15,7 @@ import bannerAdventure from "@/assets/banner-adventure.jpg";
 import bannerHoneymoon from "@/assets/banner-honeymoon.jpg";
 
 // Import Ooty Tour package images
-import ootyImg from "@/assets/ooty.jpg";
+import ootyImg from "@/assets/ooty-delight.jpg";
 import coonoorImg from "@/assets/coonoor.jpg";
 import pykaraImg from "@/assets/pykara.jpg";
 import avalancheImg from "@/assets/avalanche.jpg";
@@ -61,11 +61,11 @@ const categoryBanners: Record<string, string> = {
 
 const packageImages: Record<string, string> = {
   // Ooty Tour Packages
-  "ooty-delight": ootyImg,
-  "kodaikanal-escape": coonoorImg,
-  "munnar-magic": pykaraImg,
-  "coorg-adventure": avalancheImg,
-  "shimla-manali": kodanadImg,
+  "ooty": ootyImg,
+  "coonoor": coonoorImg,
+  "pykara": pykaraImg,
+  "avalanche": avalancheImg,
+  "kodanadu": kodanadImg,
   // Pickup & Drop
   "goa-carnival": airportPickupImg,
   "andaman-paradise": railwayTransferImg,
