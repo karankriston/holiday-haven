@@ -11,7 +11,7 @@ import ootyTourImg from "@/assets/ooty-tour.jpg";
 import pickupDropImg from "@/assets/pickup-drop.jpg";
 import southSerenityImg from "@/assets/south-serenity.jpg";
 import toyTrainImg from "@/assets/toy-train.jpg";
-import treksAdventureImg from "@/assets/treks-adventure.jpg";
+import hotelBookingsImg from "@/assets/hotel-bookings.jpg";
 import honeymoonImg from "@/assets/honeymoon.jpg";
 import ootyBangaloreImg from "@/assets/ooty-bangalore.jpg";
 import ootyKeralaImg from "@/assets/ooty-kerala.jpg";
@@ -22,7 +22,7 @@ const categoryImages: Record<string, string> = {
   "ooty-cabs-pick-up-drop": pickupDropImg,
   "south-serenity-tours": southSerenityImg,
   "ooty-toy-train-ride": toyTrainImg,
-  "hotels": treksAdventureImg,
+  "hotels": hotelBookingsImg,
   "honeymoon-packages": honeymoonImg,
 };
 
