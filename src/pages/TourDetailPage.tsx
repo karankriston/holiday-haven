@@ -70,12 +70,11 @@ import bannerHoneymoon from "@/assets/banner-honeymoon.jpg";
 // Gallery images mapping - 4 images per package
 const packageGallery: Record<string, string[]> = {
   // Ooty Tour Packages
-  "ooty": [ootyDelight1, ootyDelight2, ootyDelight3, ootyDelight4],
-  "coonoor": [coonoor1, coonoor2, coonoor3, coonoor4],
-  "pykara": [pykara1, pykara2, pykara3, pykara4],
+  "ooty-delight": [ootyDelight1, ootyDelight2, ootyDelight3, ootyDelight4],
+  "kodaikanal-escape": [coonoor1, coonoor2, coonoor3, coonoor4],
+  "munnar-magic": [pykara1, pykara2, pykara3, pykara4],
   "coorg-adventure": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
-  "kodanadu": [kodanadu1, kodanadu2, kodanadu3, kodanadu4],
-  "birdwatch-virgin-earth-ooty": [trekMukurthi2, trekDoddabetta2, trekAvalanche2, pykara3],
+  "shimla-manali": [kodanadu1, kodanadu2, kodanadu3, kodanadu4],
   // Pickup & Drop - reuse scenic images
   "goa-carnival": [ootyDelight1, coonoor1, pykara1, kodanadu1],
   "andaman-paradise": [coonoor1, ootyDelight1, pykara1, kodanadu1],
@@ -88,6 +87,7 @@ const packageGallery: Record<string, string[]> = {
   "south-temple": [southIndia1, southIndia2, southIndia3, southIndia4],
   // Adventure
   "ladakh-expedition": [trekDoddabetta1, trekDoddabetta2, trekDoddabetta3, trekDoddabetta4],
+  "birdwatch-virgin": [trekMukurthi2, trekDoddabetta2, trekAvalanche2, pykara3],
   "rishikesh-thrill": [trekMukurthi1, trekMukurthi2, trekMukurthi3, trekMukurthi4],
   "spiti-valley": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
   // Honeymoon - using scenic images
