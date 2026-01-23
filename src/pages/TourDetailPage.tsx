@@ -23,26 +23,30 @@ import kodanadu1 from "@/assets/gallery/kodanadu-1.jpg";
 import kodanadu2 from "@/assets/gallery/kodanadu-2.jpg";
 import kodanadu3 from "@/assets/gallery/kodanadu-3.jpg";
 import kodanadu4 from "@/assets/gallery/kodanadu-4.jpg";
-import kerala1 from "@/assets/gallery/kerala-1.jpg";
-import kerala2 from "@/assets/gallery/kerala-2.jpg";
-import kerala3 from "@/assets/gallery/kerala-3.jpg";
-import kerala4 from "@/assets/gallery/kerala-4.jpg";
-import temple1 from "@/assets/gallery/temple-1.jpg";
-import temple2 from "@/assets/gallery/temple-2.jpg";
-import temple3 from "@/assets/gallery/temple-3.jpg";
-import temple4 from "@/assets/gallery/temple-4.jpg";
-import karnataka1 from "@/assets/gallery/karnataka-1.jpg";
-import karnataka2 from "@/assets/gallery/karnataka-2.jpg";
-import karnataka3 from "@/assets/gallery/karnataka-3.jpg";
-import karnataka4 from "@/assets/gallery/karnataka-4.jpg";
-import andhra1 from "@/assets/gallery/andhra-1.jpg";
-import andhra2 from "@/assets/gallery/andhra-2.jpg";
-import andhra3 from "@/assets/gallery/andhra-3.jpg";
-import andhra4 from "@/assets/gallery/andhra-4.jpg";
-import southIndia1 from "@/assets/gallery/south-india-1.jpg";
-import southIndia2 from "@/assets/gallery/south-india-2.jpg";
-import southIndia3 from "@/assets/gallery/south-india-3.jpg";
-import southIndia4 from "@/assets/gallery/south-india-4.jpg";
+import kerala1 from "@/assets/gallery/kerala-backwaters-1.jpg";
+import kerala2 from "@/assets/gallery/kerala-backwaters-2.jpg";
+import kerala3 from "@/assets/gallery/kerala-backwaters-3.jpg";
+import kerala4 from "@/assets/gallery/kerala-backwaters-4.jpg";
+import temple1 from "@/assets/gallery/tamil-temple-1.jpg";
+import temple2 from "@/assets/gallery/tamil-temple-2.jpg";
+import temple3 from "@/assets/gallery/tamil-temple-3.jpg";
+import temple4 from "@/assets/gallery/tamil-temple-4.jpg";
+import karnataka1 from "@/assets/gallery/karnataka-new-1.jpg";
+import karnataka2 from "@/assets/gallery/karnataka-new-2.jpg";
+import karnataka3 from "@/assets/gallery/karnataka-new-3.jpg";
+import karnataka4 from "@/assets/gallery/karnataka-new-4.jpg";
+import andhra1 from "@/assets/gallery/andhra-new-1.jpg";
+import andhra2 from "@/assets/gallery/andhra-new-2.jpg";
+import andhra3 from "@/assets/gallery/andhra-new-3.jpg";
+import andhra4 from "@/assets/gallery/andhra-new-4.jpg";
+import keralaCoastal1 from "@/assets/gallery/kerala-coastal-1.jpg";
+import keralaCoastal2 from "@/assets/gallery/kerala-coastal-2.jpg";
+import keralaCoastal3 from "@/assets/gallery/kerala-coastal-3.jpg";
+import keralaCoastal4 from "@/assets/gallery/kerala-coastal-4.jpg";
+import southIndia1 from "@/assets/gallery/south-complete-1.jpg";
+import southIndia2 from "@/assets/gallery/south-complete-2.jpg";
+import southIndia3 from "@/assets/gallery/south-complete-3.jpg";
+import southIndia4 from "@/assets/gallery/south-complete-4.jpg";
 import trekDoddabetta1 from "@/assets/gallery/trek-doddabetta-1.jpg";
 import trekDoddabetta2 from "@/assets/gallery/trek-doddabetta-2.jpg";
 import trekDoddabetta3 from "@/assets/gallery/trek-doddabetta-3.jpg";
@@ -55,10 +59,6 @@ import trekAvalanche1 from "@/assets/gallery/trek-avalanche-1.jpg";
 import trekAvalanche2 from "@/assets/gallery/trek-avalanche-2.jpg";
 import trekAvalanche3 from "@/assets/gallery/trek-avalanche-3.jpg";
 import trekAvalanche4 from "@/assets/gallery/trek-avalanche-4.jpg";
-import keralaBeach1 from "@/assets/gallery/kerala-beach-1.jpg";
-import keralaBeach2 from "@/assets/gallery/kerala-beach-2.jpg";
-import keralaBeach3 from "@/assets/gallery/kerala-beach-3.jpg";
-import keralaBeach4 from "@/assets/gallery/kerala-beach-4.jpg";
 
 import bannerHillstations from "@/assets/banner-hillstations.jpg";
 import bannerPickup from "@/assets/banner-pickup.jpg";
@@ -81,10 +81,11 @@ const packageGallery: Record<string, string[]> = {
   "andaman-paradise": [coonoor1, ootyDelight1, pykara1, kodanadu1],
   "kerala-backwaters": [kerala1, kerala2, kerala3, kerala4],
   // South Serenity Tours
-  "rajasthan-royal": [kerala1, kerala2, kerala3, kerala4],
-  "golden-triangle": [temple1, temple2, temple3, temple4],
-  "hampi-heritage": [karnataka1, karnataka2, karnataka3, karnataka4],
-  "varanasi-spiritual": [andhra1, andhra2, andhra3, andhra4],
+  "kerala-backwaters-bliss": [kerala1, kerala2, kerala3, kerala4],
+  "tamil-nadu-temple-trail": [temple1, temple2, temple3, temple4],
+  "karnataka-heritage": [karnataka1, karnataka2, karnataka3, karnataka4],
+  "andhra-spiritual-journey": [andhra1, andhra2, andhra3, andhra4],
+  "kerala-coastal-paradise": [keralaCoastal1, keralaCoastal2, keralaCoastal3, keralaCoastal4],
   "south-temple": [southIndia1, southIndia2, southIndia3, southIndia4],
   // Adventure
   "ladakh-expedition": [trekDoddabetta1, trekDoddabetta2, trekDoddabetta3, trekDoddabetta4],
@@ -96,8 +97,6 @@ const packageGallery: Record<string, string[]> = {
   "tirupati-darshan": [kerala2, andhra1, kerala1, kerala3],
   "amarnath-yatra": [southIndia4, kodanadu1, kerala2, kerala1],
   "south-jyotirlinga": [ootyDelight3, ootyDelight4, coonoor3, pykara4],
-  // Kerala Coastal Paradise
-  "kerala-coastal-paradise": [keralaBeach1, keralaBeach2, keralaBeach3, keralaBeach4],
 };
 
 const categoryBanners: Record<string, string> = {
