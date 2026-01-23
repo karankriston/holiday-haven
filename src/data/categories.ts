@@ -132,7 +132,7 @@ export const categories: Category[] = [
     icon: "🌿",
     packages: [
       {
-        id: "rajasthan-royal",
+        id: "kerala-backwaters-bliss",
         name: "Kerala Backwaters Bliss",
         locations: "Alleppey, Kumarakom, Kochi, Munnar",
         locationsList: ["Alleppey", "Kumarakom", "Fort Kochi", "Munnar", "Thekkady", "Vagamon"],
@@ -141,7 +141,7 @@ export const categories: Category[] = [
         description: "Experience the serene backwaters of Kerala with houseboat stays, Ayurvedic treatments, and lush hill stations"
       },
       {
-        id: "golden-triangle",
+        id: "tamil-nadu-temple-trail",
         name: "Tamil Nadu Temple Trail",
         locations: "Madurai, Rameswaram, Kanyakumari, Thanjavur",
         locationsList: ["Madurai", "Rameswaram", "Kanyakumari", "Thanjavur", "Trichy", "Pondicherry"],
@@ -150,7 +150,7 @@ export const categories: Category[] = [
         description: "Explore the magnificent temples of Tamil Nadu with their stunning Dravidian architecture"
       },
       {
-        id: "hampi-heritage",
+        id: "karnataka-heritage",
         name: "Karnataka Heritage",
         locations: "Mysore, Coorg, Hampi, Badami",
         locationsList: ["Mysore Palace", "Coorg", "Hampi", "Badami Caves", "Belur", "Halebidu"],
@@ -159,7 +159,7 @@ export const categories: Category[] = [
         description: "Discover Karnataka's rich heritage with royal palaces, ancient ruins, and coffee plantations"
       },
       {
-        id: "varanasi-spiritual",
+        id: "andhra-spiritual-journey",
         name: "Andhra Spiritual Journey",
         locations: "Tirupati, Srikalahasti, Lepakshi, Puttaparthi",
         locationsList: ["Tirupati", "Tirumala", "Srikalahasti", "Lepakshi", "Puttaparthi", "Ahobilam"],
