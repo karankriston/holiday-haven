@@ -38,7 +38,7 @@ import southIndiaCompleteImg from "@/assets/south-india-complete.jpg";
 // Import Adventure images
 import doddabettaTrekImg from "@/assets/doddabetta-trek.jpg";
 import birdwatchImg from "@/assets/birdwatch.jpg";
-import birdwatchVirginEarthImg from "@/assets/birdwatch-virgin-earth.jpg";
+import birdwatchVirginEarthImg from "@/assets/birdwatch-virgin-earth-enhanced.jpg";
 import mukurthiTrekImg from "@/assets/mukurthi-trek.jpg";
 import avalancheTrekImg from "@/assets/avalanche-trek.jpg";
 import nightSafariImg from "@/assets/night-safari.jpg";
