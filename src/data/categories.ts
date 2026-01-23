@@ -101,7 +101,6 @@ export const categories: Category[] = [
         locations: "Coimbatore Airport, Bangalore Airport, Chennai Airport, Mysore, Salem, Erode, Tirupur, Madurai",
         locationsList: ["Coimbatore Airport", "Bangalore Airport", "Chennai Airport", "Mysore", "Salem", "Erode", "Tirupur", "Madurai"],
         duration: "One Way",
-        price: "₹2,999",
         image: "/images/goa.jpg",
         description: "Comfortable pickup service from major airports to Ooty with experienced drivers and well-maintained vehicles"
       },
@@ -111,7 +110,6 @@ export const categories: Category[] = [
         locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore, Erode, Chennai, Madurai, Tiruppur",
         locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode Junction", "Chennai Central", "Madurai Junction", "Tiruppur"],
         duration: "One Way",
-        price: "₹1,999",
         image: "/images/andaman.jpg",
         description: "Seamless transfers from railway stations to Ooty with punctual service and comfortable seating"
       },
@@ -121,7 +119,6 @@ export const categories: Category[] = [
         locations: "Any City to Ooty and Back",
         locationsList: ["Coimbatore", "Bangalore", "Chennai", "Mysore", "Kochi", "Madurai", "Salem", "Tirupur"],
         duration: "Round Trip",
-        price: "₹5,999",
         image: "/images/kerala.jpg",
         description: "Complete round trip transfer package with flexible scheduling and 24/7 availability"
       }
