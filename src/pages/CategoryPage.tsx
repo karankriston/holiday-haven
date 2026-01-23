@@ -30,9 +30,10 @@ import multiDayPackageImg from "@/assets/multi-day-package.jpg";
 
 // Import South Serenity images
 import keralaBackwatersImg from "@/assets/kerala-backwaters.jpg";
-import templeTrailImg from "@/assets/temple-trail.jpg";
+import templeTrailImg from "@/assets/tamil-temple-trail.jpg";
 import karnatakaHeritageImg from "@/assets/karnataka-heritage.jpg";
 import andhraSpiritualImg from "@/assets/andhra-spiritual.jpg";
+import keralaCoastalImg from "@/assets/kerala-coastal.jpg";
 import southIndiaCompleteImg from "@/assets/south-india-complete.jpg";
 
 // Import Adventure images
@@ -75,10 +76,11 @@ const packageImages: Record<string, string> = {
   "pondicherry-bliss": localSightseeingImg,
   "lakshadweep-dream": multiDayPackageImg,
   // South Serenity Tours
-  "rajasthan-royal": keralaBackwatersImg,
-  "golden-triangle": templeTrailImg,
-  "hampi-heritage": karnatakaHeritageImg,
-  "varanasi-spiritual": andhraSpiritualImg,
+  "kerala-backwaters-bliss": keralaBackwatersImg,
+  "tamil-nadu-temple-trail": templeTrailImg,
+  "karnataka-heritage": karnatakaHeritageImg,
+  "andhra-spiritual-journey": andhraSpiritualImg,
+  "kerala-coastal-paradise": keralaCoastalImg,
   "south-temple": southIndiaCompleteImg,
   // Adventure
   "ladakh-expedition": doddabettaTrekImg,
