@@ -15,7 +15,7 @@ const CategoryCard = ({ category, index, categoryImages }: CategoryCardProps) =>
       className="group card-travel block"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+      <div className="relative h-52 sm:h-56 md:h-60 lg:h-72 overflow-hidden">
         <img
           src={categoryImages[category.id]}
           alt={category.name}
@@ -29,16 +29,16 @@ const CategoryCard = ({ category, index, categoryImages }: CategoryCardProps) =>
         </div>
       </div>
 
-      <div className="p-4 sm:p-5 md:p-6">
-        <h3 className="text-lg sm:text-xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors">
+      <div className="p-4 sm:p-5 md:p-5 lg:p-6">
+        <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-serif font-bold text-card-foreground mb-2 group-hover:text-primary transition-colors line-clamp-1">
           {category.name}
         </h3>
-        <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+        <p className="text-muted-foreground text-xs sm:text-sm md:text-sm mb-3 sm:mb-4 line-clamp-2 min-h-[2.5rem]">
           {category.description}
         </p>
-        <div className="flex items-center text-primary font-medium text-sm group-hover:gap-3 gap-2 transition-all">
+        <div className="flex items-center text-primary font-medium text-xs sm:text-sm group-hover:gap-3 gap-2 transition-all">
           <span>Explore Tours</span>
-          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
     </Link>
