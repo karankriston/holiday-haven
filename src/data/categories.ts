@@ -197,52 +197,11 @@ export const categories: Category[] = [
   },
   {
     id: "hotels",
-    name: "Hotels",
-    description: "Thrilling experiences for the bold explorer",
-    image: "/images/adventure.jpg",
-    icon: "🥾",
-    packages: [
-      {
-        id: "ladakh-expedition",
-        name: "Doddabetta Trek",
-        locations: "Doddabetta Peak, highest point in Nilgiris",
-        locationsList: ["Doddabetta Base", "Forest Trail", "View Point", "Summit", "Tea Estate", "Botanical Garden"],
-        duration: "Half Day",
-        price: "₹1,499",
-        image: "/images/ladakh.jpg",
-        description: "Trek to the highest peak in the Nilgiris at 2,637m with panoramic views of the entire region"
-      },
-      {
-        id: "birdwatch-virgin",
-        name: "Bird Watch [Virgin Earth]",
-        locations: "Virgin Earth Bird Sanctuary, Nilgiri forests",
-        locationsList: ["Virgin Earth Sanctuary", "Forest Trails", "Bird Watching Points", "Nature Walk", "Photography Spots", "Wildlife Spotting"],
-        duration: "Half Day",
-        price: "₹1,999",
-        image: "/images/birdwatch.jpg",
-        description: "Discover exotic bird species in the pristine Virgin Earth sanctuary with expert naturalist guides"
-      },
-      {
-        id: "rishikesh-thrill",
-        name: "Mukurthi Peak Trek",
-        locations: "Mukurthi National Park adventure",
-        locationsList: ["Mukurthi Park Entry", "Shola Forest", "Grasslands", "Peak Summit", "Wildlife Spotting"],
-        duration: "Full Day",
-        price: "₹2,999",
-        image: "/images/rishikesh.jpg",
-        description: "Challenging trek through Mukurthi National Park with chances to spot Nilgiri Tahr and exotic birds"
-      },
-      {
-        id: "spiti-valley",
-        name: "Avalanche Valley Trek",
-        locations: "Avalanche Lake and surrounding trails",
-        locationsList: ["Avalanche Lake", "Upper Bhavani", "Emerald Lake", "Forest Trails", "Trout Fishing"],
-        duration: "Full Day",
-        price: "₹2,499",
-        image: "/images/spiti.jpg",
-        description: "Scenic trek through the pristine Avalanche valley with crystal clear lakes and diverse wildlife"
-      },
-    ]
+    name: "Hotel Bookings",
+    description: "Premium hotel bookings in Ooty & Nilgiris",
+    image: "/images/hotel-bookings.jpg",
+    icon: "🏨",
+    packages: []
   },
   {
     id: "honeymoon-packages",

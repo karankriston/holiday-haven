@@ -52,7 +52,7 @@ const Footer = () => {
               <li><Link to="/category/ooty-tour-packages" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Ooty Tour Packages</Link></li>
               <li><Link to="/long-trips" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Long Trips</Link></li>
               <li><Link to="/category/honeymoon-packages" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Honeymoon Packages</Link></li>
-              <li><Link to="/category/hotels" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Hotels</Link></li>
+              <li><Link to="/category/hotels" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Hotel Bookings</Link></li>
             </ul>
           </div>
 
