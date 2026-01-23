@@ -98,29 +98,29 @@ export const categories: Category[] = [
       {
         id: "goa-carnival",
         name: "Airport Pickup",
-        locations: "Coimbatore Airport, Bangalore Airport, Chennai Airport, Mysore, Salem, Erode, Tirupur, Madurai",
-        locationsList: ["Coimbatore Airport", "Bangalore Airport", "Chennai Airport", "Mysore", "Salem", "Erode", "Tirupur", "Madurai"],
+        locations: "Major South India Airports",
+        locationsList: ["Coimbatore Airport", "Bangalore Airport", "Chennai Airport", "Kochi Airport", "Madurai Airport", "Trichy Airport", "Mangalore Airport", "Mysore Airport", "Calicut Airport", "Kannur Airport", "Tirupati Airport", "Hyderabad Airport", "Vizag Airport", "Vijayawada Airport", "Hubli Airport", "Belgaum Airport", "Tuticorin Airport", "Salem Airport", "Pondicherry Airport", "Rajahmundry Airport"],
         duration: "One Way",
         image: "/images/goa.jpg",
-        description: "Comfortable pickup service from major airports to Ooty with experienced drivers and well-maintained vehicles"
+        description: "We are ready to pick you up from the airport and provide a safe, comfortable ride to your destination."
       },
       {
         id: "andaman-paradise",
         name: "Railway Station Transfer",
-        locations: "Mettupalayam, Coimbatore, Salem, Mysore, Bangalore, Erode, Chennai, Madurai, Tiruppur",
-        locationsList: ["Mettupalayam", "Coimbatore Junction", "Salem Junction", "Mysore Junction", "Bangalore City", "Erode Junction", "Chennai Central", "Madurai Junction", "Tiruppur"],
+        locations: "Major South India Railway Stations",
+        locationsList: ["Mettupalayam", "Coimbatore Junction", "Chennai Central", "Bangalore City", "Mysore Junction", "Erode Junction", "Salem Junction", "Madurai Junction", "Tiruppur", "Trichy Junction", "Thanjavur Junction", "Kochi Junction", "Kozhikode", "Mangalore Central", "Hubli Junction", "Vijayawada Junction", "Tirupati", "Secunderabad", "Vizag", "Kannur"],
         duration: "One Way",
         image: "/images/andaman.jpg",
-        description: "Seamless transfers from railway stations to Ooty with punctual service and comfortable seating"
+        description: "We ensure timely pickups from railway stations with comfortable vehicles and experienced drivers for a hassle-free journey."
       },
       {
         id: "kerala-backwaters",
         name: "Round Trip Transfer",
-        locations: "Any City to Ooty and Back",
-        locationsList: ["Coimbatore", "Bangalore", "Chennai", "Mysore", "Kochi", "Madurai", "Salem", "Tirupur"],
+        locations: "Major South India Destinations",
+        locationsList: ["Coimbatore", "Bangalore", "Chennai", "Mysore", "Kochi", "Madurai", "Salem", "Tirupur", "Hyderabad", "Mangalore", "Pondicherry", "Kodaikanal", "Munnar", "Wayanad", "Coorg", "Hampi", "Gokarna", "Varkala", "Alleppey", "Thekkady"],
         duration: "Round Trip",
         image: "/images/kerala.jpg",
-        description: "Complete round trip transfer package with flexible scheduling and 24/7 availability"
+        description: "Enjoy a complete round trip experience to popular South India destinations with flexible scheduling and 24/7 availability."
       }
     ]
   },
