@@ -59,6 +59,10 @@ import trekAvalanche1 from "@/assets/gallery/trek-avalanche-1.jpg";
 import trekAvalanche2 from "@/assets/gallery/trek-avalanche-2.jpg";
 import trekAvalanche3 from "@/assets/gallery/trek-avalanche-3.jpg";
 import trekAvalanche4 from "@/assets/gallery/trek-avalanche-4.jpg";
+import birdwatch1 from "@/assets/gallery/birdwatch-1.jpg";
+import birdwatch2 from "@/assets/gallery/birdwatch-2.jpg";
+import birdwatch3 from "@/assets/gallery/birdwatch-3.jpg";
+import birdwatch4 from "@/assets/gallery/birdwatch-4.jpg";
 
 import bannerHillstations from "@/assets/banner-hillstations.jpg";
 import bannerPickup from "@/assets/banner-pickup.jpg";
@@ -97,7 +101,7 @@ const packageGallery: Record<string, string[]> = {
   "pykara": [pykara1, pykara2, pykara3, pykara4],
   "avalanche": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
   "kodanadu": [kodanadu1, kodanadu2, kodanadu3, kodanadu4],
-  "birdwatch-virgin-earth-ooty": [trekMukurthi2, trekDoddabetta2, trekAvalanche2, pykara3],
+  "birdwatch-virgin-earth-ooty": [birdwatch1, birdwatch2, birdwatch3, birdwatch4],
   // Pickup & Drop - reuse scenic images
   "goa-carnival": [ootyDelight1, coonoor1, pykara1, kodanadu1],
   "andaman-paradise": [coonoor1, ootyDelight1, pykara1, kodanadu1],
