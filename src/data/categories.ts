@@ -252,7 +252,7 @@ export const categories: Category[] = [
     icon: "💑",
     packages: [
       {
-        id: "char-dham",
+        id: "ooty-honeymoon-package",
         name: "Romantic Ooty Escape",
         locations: "Ooty, Coonoor romantic spots",
         locationsList: ["Rose Garden", "Botanical Garden", "Ooty Lake", "Boat House", "Dolphin's Nose", "Lamb's Rock"],
@@ -261,7 +261,7 @@ export const categories: Category[] = [
         description: "Perfect honeymoon package with romantic stays, candlelight dinners, and scenic excursions"
       },
       {
-        id: "vaishno-devi",
+        id: "coorg-ooty-trips",
         name: "Coorg & Ooty Romance",
         locations: "Coorg, Mysore, Madikeri and Ooty combined tour",
         locationsList: ["Abbey Falls", "Raja's Seat", "Coffee Plantations", "Ooty Lake", "Rose Garden", "Tea Estates", "Mysore", "Madikeri"],
@@ -270,7 +270,7 @@ export const categories: Category[] = [
         description: "Romantic journey through the coffee estates of Coorg and tea gardens of Ooty"
       },
       {
-        id: "tirupati-darshan",
+        id: "kerala-honeymoon-trips",
         name: "Kerala Honeymoon Special",
         locations: "Kerala backwaters and hills",
         locationsList: ["Munnar", "Thekkady", "Alleppey", "Kumarakom", "Houseboat Stay", "Ayurveda Spa"],
@@ -279,7 +279,7 @@ export const categories: Category[] = [
         description: "Luxurious Kerala honeymoon with houseboat stays, spa treatments, and romantic hill station visits"
       },
       {
-        id: "amarnath-yatra",
+        id: "south-india-tour",
         name: "South India Romantic Tour",
         locations: "Ooty, Kodaikanal, Munnar",
         locationsList: ["Ooty", "Kodaikanal", "Munnar", "Alleppey", "Romantic Stays", "Private Tours"],
@@ -288,7 +288,7 @@ export const categories: Category[] = [
         description: "Grand South India honeymoon covering the most romantic destinations with luxury accommodations"
       },
       {
-        id: "south-jyotirlinga",
+        id: "budget-honeymoon-package",
         name: "Budget Honeymoon Package",
         locations: "Ooty romantic essentials",
         locationsList: ["Ooty Lake", "Botanical Garden", "Rose Garden", "Doddabetta", "Pine Forest"],
