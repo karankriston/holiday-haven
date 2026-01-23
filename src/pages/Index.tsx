@@ -19,7 +19,7 @@ import ootyCoimbatoreImg from "@/assets/ooty-coimbatore.jpg";
 
 const categoryImages: Record<string, string> = {
   "ooty-tour-packages": ootyTourImg,
-  "pick-up-drop": pickupDropImg,
+  "ooty-cabs-pick-up-drop": pickupDropImg,
   "south-serenity-tours": southSerenityImg,
   "ooty-toy-train-ride": toyTrainImg,
   "hotels": treksAdventureImg,

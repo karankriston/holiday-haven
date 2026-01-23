@@ -102,7 +102,7 @@ const packageGallery: Record<string, string[]> = {
 
 const categoryBanners: Record<string, string> = {
   "ooty-tour-packages": bannerHillstations,
-  "pick-up-drop": bannerPickup,
+  "ooty-cabs-pick-up-drop": bannerPickup,
   "south-serenity-tours": bannerSouth,
   "ooty-toy-train-ride": bannerToytrain,
   "hotels": bannerAdventure,

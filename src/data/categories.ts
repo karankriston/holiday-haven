@@ -89,7 +89,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: "pick-up-drop",
+    id: "ooty-cabs-pick-up-drop",
     name: "Pick up & Drop",
     description: "Comfortable transfers to your destination. Additional charges may apply based on pickup location.",
     image: "/images/beach.jpg",
