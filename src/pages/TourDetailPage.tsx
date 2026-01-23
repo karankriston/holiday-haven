@@ -192,7 +192,7 @@ const TourDetailPage = () => {
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2">
             Tour <span className="text-gradient-primary">Gallery</span>
           </h2>
-          <p className="text-muted-foreground text-sm mb-6 italic">
+          <p className="text-muted-foreground text-sm mb-6">
             ✨ These images are thoughtfully crafted using AI, inspired by the real beauty of each destination.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
