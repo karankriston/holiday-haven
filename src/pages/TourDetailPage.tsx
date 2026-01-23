@@ -95,7 +95,7 @@ const packageGallery: Record<string, string[]> = {
   "ooty": [ootyDelight1, ootyDelight2, ootyDelight3, ootyDelight4],
   "coonoor": [coonoor1, coonoor2, coonoor3, coonoor4],
   "pykara": [pykara1, pykara2, pykara3, pykara4],
-  "coorg-adventure": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
+  "avalanche": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
   "kodanadu": [kodanadu1, kodanadu2, kodanadu3, kodanadu4],
   "birdwatch-virgin-earth-ooty": [trekMukurthi2, trekDoddabetta2, trekAvalanche2, pykara3],
   // Pickup & Drop - reuse scenic images
