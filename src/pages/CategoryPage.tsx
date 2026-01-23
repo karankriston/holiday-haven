@@ -130,7 +130,7 @@ const CategoryPage = () => {
 
   const bannerImage = categoryBanners[category.id] || bannerHillstations;
   const isToyTrain = category.id === "ooty-toy-train-ride";
-  const isPickupDrop = category.id === "pick-up-drop";
+  const isPickupDrop = category.id === "ooty-cabs-pick-up-drop";
 
   return (
     <div className="min-h-screen bg-background animate-page-enter">
@@ -271,7 +271,11 @@ const CategoryPage = () => {
           <div className="container mx-auto">
             <div className="mb-10">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-3">
-                Available <span className="text-gradient-primary">{isPickupDrop ? 'Packages' : 'Tour Packages'}</span>
+                {isPickupDrop ? (
+                  <>Pickup <span className="text-gradient-primary">Locations</span></>
+                ) : (
+                  <>Available <span className="text-gradient-primary">Tour Packages</span></>
+                )}
               </h2>
               <p className="text-muted-foreground">
                 Choose from our carefully curated {category.name.toLowerCase()}
@@ -296,9 +300,6 @@ const CategoryPage = () => {
                             <li key={idx} className="flex items-center gap-1.5 text-sm text-muted-foreground"><span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />{location}</li>
                           ))}
                         </ul>
-                        {pkg.id === "kerala-backwaters" && (
-                          <p className="mt-3 text-sm text-primary italic">We offer comfortable and reliable round-trip tour services across South India.</p>
-                        )}
                       </div>
                     </div>
                     {/* CTA Buttons - Similar to reference image */}
