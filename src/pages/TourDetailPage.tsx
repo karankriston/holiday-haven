@@ -67,6 +67,28 @@ import bannerToytrain from "@/assets/banner-toytrain.jpg";
 import bannerAdventure from "@/assets/banner-adventure.jpg";
 import bannerHoneymoon from "@/assets/banner-honeymoon.jpg";
 
+// Honeymoon gallery images
+import honeymoonOoty1 from "@/assets/gallery/honeymoon-ooty-1.jpg";
+import honeymoonOoty2 from "@/assets/gallery/honeymoon-ooty-2.jpg";
+import honeymoonOoty3 from "@/assets/gallery/honeymoon-ooty-3.jpg";
+import honeymoonOoty4 from "@/assets/gallery/honeymoon-ooty-4.jpg";
+import honeymoonCoorg1 from "@/assets/gallery/honeymoon-coorg-1.jpg";
+import honeymoonCoorg2 from "@/assets/gallery/honeymoon-coorg-2.jpg";
+import honeymoonCoorg3 from "@/assets/gallery/honeymoon-coorg-3.jpg";
+import honeymoonCoorg4 from "@/assets/gallery/honeymoon-coorg-4.jpg";
+import honeymoonKerala1 from "@/assets/gallery/honeymoon-kerala-1.jpg";
+import honeymoonKerala2 from "@/assets/gallery/honeymoon-kerala-2.jpg";
+import honeymoonKerala3 from "@/assets/gallery/honeymoon-kerala-3.jpg";
+import honeymoonKerala4 from "@/assets/gallery/honeymoon-kerala-4.jpg";
+import honeymoonSouth1 from "@/assets/gallery/honeymoon-south-1.jpg";
+import honeymoonSouth2 from "@/assets/gallery/honeymoon-south-2.jpg";
+import honeymoonSouth3 from "@/assets/gallery/honeymoon-south-3.jpg";
+import honeymoonSouth4 from "@/assets/gallery/honeymoon-south-4.jpg";
+import honeymoonBudget1 from "@/assets/gallery/honeymoon-budget-1.jpg";
+import honeymoonBudget2 from "@/assets/gallery/honeymoon-budget-2.jpg";
+import honeymoonBudget3 from "@/assets/gallery/honeymoon-budget-3.jpg";
+import honeymoonBudget4 from "@/assets/gallery/honeymoon-budget-4.jpg";
+
 // Gallery images mapping - 4 images per package
 const packageGallery: Record<string, string[]> = {
   // Ooty Tour Packages
@@ -91,12 +113,12 @@ const packageGallery: Record<string, string[]> = {
   "ladakh-expedition": [trekDoddabetta1, trekDoddabetta2, trekDoddabetta3, trekDoddabetta4],
   "rishikesh-thrill": [trekMukurthi1, trekMukurthi2, trekMukurthi3, trekMukurthi4],
   "spiti-valley": [trekAvalanche1, trekAvalanche2, trekAvalanche3, trekAvalanche4],
-  // Honeymoon - using scenic images
-  "char-dham": [ootyDelight4, ootyDelight3, coonoor2, coonoor3],
-  "vaishno-devi": [kodanadu2, kodanadu1, karnataka3, coonoor4],
-  "tirupati-darshan": [kerala2, andhra1, kerala1, kerala3],
-  "amarnath-yatra": [southIndia4, kodanadu1, kerala2, kerala1],
-  "south-jyotirlinga": [ootyDelight3, ootyDelight4, coonoor3, pykara4],
+  // Honeymoon
+  "ooty-honeymoon-package": [honeymoonOoty1, honeymoonOoty2, honeymoonOoty3, honeymoonOoty4],
+  "coorg-ooty-trips": [honeymoonCoorg1, honeymoonCoorg2, honeymoonCoorg3, honeymoonCoorg4],
+  "kerala-honeymoon-trips": [honeymoonKerala1, honeymoonKerala2, honeymoonKerala3, honeymoonKerala4],
+  "south-india-tour": [honeymoonSouth1, honeymoonSouth2, honeymoonSouth3, honeymoonSouth4],
+  "budget-honeymoon-package": [honeymoonBudget1, honeymoonBudget2, honeymoonBudget3, honeymoonBudget4],
 };
 
 const categoryBanners: Record<string, string> = {

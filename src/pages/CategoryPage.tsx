@@ -46,11 +46,11 @@ import nightSafariImg from "@/assets/night-safari.jpg";
 import multiAdventureImg from "@/assets/multi-adventure.jpg";
 
 // Import Honeymoon images
-import romanticOotyImg from "@/assets/romantic-ooty.jpg";
-import coorgRomanceImg from "@/assets/coorg-romance.jpg";
-import keralaHoneymoonImg from "@/assets/kerala-honeymoon.jpg";
-import southHoneymoonImg from "@/assets/south-honeymoon.jpg";
-import budgetHoneymoonImg from "@/assets/budget-honeymoon.jpg";
+import honeymoonOotyImg from "@/assets/honeymoon-ooty.jpg";
+import honeymoonCoorgImg from "@/assets/honeymoon-coorg.jpg";
+import honeymoonKeralaImg from "@/assets/honeymoon-kerala.jpg";
+import honeymoonSouthImg from "@/assets/honeymoon-southindia.jpg";
+import honeymoonBudgetImg from "@/assets/honeymoon-budget.jpg";
 
 const categoryBanners: Record<string, string> = {
   "ooty-tour-packages": bannerHillstations,
@@ -90,11 +90,11 @@ const packageImages: Record<string, string> = {
   "meghalaya-caves": nightSafariImg,
   "sikkim-adventure": multiAdventureImg,
   // Honeymoon
-  "char-dham": romanticOotyImg,
-  "vaishno-devi": coorgRomanceImg,
-  "tirupati-darshan": keralaHoneymoonImg,
-  "amarnath-yatra": southHoneymoonImg,
-  "south-jyotirlinga": budgetHoneymoonImg,
+  "ooty-honeymoon-package": honeymoonOotyImg,
+  "coorg-ooty-trips": honeymoonCoorgImg,
+  "kerala-honeymoon-trips": honeymoonKeralaImg,
+  "south-india-tour": honeymoonSouthImg,
+  "budget-honeymoon-package": honeymoonBudgetImg,
 };
 
 const CategoryPage = () => {
