@@ -57,7 +57,7 @@ export const categories: Category[] = [
         description: "Experience the natural wonders of Pykara with stunning waterfalls, boat rides, and adventure activities in the Nilgiris"
       },
       {
-        id: "coorg-adventure",
+        id: "avalanche",
         name: "Avalanche Wilderness Retreat",
         locations: "Cairn Hill Reservoir, Thoda Museum, Emerald Lake, Avalanche Dam, Avalanche Jeep Ride",
         locationsList: ["Cairn Hill Reservoir", "Thoda Museum", "Emerald Lake", "Avalanche Dam", "Avalanche Jeep Ride [Additional Cost]"],
