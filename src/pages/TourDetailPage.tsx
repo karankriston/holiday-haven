@@ -79,6 +79,14 @@ import bannerAvalanche from "@/assets/banner-avalanche.jpg";
 import bannerKodanadu from "@/assets/banner-kodanadu.jpg";
 import bannerBirdwatch from "@/assets/banner-birdwatch.jpg";
 
+// Package-specific banners for South Serenity tours
+import bannerKeralaBackwaters from "@/assets/banner-kerala-backwaters.jpg";
+import bannerTamilTemple from "@/assets/banner-tamil-temple.jpg";
+import bannerKarnatakaHeritage from "@/assets/banner-karnataka-heritage.jpg";
+import bannerAndhraSpiritualBanner from "@/assets/banner-andhra-spiritual.jpg";
+import bannerKeralaCoastal from "@/assets/banner-kerala-coastal.jpg";
+import bannerSouthComplete from "@/assets/banner-south-complete.jpg";
+
 // Honeymoon gallery images
 import honeymoonOoty1 from "@/assets/gallery/honeymoon-ooty-1.jpg";
 import honeymoonOoty2 from "@/assets/gallery/honeymoon-ooty-2.jpg";
@@ -144,12 +152,20 @@ const categoryBanners: Record<string, string> = {
 
 // Package-specific banners (override category banners)
 const packageBanners: Record<string, string> = {
+  // Ooty Tour Packages
   "ooty": bannerOotyDelight,
   "coonoor": bannerCoonoor,
   "pykara": bannerPykara,
   "avalanche": bannerAvalanche,
   "kodanadu": bannerKodanadu,
   "birdwatch-virgin-earth-ooty": bannerBirdwatch,
+  // South Serenity Tours
+  "kerala-backwaters-bliss": bannerKeralaBackwaters,
+  "tamil-nadu-temple-trail": bannerTamilTemple,
+  "karnataka-heritage": bannerKarnatakaHeritage,
+  "andhra-spiritual-journey": bannerAndhraSpiritualBanner,
+  "kerala-coastal-paradise": bannerKeralaCoastal,
+  "south-temple": bannerSouthComplete,
 };
 
 const TourDetailPage = () => {
