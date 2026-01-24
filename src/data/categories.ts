@@ -298,7 +298,7 @@ export const longTrips = [
     duration: "Half Day",
     price: "₹2,499",
     image: "/images/ooty-mettupalayam.jpg",
-    description: "Scenic drive through 36 hairpin bends from Ooty to Mettupalayam with tea garden views"
+    description: "Scenic drive through 14 hairpin bends from Ooty to Mettupalayam with tea garden views"
   },
   {
     id: "ooty-chennai",
