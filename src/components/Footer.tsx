@@ -48,7 +48,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-serif font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><Link to="/" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/" state={{ fromFooter: true, scrollTo: "hero" }} className="text-primary-foreground/70 hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/category/ooty-tour-packages" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Ooty Tour Packages</Link></li>
               <li><Link to="/long-trips" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Long Trips</Link></li>
               <li><Link to="/category/honeymoon-packages" state={{ fromFooter: true, scrollToTop: true }} className="text-primary-foreground/70 hover:text-primary transition-colors">Honeymoon Packages</Link></li>
