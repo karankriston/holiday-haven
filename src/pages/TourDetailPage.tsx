@@ -71,6 +71,14 @@ import bannerToytrain from "@/assets/banner-toytrain.jpg";
 import bannerAdventure from "@/assets/banner-adventure.jpg";
 import bannerHoneymoon from "@/assets/banner-honeymoon.jpg";
 
+// Package-specific banners for Ooty tours
+import bannerOotyDelight from "@/assets/banner-ooty-delight.jpg";
+import bannerCoonoor from "@/assets/banner-coonoor.jpg";
+import bannerPykara from "@/assets/banner-pykara.jpg";
+import bannerAvalanche from "@/assets/banner-avalanche.jpg";
+import bannerKodanadu from "@/assets/banner-kodanadu.jpg";
+import bannerBirdwatch from "@/assets/banner-birdwatch.jpg";
+
 // Honeymoon gallery images
 import honeymoonOoty1 from "@/assets/gallery/honeymoon-ooty-1.jpg";
 import honeymoonOoty2 from "@/assets/gallery/honeymoon-ooty-2.jpg";
@@ -134,6 +142,16 @@ const categoryBanners: Record<string, string> = {
   "honeymoon-packages": bannerHoneymoon,
 };
 
+// Package-specific banners (override category banners)
+const packageBanners: Record<string, string> = {
+  "ooty": bannerOotyDelight,
+  "coonoor": bannerCoonoor,
+  "pykara": bannerPykara,
+  "avalanche": bannerAvalanche,
+  "kodanadu": bannerKodanadu,
+  "birdwatch-virgin-earth-ooty": bannerBirdwatch,
+};
+
 const TourDetailPage = () => {
   const { categoryId, packageId } = useParams();
   const navigate = useNavigate();
@@ -162,7 +180,8 @@ const TourDetailPage = () => {
   }
 
   const galleryImages = packageGallery[pkg.id] || [bannerHillstations, bannerPickup, bannerSouth, bannerAdventure];
-  const bannerImage = categoryBanners[category.id] || bannerHillstations;
+  // Use package-specific banner if available, otherwise fall back to category banner
+  const bannerImage = packageBanners[pkg.id] || categoryBanners[category.id] || bannerHillstations;
 
   return (
     <div className="min-h-screen bg-background animate-page-enter">
