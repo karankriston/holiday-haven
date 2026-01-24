@@ -8,6 +8,19 @@ interface CategoryCardProps {
   categoryImages: Record<string, string>;
 }
 
+const getCTAText = (categoryId: string): string => {
+  switch (categoryId) {
+    case "ooty-cabs-pick-up-drop":
+      return "Book Now";
+    case "ooty-toy-train-ride":
+      return "Ride Now";
+    case "hotels":
+      return "Book Now";
+    default:
+      return "Explore Tours";
+  }
+};
+
 const CategoryCard = ({ category, index, categoryImages }: CategoryCardProps) => {
   return (
     <Link
@@ -37,7 +50,7 @@ const CategoryCard = ({ category, index, categoryImages }: CategoryCardProps) =>
           {category.description}
         </p>
         <div className="flex items-center text-primary font-medium text-sm sm:text-sm group-hover:gap-3 gap-2 transition-all">
-          <span>Explore Tours</span>
+          <span>{getCTAText(category.id)}</span>
           <ArrowRight className="w-4 h-4 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
