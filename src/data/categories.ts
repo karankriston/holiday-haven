@@ -31,7 +31,7 @@ export const categories: Category[] = [
         name: "Ooty Delight Tour",
         locations: "Doddabetta Peak, Tea Park, Ooty Lake, Botanical Garden, Karnataka Garden, Tea Factory, Eagle Adventures Park, Chocolate Museum",
         locationsList: ["Doddabetta Peak", "Tea Park", "Ooty Lake [Boating]", "Botanical Garden", "Karnataka Garden", "Tea Factory", "Eagle Adventures Park", "Chocolate Museum"],
-        duration: "Full Day",
+        duration: "9:30 AM - 5:30 PM",
         price: "₹2,500",
         image: "/images/ooty.jpg",
         description: "Experience the Queen of Hill Stations with sprawling tea gardens, botanical wonders, and scenic railway journeys through the Nilgiris"
@@ -41,7 +41,7 @@ export const categories: Category[] = [
         name: "Coonoor Scenic Experience",
         locations: "Lamb's Rock, Dolphin's Nose, Sims Park, Tea Garden, Madras Regimental Museum, Strawberry Farm",
         locationsList: ["Lamb's Rock", "Dolphin's Nose", "Sims Park", "Tea Garden", "Madras Regimental Museum", "Strawberry Farm"],
-        duration: "Full Day",
+        duration: "9:30 AM - 5:30 PM",
         price: "₹2,500",
         image: "/images/kodaikanal.jpg",
         description: "Discover the scenic beauty of Coonoor with pristine viewpoints, lush gardens, and historic colonial architecture"
@@ -51,7 +51,7 @@ export const categories: Category[] = [
         name: "Pykara Nature And Adventure",
         locations: "Pykara Falls, Pykara Lake, Shooting Spot, Pine Forest, Tree Park, Wenlock Downs, Mudhumalai Trek",
         locationsList: ["Pykara Falls", "Pykara Lake [Boating]", "Shooting Spot (9th Miles)", "Pine Forest", "Tree Park", "Wenlock Downs", "Mudhumalai Trek [₹1000]"],
-        duration: "Full Day",
+        duration: "9:30 AM - 5:30 PM",
         price: "₹2,500",
         image: "/images/munnar.jpg",
         description: "Experience the natural wonders of Pykara with stunning waterfalls, boat rides, and adventure activities in the Nilgiris"
@@ -61,7 +61,7 @@ export const categories: Category[] = [
         name: "Avalanche Wilderness Retreat",
         locations: "Cairn Hill Reservoir, Thoda Museum, Emerald Lake, Avalanche Dam, Avalanche Jeep Ride",
         locationsList: ["Cairn Hill Reservoir", "Thoda Museum", "Emerald Lake", "Avalanche Dam", "Avalanche Jeep Ride [Additional Cost]"],
-        duration: "Full Day",
+        duration: "9:30 AM - 5:30 PM",
         price: "₹2,700",
         image: "/images/coorg.jpg",
         description: "Explore the pristine wilderness of Avalanche with crystal clear lakes, shola forests, and untouched natural beauty"
@@ -71,7 +71,7 @@ export const categories: Category[] = [
         name: "Kodanadu Highlight Experience",
         locations: "Kodanadu Viewpoint, Catherine Falls, Kodanad Estates, Pandian Park, Rangaswamy Peak",
         locationsList: ["Kodanadu Viewpoint", "Catherine Falls", "Kodanad Estates", "Pandian Park", "Rangaswamy Peak"],
-        duration: "Full Day",
+        duration: "9:30 AM - 5:30 PM",
         price: "₹3,000",
         image: "/images/shimla.jpg",
         description: "Experience the breathtaking views of Kodanadu with elephant encounters, tea plantation walks, and stunning valley vistas"
@@ -81,7 +81,7 @@ export const categories: Category[] = [
         name: "Bird Watch [Virgin Earth]",
         locations: "Virgin Earth Bird Sanctuary, Nilgiri forests",
         locationsList: ["Virgin Earth Sanctuary", "Forest Trails", "Bird Watching Points", "Nature Walk", "Photography Spots", "Wildlife Spotting"],
-        duration: "Full Day",
+        duration: "9:30 AM - 5:30 PM",
         price: "₹2,599",
         image: "/images/birdwatch.jpg",
         description: "Discover exotic bird species in the pristine Virgin Earth sanctuary with expert naturalist guides"
