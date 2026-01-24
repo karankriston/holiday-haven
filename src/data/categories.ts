@@ -22,7 +22,7 @@ export const categories: Category[] = [
   {
     id: "ooty-tour-packages",
     name: "Ooty Tour Packages",
-    description: "Escape to the misty mountains and serene valleys",
+    description: "Discover misty peaks, lush tea gardens and serene valleys",
     image: "/images/hill-station.jpg",
     icon: "🏔️",
     packages: [
@@ -91,7 +91,7 @@ export const categories: Category[] = [
   {
     id: "ooty-cabs-pick-up-drop",
     name: "Pick up & Drop",
-    description: "Comfortable transfers to your destination. Additional charges may apply based on pickup location.",
+    description: "Safe and comfortable transfers from airports and railway stations",
     image: "/images/beach.jpg",
     icon: "🚗",
     packages: [
@@ -127,7 +127,7 @@ export const categories: Category[] = [
   {
     id: "south-serenity-tours",
     name: "South Serenity Tours",
-    description: "Peaceful escapes through South India",
+    description: "Explore peaceful temples, backwaters and heritage across South India",
     image: "/images/heritage.jpg",
     icon: "🌿",
     packages: [
@@ -190,7 +190,7 @@ export const categories: Category[] = [
   {
     id: "ooty-toy-train-ride",
     name: "Ooty Toy Train Ride",
-    description: "Heritage railway experience through the Nilgiris",
+    description: "Scenic heritage railway journey through stunning Nilgiri mountain tunnels",
     image: "/images/wildlife.jpg",
     icon: "🚂",
     packages: []
@@ -198,7 +198,7 @@ export const categories: Category[] = [
   {
     id: "hotels",
     name: "Hotel Bookings",
-    description: "Premium hotel bookings in Ooty & Nilgiris",
+    description: "Handpicked premium stays and resorts in Ooty and Nilgiris",
     image: "/images/hotel-bookings.jpg",
     icon: "🏨",
     packages: []
@@ -206,7 +206,7 @@ export const categories: Category[] = [
   {
     id: "honeymoon-packages",
     name: "Honeymoon Packages",
-    description: "Romantic getaways for couples",
+    description: "Unforgettable romantic escapes crafted perfectly for newlywed couples",
     image: "/images/pilgrimage.jpg",
     icon: "💑",
     packages: [
