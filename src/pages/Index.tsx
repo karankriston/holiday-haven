@@ -10,7 +10,7 @@ import heroImage from "@/assets/hero-travel.jpg";
 import ootyTourImg from "@/assets/ooty-tour.jpg";
 import pickupDropImg from "@/assets/pickup-drop.jpg";
 import southSerenityImg from "@/assets/south-serenity.jpg";
-import toyTrainImg from "@/assets/toy-train.jpg";
+import toyTrainImg from "@/assets/toy-train-enhanced.jpg";
 import hotelBookingsImg from "@/assets/hotel-bookings.jpg";
 import honeymoonImg from "@/assets/honeymoon.jpg";
 import ootyBangaloreImg from "@/assets/ooty-bangalore.jpg";
