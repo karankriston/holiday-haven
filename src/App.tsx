@@ -21,8 +21,27 @@ const ScrollToTop = () => {
   const { pathname, state } = useLocation();
 
   useLayoutEffect(() => {
-    // Check for long trips scroll position
+    // Save footer navigation state for back navigation
+    if (state?.fromFooter) {
+      sessionStorage.setItem('returnToFooter', 'true');
+    }
+
+    // Check if returning to home page
     if (pathname === '/') {
+      // Check if returning from footer link
+      const returnToFooter = sessionStorage.getItem('returnToFooter');
+      if (returnToFooter) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'instant'
+          });
+          sessionStorage.removeItem('returnToFooter');
+        }, 100);
+        return;
+      }
+
+      // Check for long trips scroll position
       const savedScrollPosition = sessionStorage.getItem('longTripsScrollPosition');
       if (savedScrollPosition) {
         setTimeout(() => {
@@ -41,9 +60,14 @@ const ScrollToTop = () => {
           element.scrollIntoView({ behavior: 'instant', block: 'start' });
         }, 100);
       }
-    } else {
-      // Scroll to top for all page navigations
-      window.scrollTo(0, 0);
+    } else if (pathname !== '/') {
+      // For Popular Tours footer links - scroll to top on forward navigation
+      if (state?.scrollToTop) {
+        window.scrollTo(0, 0);
+      } else {
+        // Only scroll to top for non-home pages on new navigations
+        window.scrollTo(0, 0);
+      }
     }
   }, [pathname, state]);
 
