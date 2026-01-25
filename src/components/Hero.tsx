@@ -6,7 +6,7 @@ interface HeroProps {
 }
 
 const Hero = ({ heroImage }: HeroProps) => {
-  const phoneNumber = "918667820589";
+  const phoneNumber = "917639919694";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
 
   const scrollToCategories = () => {

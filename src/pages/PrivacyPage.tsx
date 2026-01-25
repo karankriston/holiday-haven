@@ -131,8 +131,8 @@ const PrivacyPage = () => {
                 <p className="font-semibold text-foreground">OotyEscapes</p>
                 <p className="flex items-center gap-2 text-muted-foreground">
                   <span>📞 Phone / WhatsApp:</span>
-                  <a href="tel:+918667820589" className="text-primary hover:underline">
-                    +91 86678 20589
+                  <a href="tel:+917639919694" className="text-primary hover:underline">
+                    +91 76399 19694
                   </a>
                 </p>
                 <p className="flex items-center gap-2 text-muted-foreground">

@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import logoImg from "@/assets/logo.png";
 
 const Footer = () => {
-  const phoneNumber = "918667820589";
+  const phoneNumber = "917639919694";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
 
   return (
@@ -81,7 +81,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a href={`tel:+${phoneNumber}`} className="text-primary-foreground/70 hover:text-primary transition-colors">
-                  +91 86678 20589
+                  +91 76399 19694
                 </a>
               </li>
               <li className="flex items-center gap-3">

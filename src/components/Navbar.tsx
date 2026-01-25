@@ -6,7 +6,7 @@ import logoImg from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = "+91 8667820589";
+  const phoneNumber = "+91 7639919694";
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -100,7 +100,7 @@ const Navbar = () => {
 
           {/* Phone Button - Right */}
           <div className="hidden md:block">
-            <a href="tel:+918667820589">
+            <a href="tel:+917639919694">
               <Button variant="default" size="lg" className="flex items-center gap-2 rounded-sm px-5 py-2.5">
                 <Phone className="w-4 h-4" />
                 {phoneNumber}
@@ -149,7 +149,7 @@ const Navbar = () => {
               >
                 Reviews
               </a>
-              <a href="tel:+918667820589">
+              <a href="tel:+917639919694">
                 <Button variant="default" className="w-full flex items-center gap-2 rounded-sm">
                   <Phone className="w-4 h-4" />
                   {phoneNumber}

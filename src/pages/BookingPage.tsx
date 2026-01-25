@@ -26,7 +26,7 @@ const BookingPage = () => {
   const { categoryId, packageId } = useParams();
   const category = categories.find((c) => c.id === categoryId);
   const pkg = category?.packages.find((p) => p.id === packageId);
-  const phoneNumber = "918667820589";
+  const phoneNumber = "917639919694";
   const whatsappMessage = encodeURIComponent(`Hi Raghul, Your packages look interesting—I'm excited to know more about them.`);
 
   useEffect(() => {

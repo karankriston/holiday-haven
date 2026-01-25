@@ -174,7 +174,7 @@ const TourDetailPage = () => {
   const location = useLocation();
   const category = categories.find((c) => c.id === categoryId);
   const pkg = category?.packages.find((p) => p.id === packageId);
-  const phoneNumber = "918667820589";
+  const phoneNumber = "917639919694";
   const whatsappMessage = encodeURIComponent(`Hi Raghul, I'm interested in the ${pkg?.name || 'tour package'}. Please share more details.`);
 
   useEffect(() => {
