@@ -74,22 +74,19 @@ const ExploreIndiaPage = () => {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center mt-16">
         <div className="absolute inset-0">
           <img src={exploreIndiaBanner} alt="Explore India with OotyEscapes" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-foreground/20" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/80 backdrop-blur-sm rounded-full mb-4">
             <MapPin className="w-4 h-4 text-primary-foreground" />
             <span className="text-sm font-medium text-primary-foreground">15+ Destinations</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground mb-3">
-            Explore India with <span className="text-primary">OotyEscapes</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-lg mb-3">
+            Explore India with <span className="text-primary drop-shadow-md">OotyEscapes</span>
           </h1>
-          <p className="text-base sm:text-lg text-primary-foreground/90 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-white/95 drop-shadow-md max-w-2xl mx-auto">
             Your gateway to South India's most breathtaking destinations
           </p>
         </div>
-        {/* Decorative bottom wave */}
-        <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Destinations Section */}
