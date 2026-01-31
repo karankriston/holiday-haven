@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
+import ExploreIndiaBanner from "@/components/ExploreIndiaBanner";
 import LongTrips from "@/components/LongTrips";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
@@ -38,6 +39,7 @@ const Index = () => {
       <Navbar />
       <Hero heroImage={heroImage} />
       <Categories categoryImages={categoryImages} />
+      <ExploreIndiaBanner />
       <LongTrips tripImages={tripImages} />
       <Reviews />
       <Footer />
