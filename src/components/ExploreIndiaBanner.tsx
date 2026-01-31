@@ -100,18 +100,23 @@ const ExploreIndiaBanner = () => {
             </div>
 
             {/* Right Visual Section */}
-            <div className="lg:w-80 xl:w-96 relative min-h-[200px] lg:min-h-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent opacity-90" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-primary-foreground">
-                <div className="text-center">
-                  <div className="text-5xl sm:text-6xl font-serif font-bold mb-2">15+</div>
-                  <div className="text-lg font-medium mb-4">Destinations</div>
-                  <div className="w-16 h-0.5 bg-primary-foreground/50 mx-auto mb-4" />
-                  <div className="text-4xl sm:text-5xl font-serif font-bold mb-2">6</div>
-                  <div className="text-lg font-medium mb-4">Stay Types</div>
-                  <div className="w-16 h-0.5 bg-primary-foreground/50 mx-auto mb-4" />
-                  <div className="text-sm opacity-90">Customized Tours</div>
-                  <div className="text-sm opacity-90">Available</div>
+            <div className="lg:w-80 xl:w-96 relative">
+              <div className="bg-gradient-to-br from-primary via-secondary to-accent p-6 lg:absolute lg:inset-0 flex items-center justify-center">
+                <div className="flex flex-row lg:flex-col items-center justify-center gap-6 lg:gap-4 text-primary-foreground w-full">
+                  <div className="text-center flex-1 lg:flex-none">
+                    <div className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold">15+</div>
+                    <div className="text-sm lg:text-lg font-medium">Destinations</div>
+                  </div>
+                  <div className="w-px h-10 lg:w-16 lg:h-0.5 bg-primary-foreground/50" />
+                  <div className="text-center flex-1 lg:flex-none">
+                    <div className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold">6</div>
+                    <div className="text-sm lg:text-lg font-medium">Stay Types</div>
+                  </div>
+                  <div className="w-px h-10 lg:w-16 lg:h-0.5 bg-primary-foreground/50" />
+                  <div className="text-center flex-1 lg:flex-none">
+                    <div className="text-xs sm:text-sm opacity-90">Customized</div>
+                    <div className="text-xs sm:text-sm opacity-90">Tours Available</div>
+                  </div>
                 </div>
               </div>
             </div>
