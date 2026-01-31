@@ -1,9 +1,9 @@
-import { MapPin, Home, Phone, MessageCircle, ArrowLeft, Mountain, Waves, Building2, PartyPopper, Cake, Users } from "lucide-react";
-import { Link } from "react-router-dom";
+import { MapPin, Home, Phone, MessageCircle, Mountain, Waves, Building2, Cake, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import exploreIndiaBanner from "@/assets/explore-india-banner.jpg";
 
 const destinations = [
   { name: "ECR Beach Resort", type: "Beach" },
@@ -57,48 +57,63 @@ const stayOptions = [
 ];
 
 const ExploreIndiaPage = () => {
-  const whatsappNumber = "919876543210";
+  const whatsappNumber = "917639919694";
   const whatsappMessage = encodeURIComponent("Hi! I'm interested in exploring destinations with OotyEscapes. Please share more details.");
 
   return (
     <div className="min-h-screen bg-background animate-page-enter">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-x-1/2" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl translate-x-1/2" />
+      {/* Hero Section with Banner Image */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src={exploreIndiaBanner} 
+            alt="Explore South India" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/70" />
+        </div>
         
-        <div className="container mx-auto px-4 relative z-10">
-          <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6">
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
-          
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10 text-center pt-20">
+          <div className="max-w-3xl mx-auto">
+            <span className="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 border border-primary-foreground/20">
+              ✨ Beyond Ooty - Discover South India
+            </span>
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground mb-6 drop-shadow-lg">
               Explore India with{" "}
-              <span className="text-gradient-primary">OotyEscapes</span>
+              <span className="text-golden">OotyEscapes</span>
             </h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            
+            <p className="text-lg sm:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto drop-shadow-md">
               Your gateway to South India's most breathtaking destinations. From misty hill stations to pristine beaches, we craft journeys that create lifelong memories.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">
               <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="group">
+                <Button size="lg" className="group shadow-xl hover:shadow-2xl transition-shadow text-base px-8 py-6">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Chat on WhatsApp
                 </Button>
               </a>
-              <a href="tel:+919876543210">
-                <Button size="lg" variant="outline" className="group">
+              <a href="tel:+917639919694">
+                <Button size="lg" variant="heroOutline" className="group shadow-xl hover:shadow-2xl transition-shadow">
                   <Phone className="w-5 h-5 mr-2" />
-                  Call Us Now
+                  +91 76399 19694
                 </Button>
               </a>
             </div>
           </div>
+        </div>
+        
+        {/* Decorative bottom wave */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+            <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="hsl(var(--background))"/>
+          </svg>
         </div>
       </section>
 
@@ -197,10 +212,10 @@ const ExploreIndiaPage = () => {
                 WhatsApp Us
               </Button>
             </a>
-            <a href="tel:+919876543210">
+            <a href="tel:+917639919694">
               <Button size="lg" variant="heroOutline" className="group border-primary-foreground/50 hover:bg-primary-foreground/10">
                 <Phone className="w-5 h-5 mr-2" />
-                +91 98765 43210
+                +91 76399 19694
               </Button>
             </a>
           </div>
