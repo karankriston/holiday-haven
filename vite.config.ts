@@ -14,20 +14,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    // Prevent duplicate React instances
-    dedupe: ["react", "react-dom", "react/jsx-runtime"],
-  },
-  build: {
-    // Optimize for production
-    minify: "esbuild",
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "react-router-dom"],
-          ui: ["@radix-ui/react-dialog", "@radix-ui/react-tooltip", "@radix-ui/react-accordion"],
-        },
-      },
-    },
   },
 }));
