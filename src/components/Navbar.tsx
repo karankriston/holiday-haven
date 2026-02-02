@@ -60,9 +60,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoImg} alt="OotyEscapes Logo" className="w-7 h-7 object-contain" />
+            <img src={logoImg} alt="OotyEscape Logo" className="w-7 h-7 object-contain" />
             <span className="text-xl font-serif font-bold text-foreground">
-              Ooty<span className="text-primary">Escapes</span>
+              Ooty<span className="text-primary">Escape</span>
             </span>
           </Link>
 

@@ -33,7 +33,7 @@ const PrivacyPage = () => {
     {
       title: "3. Payment Information",
       content: [
-        "OotyEscapes does not collect or process any online payments through this website.",
+        "OotyEscape does not collect or process any online payments through this website.",
         "All payments are handled offline after direct communication with our team."
       ]
     },
@@ -41,7 +41,7 @@ const PrivacyPage = () => {
       title: "4. Data Protection",
       content: [
         "We take reasonable steps to protect your personal information from unauthorized access, misuse, or disclosure.",
-        "Your data is accessed only by authorized personnel of OotyEscapes."
+        "Your data is accessed only by authorized personnel of OotyEscape."
       ]
     },
     {
@@ -74,7 +74,7 @@ const PrivacyPage = () => {
     {
       title: "9. Changes to This Policy",
       content: [
-        "OotyEscapes may update this Privacy Policy at any time without prior notice. Changes will be updated on this page."
+        "OotyEscape may update this Privacy Policy at any time without prior notice. Changes will be updated on this page."
       ]
     }
   ];
@@ -91,7 +91,7 @@ const PrivacyPage = () => {
               Privacy Policy
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              At OotyEscapes, we respect your privacy and are committed to protecting any personal information you share with us. This Privacy Policy explains how we collect, use, and protect your information.
+              At OotyEscape, we respect your privacy and are committed to protecting any personal information you share with us. This Privacy Policy explains how we collect, use, and protect your information.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ const PrivacyPage = () => {
                 If you have any questions about this Privacy Policy, you can contact us at:
               </p>
               <div className="space-y-3">
-                <p className="font-semibold text-foreground">OotyEscapes</p>
+                <p className="font-semibold text-foreground">OotyEscape</p>
                 <p className="flex items-center gap-2 text-muted-foreground">
                   <span>📞 Phone / WhatsApp:</span>
                   <a href="tel:+917639919694" className="text-primary hover:underline">
