@@ -1,15 +1,16 @@
+import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 import logoImg from "@/assets/logo.png";
 
-const Footer = () => {
+const Footer = forwardRef<HTMLElement>((_, ref) => {
   const phoneNumber = "917639919694";
   const secondaryPhoneNumber = "918072360025";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
   const secondaryWhatsappMessage = encodeURIComponent("Hi, I'm interested in your tour packages. Please share more details.");
 
   return (
-    <footer id="footer" className="bg-foreground text-primary-foreground">
+    <footer ref={ref} id="footer" className="bg-foreground text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -154,6 +155,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;

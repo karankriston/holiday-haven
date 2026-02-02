@@ -1,9 +1,9 @@
 import { reviews } from "@/data/categories";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, forwardRef } from "react";
 import { Button } from "@/components/ui/button";
 
-const Reviews = () => {
+const Reviews = forwardRef<HTMLElement>((_, ref) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -37,7 +37,7 @@ const Reviews = () => {
   };
 
   return (
-    <section id="reviews" className="section-padding bg-muted/30">
+    <section ref={ref} id="reviews" className="section-padding bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
@@ -169,6 +169,8 @@ const Reviews = () => {
       </div>
     </section>
   );
-};
+});
+
+Reviews.displayName = "Reviews";
 
 export default Reviews;
