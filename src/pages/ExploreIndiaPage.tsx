@@ -71,41 +71,21 @@ const ExploreIndiaPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[380px] flex items-center justify-center mt-16 overflow-hidden">
-        {/* Background Image with Overlay */}
+      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center mt-16">
         <div className="absolute inset-0">
-          <img src={exploreIndiaBanner} alt="Explore India with OotyEscape" className="w-full h-full object-cover scale-105" />
-          {/* Elegant gradient overlay for text legibility */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
+          <img src={exploreIndiaBanner} alt="Explore India with OotyEscape" className="w-full h-full object-cover" />
         </div>
-        
-        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-md border border-white/30 rounded-full mb-6 shadow-xl">
-            <MapPin className="w-4 h-4 text-yellow-400" />
-            <span className="text-sm font-semibold text-white tracking-wide">15+ Destinations Across South India</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/80 backdrop-blur-sm rounded-full mb-4">
+            <MapPin className="w-4 h-4 text-primary-foreground" />
+            <span className="text-sm font-medium text-primary-foreground">15+ Destinations</span>
           </div>
-          
-          {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-4">
-            <span className="text-white drop-shadow-2xl">Explore India with</span>
-            <br className="hidden sm:block" />
-            <span className="text-yellow-400 drop-shadow-2xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-400 bg-clip-text text-transparent"> OotyEscape</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-lg mb-3">
+            Explore India with <span className="text-yellow-400 drop-shadow-md">OotyEscape</span>
           </h1>
-          
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/95 drop-shadow-lg max-w-3xl mx-auto font-light tracking-wide">
+          <p className="text-base sm:text-lg text-white/95 drop-shadow-md max-w-2xl mx-auto">
             Your gateway to South India's most breathtaking destinations
           </p>
-          
-          {/* Decorative line */}
-          <div className="mt-6 flex items-center justify-center gap-3">
-            <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-yellow-400/80" />
-            <div className="w-2 h-2 rounded-full bg-yellow-400" />
-            <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-yellow-400/80" />
-          </div>
         </div>
       </section>
 
