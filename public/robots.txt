@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://ootyescapes.com/sitemap.xml
+Sitemap: https://ootyescape.com/sitemap.xml
