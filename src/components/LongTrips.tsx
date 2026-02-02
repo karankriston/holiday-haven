@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { longTrips } from "@/data/categories";
@@ -8,7 +7,7 @@ interface LongTripsProps {
   tripImages: Record<string, string>;
 }
 
-const LongTrips = forwardRef<HTMLElement, LongTripsProps>(({ tripImages }, ref) => {
+const LongTrips = ({ tripImages }: LongTripsProps) => {
   const navigate = useNavigate();
   const phoneNumber = "917639919694";
   const whatsappMessage = encodeURIComponent("Hi Raghul, Your packages look interesting—I'm excited to know more about them.");
@@ -23,7 +22,7 @@ const LongTrips = forwardRef<HTMLElement, LongTripsProps>(({ tripImages }, ref) 
   const displayedTrips = longTrips.slice(0, 3);
 
   return (
-    <section ref={ref} id="long-trips" className="section-padding scroll-mt-16">
+    <section id="long-trips" className="section-padding scroll-mt-16">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
@@ -117,8 +116,6 @@ const LongTrips = forwardRef<HTMLElement, LongTripsProps>(({ tripImages }, ref) 
       </div>
     </section>
   );
-});
-
-LongTrips.displayName = "LongTrips";
+};
 
 export default LongTrips;
