@@ -11,7 +11,7 @@ const TermsPage = () => {
     {
       title: "1. Booking Process",
       content: [
-        "OotyEscape does not provide online booking or payment through the website.",
+        "OotyPlanners does not provide online booking or payment through the website.",
         "Customers must contact us directly via phone or WhatsApp to check availability and confirm bookings.",
         "Booking confirmation will be provided only after direct communication with our team."
       ]
@@ -36,7 +36,7 @@ const TermsPage = () => {
       title: "4. Changes to Itinerary",
       content: [
         "The itinerary may be changed due to weather conditions, road conditions, traffic, or other unavoidable situations.",
-        "OotyEscape reserves the right to modify or cancel any part of the tour for safety or operational reasons."
+        "OotyPlanners reserves the right to modify or cancel any part of the tour for safety or operational reasons."
       ]
     },
     {
@@ -52,7 +52,7 @@ const TermsPage = () => {
       title: "6. Customer Responsibilities",
       content: [
         "Guests must carry valid ID proof during the trip.",
-        "OotyEscape is not responsible for loss of personal belongings.",
+        "OotyPlanners is not responsible for loss of personal belongings.",
         "The customer shall be held liable for any damages to the vehicle's interior sustained during the duration of the trip."
       ]
     },
@@ -60,7 +60,7 @@ const TermsPage = () => {
       title: "7. Health & Safety",
       content: [
         "Guests are responsible for their own health and fitness to travel.",
-        "OotyEscape is not liable for any injury, accident, illness, or loss during the trip."
+        "OotyPlanners is not liable for any injury, accident, illness, or loss during the trip."
       ]
     },
     {
@@ -90,7 +90,7 @@ const TermsPage = () => {
     {
       title: "11. Force Majeure",
       content: [
-        "OotyEscape is not responsible for delays or cancellations due to natural calamities, landslides, strikes, government restrictions, or any events beyond our control."
+        "OotyPlanners is not responsible for delays or cancellations due to natural calamities, landslides, strikes, government restrictions, or any events beyond our control."
       ]
     },
     {
@@ -98,7 +98,7 @@ const TermsPage = () => {
       content: [
         "This website is for information purposes only.",
         "No bookings or payments are accepted directly through the website.",
-        "By contacting OotyEscape, you agree to these terms and conditions."
+        "By contacting OotyPlanners, you agree to these terms and conditions."
       ]
     },
     {
@@ -121,7 +121,7 @@ const TermsPage = () => {
               Terms & Conditions
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Welcome to OotyEscape. By using our website and contacting us for tour bookings, you agree to the following terms and conditions.
+              Welcome to OotyPlanners. By using our website and contacting us for tour bookings, you agree to the following terms and conditions.
             </p>
           </div>
 

@@ -60,7 +60,7 @@ const stayOptions = [
 
 const ExploreIndiaPage = () => {
   const phoneNumber = "917639919694";
-  const whatsappMessage = encodeURIComponent("Hi Raghul, I'm interested in exploring destinations with OotyEscape. Please share more details.");
+  const whatsappMessage = encodeURIComponent("Hi Raghul, I'm interested in exploring destinations with OotyPlanners. Please share more details.");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -81,7 +81,7 @@ const ExploreIndiaPage = () => {
             <span className="text-sm font-medium text-primary-foreground">15+ Destinations</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-lg mb-3">
-            Explore India with <span className="text-yellow-400 drop-shadow-md">OotyEscape</span>
+            Explore India with <span className="text-yellow-400 drop-shadow-md">OotyPlanners</span>
           </h1>
           <p className="text-base sm:text-lg text-white/95 drop-shadow-md max-w-2xl mx-auto">
             Your gateway to South India's most breathtaking destinations
