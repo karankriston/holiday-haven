@@ -71,19 +71,20 @@ const ExploreIndiaPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center mt-16">
+      <section className="relative h-[45vh] min-h-[320px] flex items-center justify-center mt-16">
         <div className="absolute inset-0">
-          <img src={exploreIndiaBanner} alt="Explore India with OotyEscape" className="w-full h-full object-cover" />
+          <img src={exploreIndiaBanner} alt="Explore India with OotyPlanners" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-transparent" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/80 backdrop-blur-sm rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/90 backdrop-blur-sm rounded-full mb-4 shadow-lg">
             <MapPin className="w-4 h-4 text-primary-foreground" />
             <span className="text-sm font-medium text-primary-foreground">15+ Destinations</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-lg mb-3">
-            Explore India with <span className="text-yellow-400 drop-shadow-md">OotyPlanners</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] mb-3">
+            Explore India with <span className="text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">OotyPlanners</span>
           </h1>
-          <p className="text-base sm:text-lg text-white/95 drop-shadow-md max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] max-w-2xl mx-auto">
             Your gateway to South India's most breathtaking destinations
           </p>
         </div>
