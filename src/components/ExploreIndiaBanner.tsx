@@ -39,7 +39,7 @@ const ExploreIndiaBanner = () => {
               
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-foreground mb-3">
                 Explore India with{" "}
-                <span className="text-gradient-primary">OotyEscape</span>
+                <span className="text-gradient-primary">OotyPlanners</span>
               </h2>
               
               <p className="text-muted-foreground mb-6 max-w-xl">
