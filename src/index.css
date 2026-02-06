@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @keyframes page-enter {
   from {
@@ -27,10 +31,6 @@
 .animate-bounce-gentle {
   animation: bounce-gentle 2s ease-in-out infinite;
 }
-@tailwind components;
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
