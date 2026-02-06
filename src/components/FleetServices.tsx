@@ -9,6 +9,8 @@ import sedanDzire from "@/assets/vehicles/sedan-dzire.jpg";
 import sedanXcent from "@/assets/vehicles/sedan-xcent.jpg";
 import sedanTigor from "@/assets/vehicles/sedan-tigor.jpg";
 import sedanI10 from "@/assets/vehicles/sedan-i10.jpg";
+import sedanI20 from "@/assets/vehicles/sedan-i20.jpg";
+import sedanGlanza from "@/assets/vehicles/sedan-glanza.jpg";
 import suvInnova from "@/assets/vehicles/suv-innova.jpg";
 import suvCrysta from "@/assets/vehicles/suv-crysta.jpg";
 import suvErtiga from "@/assets/vehicles/suv-ertiga.jpg";
@@ -57,6 +59,8 @@ const vehicleCategories: VehicleCategory[] = [
       { name: "Hyundai Xcent", image: sedanXcent, capacity: "4 Seater" },
       { name: "Tata Tigor", image: sedanTigor, capacity: "4 Seater" },
       { name: "Hyundai Grand i10", image: sedanI10, capacity: "4 Seater" },
+      { name: "Hyundai i20", image: sedanI20, capacity: "4 Seater" },
+      { name: "Toyota Glanza", image: sedanGlanza, capacity: "4 Seater" },
     ],
   },
   {
