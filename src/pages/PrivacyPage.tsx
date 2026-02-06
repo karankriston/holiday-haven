@@ -137,8 +137,8 @@ const PrivacyPage = () => {
                 </p>
                 <p className="flex items-center gap-2 text-muted-foreground">
                   <span>📧 Email:</span>
-                  <a href="mailto:ootyplanners@gmail.com" className="text-primary hover:underline">
-                    ootyplanners@gmail.com
+                  <a href="mailto:ootytourplanners@gmail.com" className="text-primary hover:underline">
+                    ootytourplanners@gmail.com
                   </a>
                 </p>
               </div>
