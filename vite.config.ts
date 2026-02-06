@@ -14,5 +14,31 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    dedupe: ["react", "react-dom"],
+  },
+  build: {
+    sourcemap: false,
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          ui: [
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-dropdown-menu",
+            "@radix-ui/react-tabs",
+            "@radix-ui/react-accordion",
+            "@radix-ui/react-select",
+          ],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
   },
 }));
