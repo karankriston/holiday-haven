@@ -15,9 +15,9 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <img src={logoImg} alt="OotyPlanners Logo" className="w-7 h-7 object-contain" />
+              <img src={logoImg} alt="OotyTourPlanners Logo" className="w-7 h-7 object-contain" />
               <span className="text-xl font-serif font-bold">
-                Ooty<span className="text-primary">Planners</span>
+                OotyTour<span className="text-primary">Planners</span>
               </span>
             </Link>
             <p className="text-primary-foreground/70 mb-6 leading-relaxed">
@@ -132,7 +132,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2026 OotyPlanners. All rights reserved. Crafted with love for travelers.
+            © 2026 OotyTourPlanners. All rights reserved. Crafted with love for travelers.
           </p>
           <div className="flex gap-6 text-sm">
             <Link to="/privacy" state={{ fromFooter: true }} className="text-primary-foreground/50 hover:text-primary transition-colors">Privacy Policy</Link>
@@ -144,12 +144,12 @@ const Footer = () => {
       {/* Brand Bottom Bar */}
       <div className="bg-white py-3">
         <div className="container mx-auto px-4 flex items-center justify-center gap-3">
-          <img src={logoImg} alt="OotyPlanners Logo" className="w-6 h-6 object-contain" />
+          <img src={logoImg} alt="OotyTourPlanners Logo" className="w-6 h-6 object-contain" />
           <span className="font-serif font-bold text-lg tracking-wide">
-            <span className="text-foreground">Ooty</span>
+            <span className="text-foreground">OotyTour</span>
             <span className="text-primary">Planners</span>
           </span>
-          <img src={logoImg} alt="OotyPlanners Logo" className="w-6 h-6 object-contain" />
+          <img src={logoImg} alt="OotyTourPlanners Logo" className="w-6 h-6 object-contain" />
         </div>
       </div>
     </footer>

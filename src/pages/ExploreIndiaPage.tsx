@@ -60,7 +60,7 @@ const stayOptions = [
 
 const ExploreIndiaPage = () => {
   const phoneNumber = "917639919694";
-  const whatsappMessage = encodeURIComponent("Hi Raghul, I'm interested in exploring destinations with OotyPlanners. Please share more details.");
+  const whatsappMessage = encodeURIComponent("Hi Raghul, I'm interested in exploring destinations with OotyTourPlanners. Please share more details.");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -73,7 +73,7 @@ const ExploreIndiaPage = () => {
       {/* Hero Section */}
       <section className="relative h-[45vh] min-h-[320px] flex items-center justify-center mt-16">
         <div className="absolute inset-0">
-          <img src={exploreIndiaBanner} alt="Explore India with OotyPlanners" className="w-full h-full object-cover" />
+          <img src={exploreIndiaBanner} alt="Explore India with OotyTourPlanners" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-transparent" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -82,7 +82,7 @@ const ExploreIndiaPage = () => {
             <span className="text-sm font-medium text-primary-foreground">15+ Destinations</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] mb-3">
-            Explore India with <span className="text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">OotyPlanners</span>
+            Explore India with <span className="text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">OotyTourPlanners</span>
           </h1>
           <p className="text-base sm:text-lg text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] max-w-2xl mx-auto">
             Your gateway to South India's most breathtaking destinations
