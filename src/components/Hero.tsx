@@ -33,7 +33,7 @@ const Hero = ({ heroImage }: HeroProps) => {
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 animate-fade-up">
-            ✨ Experience Nilgiris with OotyPlanners ✨
+            ✨ Experience Nilgiris with OotyTourPlanners ✨
           </span>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: "0.1s" }}>

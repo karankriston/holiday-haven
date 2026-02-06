@@ -24,7 +24,7 @@ const tripImages: Record<string, string> = {
 
 const LongTripsPage = () => {
   const phoneNumber = "917639919694";
-  const whatsappMessage = encodeURIComponent("Hi Raghul, I'm interested in OotyPlanners packages. Please share more details.");
+  const whatsappMessage = encodeURIComponent("Hi Raghul, I'm interested in OotyTourPlanners packages. Please share more details.");
 
   useEffect(() => {
     window.scrollTo(0, 0);
