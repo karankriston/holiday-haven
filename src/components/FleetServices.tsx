@@ -54,13 +54,13 @@ const vehicleCategories: VehicleCategory[] = [
     features: ["Comfortable", "Fuel-efficient", "Ideal for city & highway travel"],
     gradient: "from-blue-500 to-cyan-500",
     vehicles: [
+      { name: "Toyota Glanza", image: sedanGlanza, capacity: "4 Seater" },
       { name: "Toyota Etios", image: sedanEtios, capacity: "4 Seater" },
       { name: "Maruti Swift Dzire", image: sedanDzire, capacity: "4 Seater" },
       { name: "Hyundai Xcent", image: sedanXcent, capacity: "4 Seater" },
       { name: "Tata Tigor", image: sedanTigor, capacity: "4 Seater" },
       { name: "Hyundai Grand i10", image: sedanI10, capacity: "4 Seater" },
       { name: "Hyundai i20", image: sedanI20, capacity: "4 Seater" },
-      { name: "Toyota Glanza", image: sedanGlanza, capacity: "4 Seater" },
     ],
   },
   {
