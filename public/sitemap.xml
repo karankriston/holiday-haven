@@ -2,182 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://ootytourplanners.in/</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/long-trips</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/long-trips</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/explore-india</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/explore-india</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/terms</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/terms</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/privacy</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/privacy</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Category: Ooty Tour Packages -->
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages/tour/ooty</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages/tour/ooty</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages/tour/coonoor</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages/tour/coonoor</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages/tour/pykara</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages/tour/pykara</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages/tour/avalanche</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages/tour/avalanche</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages/tour/kodanadu</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages/tour/kodanadu</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-tour-packages/tour/birdwatch-virgin-earth-ooty</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-tour-packages/tour/birdwatch-virgin-earth-ooty</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Category: Pick up & Drop -->
+  <!-- Category: Pick up & Drop (Contact-only, no tour detail pages) -->
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-cabs-pick-up-drop</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-cabs-pick-up-drop</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Category: South Serenity Tours -->
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours/tour/kerala-backwaters-bliss</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours/tour/kerala-backwaters-bliss</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours/tour/tamil-nadu-temple-trail</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours/tour/tamil-nadu-temple-trail</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours/tour/karnataka-heritage</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours/tour/karnataka-heritage</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours/tour/andhra-spiritual-journey</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours/tour/andhra-spiritual-journey</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours/tour/kerala-coastal-paradise</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours/tour/kerala-coastal-paradise</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/south-serenity-tours/tour/south-temple</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/south-serenity-tours/tour/south-temple</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Category: Ooty Toy Train Ride -->
+  <!-- Category: Ooty Toy Train Ride (Info page only, no tour detail pages) -->
   <url>
-    <loc>https://ootytourplanners.in/category/ooty-toy-train-ride</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/ooty-toy-train-ride</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Category: Hotel Bookings -->
+  <!-- Category: Hotel Bookings (Booking page only, no tour detail pages) -->
   <url>
-    <loc>https://ootytourplanners.in/category/hotels</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/hotels</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Category: Honeymoon Packages -->
   <url>
-    <loc>https://ootytourplanners.in/category/honeymoon-packages</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/honeymoon-packages</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/honeymoon-packages/tour/ooty-honeymoon-package</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/honeymoon-packages/tour/ooty-honeymoon-package</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/honeymoon-packages/tour/coorg-ooty-trips</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/honeymoon-packages/tour/coorg-ooty-trips</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/honeymoon-packages/tour/kerala-honeymoon-trips</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/honeymoon-packages/tour/kerala-honeymoon-trips</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/honeymoon-packages/tour/south-india-tour</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/honeymoon-packages/tour/south-india-tour</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ootytourplanners.in/category/honeymoon-packages/tour/budget-honeymoon-package</loc>
-    <lastmod>2025-02-06</lastmod>
+    <loc>https://ootyplanners.in/category/honeymoon-packages/tour/budget-honeymoon-package</loc>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
