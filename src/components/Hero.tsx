@@ -26,24 +26,24 @@ const Hero = ({ heroImage }: HeroProps) => {
           className="w-full h-full object-cover object-center md:object-center"
           style={{ objectPosition: 'center 40%' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-foreground/70 via-foreground/50 to-foreground/30 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/40 md:to-foreground/10" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-2xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 animate-fade-up">
-            ✨ Experience Nilgiris with OotyTourPlanners ✨
+          <span className="inline-block px-4 py-2 bg-purple-500/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 animate-fade-up border border-purple-300/30">
+            🌸 Jacaranda Season in the Nilgiris 🌸
           </span>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Discover Ooty's
-            <span className="block text-golden">Hidden Treasures</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: "0.1s", textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}>
+            Ooty Turns
+            <span className="block text-purple-300" style={{ textShadow: "0 0 40px rgba(168,85,247,0.4)" }}>Purple</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            From misty Hill stations to Ooty's winding mountain roads, from serene lakes to thrilling adventures, 
-            create great and unforgettable memories with our curated travel experience.
+          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s", textShadow: "0 1px 10px rgba(0,0,0,0.3)" }}>
+            When Jacaranda trees paint the Nilgiris in breathtaking purple, 
+            experience the magic of Ooty's most beautiful season with our curated travel packages.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
@@ -73,15 +73,15 @@ const Hero = ({ heroImage }: HeroProps) => {
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div>
-              <span className="block text-3xl font-bold text-golden">500+</span>
+              <span className="block text-3xl font-bold text-purple-300">500+</span>
               <span className="text-primary-foreground/80 text-sm">Happy Travelers</span>
             </div>
             <div>
-              <span className="block text-3xl font-bold text-golden">50+</span>
+              <span className="block text-3xl font-bold text-purple-300">50+</span>
               <span className="text-primary-foreground/80 text-sm">Destinations</span>
             </div>
             <div>
-              <span className="block text-3xl font-bold text-golden">10+</span>
+              <span className="block text-3xl font-bold text-purple-300">10+</span>
               <span className="text-primary-foreground/80 text-sm">Years Experience</span>
             </div>
           </div>

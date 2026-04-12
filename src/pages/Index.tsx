@@ -8,7 +8,7 @@ import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 
 // Import images
-import heroImage from "@/assets/hero-travel-new.jpg";
+import heroImage from "@/assets/jacaranda-hero.jpg";
 import ootyTourImg from "@/assets/ooty-tour.jpg";
 import pickupDropImg from "@/assets/pickup-drop.jpg";
 import southSerenityImg from "@/assets/south-serenity.jpg";
