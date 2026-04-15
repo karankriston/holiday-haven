@@ -32,7 +32,7 @@ const Hero = ({ heroImage }: HeroProps) => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-2xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 bg-purple-500/20 backdrop-blur-sm rounded-full text-primary-foreground text-sm font-medium mb-6 animate-fade-up border border-purple-300/30">
+          <span className="inline-block px-5 py-2.5 bg-foreground/30 backdrop-blur-md rounded-full text-primary-foreground text-sm font-medium mb-6 animate-fade-up border border-primary-foreground/20 tracking-wide">
             🌸 Jacaranda Season in the Nilgiris 🌸
           </span>
           
